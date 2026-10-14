@@ -44,6 +44,12 @@ function bungry_demo_pages(): array {
 			'description' => 'Answers about the Bungry menu, ordering and allergen information. Check current ingredient and allergen information before you order.',
 			'body'        => '<h1>FOOD ALLERGENS &amp; FAQS</h1>',
 		),
+		'blog'      => array(
+			'title'       => 'Blog',
+			'status'      => 'publish',
+			'description' => 'Stories and updates from Bungry Burger.',
+			'body'        => '',
+		),
 		'privacy'   => array(
 			'title'       => 'Privacy Policy',
 			'status'      => 'draft',
@@ -121,6 +127,7 @@ function bungry_handle_demo_import(): void {
 
 	update_option( 'show_on_front', 'page' );
 	update_option( 'page_on_front', $ids['home'] );
+	update_option( 'page_for_posts', $ids['blog'] );
 
 	bungry_seed_menu_items();
 	bungry_apply_elementor_kit();

@@ -10,6 +10,7 @@ defined( 'ABSPATH' ) || exit;
 function bungry_enqueue_assets(): void {
 	wp_enqueue_style( 'bungry-fonts', BUNGRY_URI . '/assets/fonts/fonts.css', array(), BUNGRY_VERSION );
 	wp_enqueue_style( 'bungry-base', BUNGRY_URI . '/assets/css/base.css', array( 'bungry-fonts' ), BUNGRY_VERSION );
+	wp_enqueue_style( 'bungry-blog', BUNGRY_URI . '/assets/css/blog.css', array( 'bungry-base' ), BUNGRY_VERSION );
 	wp_enqueue_script(
 		'bungry-nav',
 		BUNGRY_URI . '/assets/js/nav.js',
