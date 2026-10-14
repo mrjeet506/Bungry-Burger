@@ -1,0 +1,308 @@
+/* Bungry Elementor widgets. Loaded with the Elementor frontend; depends on base.css tokens. */
+
+.bungry-eyebrow {
+	margin: 0 0 12px;
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 20px;
+	letter-spacing: 10px;
+	text-transform: uppercase;
+	color: var(--bungry-orange-dark);
+}
+
+/* Section heading */
+.bungry-section-heading {
+	display: flex;
+	flex-direction: column;
+	gap: 0;
+	align-items: flex-start;
+}
+
+.bungry-section-heading.is-center .bungry-section-heading__text {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.bungry-section-heading__title {
+	margin-bottom: 16px;
+}
+
+.bungry-section-heading__text {
+	max-width: 640px;
+	margin-bottom: 24px;
+	font-size: 20px;
+	line-height: 32px;
+}
+
+/* Menu cards */
+.bungry-menu-cards {
+	--bungry-cols: 5;
+	display: grid;
+	grid-template-columns: repeat(var(--bungry-cols), minmax(0, 1fr));
+	gap: 24px;
+}
+
+.bungry-menu-card {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	padding: 20px;
+	border-radius: 20px;
+	background: var(--bungry-white);
+	border: 1px solid var(--bungry-cream-dark);
+}
+
+.bungry-menu-card__media {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 180px;
+}
+
+.bungry-menu-card__art svg {
+	width: auto;
+	height: 150px;
+}
+
+.bungry-menu-card__title {
+	margin: 0;
+	font-size: 22px;
+	line-height: 26px;
+}
+
+.bungry-menu-card__diet {
+	margin: 0;
+	font-size: 12px;
+	font-weight: 700;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	color: var(--bungry-deep-olive);
+}
+
+.bungry-menu-card__text {
+	margin: 0;
+	font-size: 14px;
+	line-height: 22px;
+	flex: 1 1 auto;
+}
+
+.bungry-menu-card__meta {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 10px 14px;
+}
+
+.bungry-price {
+	font-family: var(--bungry-font-heading);
+	font-size: 22px;
+	line-height: 26px;
+	color: var(--bungry-forest);
+}
+
+.bungry-menu-card__allergen {
+	font-size: 14px;
+	font-weight: 600;
+	color: var(--bungry-forest);
+}
+
+/* Notice */
+.bungry-notice {
+	padding: 20px 24px;
+	border-left: 6px solid var(--bungry-forest);
+	border-radius: 14px;
+	background: var(--bungry-cream-dark);
+}
+
+.bungry-notice--warning {
+	border-left-color: var(--bungry-orange-dark);
+	background: rgba(246, 165, 49, 0.16);
+}
+
+.bungry-notice--closed {
+	border-left-color: var(--bungry-orange);
+	background: var(--bungry-forest-dark);
+	color: var(--bungry-cream);
+}
+
+.bungry-notice--closed .bungry-notice__title {
+	color: var(--bungry-orange);
+}
+
+.bungry-notice__title {
+	margin: 0 0 4px;
+	font-family: var(--bungry-font-heading);
+	font-size: 22px;
+	line-height: 26px;
+	text-transform: uppercase;
+}
+
+.bungry-notice__text {
+	margin: 0;
+}
+
+/* FAQ */
+.bungry-faq {
+	border-top: 1px solid var(--bungry-cream-dark);
+}
+
+.bungry-faq__item {
+	border-bottom: 1px solid var(--bungry-cream-dark);
+}
+
+.bungry-faq__question {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 16px;
+	min-height: 44px;
+	padding: 20px 0;
+	cursor: pointer;
+	font-family: var(--bungry-font-heading);
+	font-size: 22px;
+	line-height: 26px;
+	text-transform: uppercase;
+	color: var(--bungry-forest);
+	list-style: none;
+}
+
+.bungry-faq__question::-webkit-details-marker {
+	display: none;
+}
+
+.bungry-faq__question::after {
+	content: '+';
+	flex-shrink: 0;
+	font-family: var(--bungry-font-body);
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 1;
+}
+
+.bungry-faq__item[open] .bungry-faq__question::after {
+	content: '\2212';
+}
+
+.bungry-faq__answer {
+	padding: 0 0 20px;
+	max-width: 760px;
+}
+
+.bungry-faq__answer p:last-child {
+	margin-bottom: 0;
+}
+
+/* Info rows */
+.bungry-info-rows {
+	display: grid;
+	grid-template-columns: repeat(4, minmax(0, 1fr));
+	gap: 24px;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.bungry-info-row {
+	display: flex;
+	gap: 14px;
+	align-items: flex-start;
+}
+
+.bungry-info-row__icon-wrap {
+	display: inline-flex;
+	flex-shrink: 0;
+	align-items: center;
+	justify-content: center;
+	width: 44px;
+	height: 44px;
+	border-radius: 999px;
+	background: var(--bungry-cream-dark);
+	color: var(--bungry-forest);
+}
+
+.bungry-info-row__icon {
+	display: inline-flex;
+	width: 22px;
+	height: 22px;
+}
+
+.bungry-info-row__icon svg {
+	width: 22px;
+	height: 22px;
+	fill: currentColor;
+}
+
+.bungry-info-row__label {
+	margin: 0 0 4px;
+	font-size: 12px;
+	font-weight: 700;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	color: var(--bungry-deep-olive);
+}
+
+.bungry-info-row__value {
+	white-space: pre-line;
+}
+
+/* CTA band */
+.bungry-cta-band {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	gap: 32px;
+	padding: 56px 64px;
+	border-radius: 24px;
+	background: var(--bungry-orange);
+	color: var(--bungry-ink);
+}
+
+.bungry-cta-band__title {
+	margin: 0 0 8px;
+	color: var(--bungry-ink);
+}
+
+.bungry-cta-band__text {
+	margin: 0;
+}
+
+.bungry-cta-band__actions {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 12px;
+}
+
+.bungry-cta-band .bungry-btn--outline-dark {
+	border-color: var(--bungry-ink);
+	color: var(--bungry-ink);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+	.bungry-menu-cards {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+
+	.bungry-info-rows {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+}
+
+@media (max-width: 767px) {
+	.bungry-menu-cards {
+		grid-template-columns: 1fr;
+	}
+
+	.bungry-info-rows {
+		grid-template-columns: 1fr;
+	}
+
+	.bungry-cta-band {
+		padding: 32px 24px;
+	}
+
+	.bungry-faq__question {
+		font-size: 20px;
+	}
+}
