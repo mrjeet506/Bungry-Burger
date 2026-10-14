@@ -1,0 +1,756 @@
+/*
+ * Bungry Burger base styles. Tokens come from the Figma style guide and mirror the Elementor kit.
+ * When the Elementor kit is active, --e-global-* variables override the fallbacks below.
+ */
+
+:root {
+	--bungry-forest: var(--e-global-color-bungryforest, #185b28);
+	--bungry-forest-dark: var(--e-global-color-bungryforestdark, #10431d);
+	--bungry-cream: var(--e-global-color-bungrycream, #f6f7ee);
+	--bungry-cream-dark: var(--e-global-color-bungrycreamdark, #e9ebd7);
+	--bungry-orange: var(--e-global-color-bungryorange, #f6a531);
+	--bungry-orange-dark: var(--e-global-color-bungryorangedark, #e08f12);
+	--bungry-olive: var(--e-global-color-bungryolive, #98a75b);
+	--bungry-deep-olive: var(--e-global-color-bungrydeepolive, #6d7a38);
+	--bungry-leaf: var(--e-global-color-bungryleaf, #5e8441);
+	--bungry-ink: var(--e-global-color-bungryink, #0e3a1a);
+	--bungry-white: var(--e-global-color-bungrywhite, #ffffff);
+
+	--bungry-font-heading: 'Bakbak One', system-ui, sans-serif;
+	--bungry-font-body: Montserrat, system-ui, sans-serif;
+
+	--bungry-radius-btn: 14px;
+	--bungry-max: 1280px;
+	--bungry-gutter: 80px;
+	--bungry-header-h: 84px;
+	--bungry-focus: var(--bungry-orange-dark);
+}
+
+@media (max-width: 1024px) {
+	:root {
+		--bungry-gutter: 40px;
+	}
+}
+
+@media (max-width: 767px) {
+	:root {
+		--bungry-gutter: 24px;
+		--bungry-header-h: 68px;
+	}
+}
+
+/* ---------- Base ---------- */
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+html {
+	-webkit-text-size-adjust: 100%;
+}
+
+body {
+	margin: 0;
+	background: var(--bungry-cream);
+	color: var(--bungry-ink);
+	font-family: var(--bungry-font-body);
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 26px;
+}
+
+body.bungry-menu-open {
+	overflow: hidden;
+}
+
+img,
+svg {
+	max-width: 100%;
+	height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+	margin: 0 0 0.5em;
+	font-family: var(--bungry-font-heading);
+	font-weight: 400;
+	text-transform: uppercase;
+	color: var(--bungry-forest);
+}
+
+h1 {
+	font-size: 80px;
+	line-height: 84px;
+	letter-spacing: -1px;
+}
+
+h2 {
+	font-size: 56px;
+	line-height: 60px;
+	letter-spacing: -0.5px;
+}
+
+h3 {
+	font-size: 40px;
+	line-height: 44px;
+}
+
+h4 {
+	font-size: 28px;
+	line-height: 32px;
+}
+
+h5 {
+	font-size: 22px;
+	line-height: 26px;
+	letter-spacing: 0.5px;
+}
+
+a {
+	color: var(--bungry-forest);
+	text-underline-offset: 3px;
+}
+
+p {
+	margin: 0 0 1em;
+}
+
+:focus-visible {
+	outline: 3px solid var(--bungry-focus);
+	outline-offset: 3px;
+}
+
+.screen-reader-text {
+	position: absolute !important;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	clip: rect(1px, 1px, 1px, 1px);
+	white-space: nowrap;
+}
+
+.bungry-skip-link {
+	position: absolute;
+	left: 16px;
+	top: -100px;
+	z-index: 200;
+	padding: 12px 16px;
+	border-radius: var(--bungry-radius-btn);
+	background: var(--bungry-orange);
+	color: var(--bungry-ink);
+	font-weight: 700;
+	text-decoration: none;
+}
+
+.bungry-skip-link:focus {
+	top: 12px;
+}
+
+.bungry-container {
+	max-width: var(--bungry-max);
+	margin: 0 auto;
+	padding: 0 var(--bungry-gutter);
+}
+
+.bungry-main {
+	min-height: 60vh;
+}
+
+.bungry-page {
+	padding-top: 64px;
+	padding-bottom: 64px;
+}
+
+.bungry-prose > * + * {
+	margin-top: 1em;
+}
+
+/* ---------- Tags (placeholder: "client to confirm") ---------- */
+
+.bungry-tag {
+	display: inline-flex;
+	align-items: center;
+	padding: 5px 12px;
+	border: 1px dashed var(--bungry-orange);
+	border-radius: 999px;
+	font-size: 12px;
+	font-weight: 700;
+	line-height: 16px;
+	letter-spacing: 0.96px;
+	text-transform: uppercase;
+	white-space: nowrap;
+}
+
+.bungry-tag--dark {
+	background: rgba(246, 165, 49, 0.16);
+	color: var(--bungry-orange);
+}
+
+.bungry-tag--light {
+	background: rgba(246, 165, 49, 0.2);
+	color: var(--bungry-forest-dark);
+}
+
+/* ---------- Buttons ---------- */
+
+.bungry-btn {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+	min-height: 44px;
+	padding: 16px 24px;
+	border: 2px solid transparent;
+	border-radius: var(--bungry-radius-btn);
+	font-family: var(--bungry-font-body);
+	font-size: 15px;
+	font-weight: 700;
+	line-height: 20px;
+	letter-spacing: 0.45px;
+	text-decoration: none;
+	text-transform: uppercase;
+	white-space: nowrap;
+	transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.bungry-btn--small {
+	padding: 10px 20px;
+}
+
+.bungry-btn--primary {
+	background: var(--bungry-orange);
+	color: var(--bungry-ink);
+}
+
+.bungry-btn--primary:hover {
+	background: var(--bungry-orange-dark);
+}
+
+.bungry-btn--dark {
+	background: var(--bungry-forest);
+	color: var(--bungry-cream);
+}
+
+.bungry-btn--dark:hover {
+	background: var(--bungry-forest-dark);
+}
+
+.bungry-btn--outline-light {
+	border-color: var(--bungry-cream);
+	color: var(--bungry-cream);
+	background: transparent;
+}
+
+.bungry-btn--outline-light:hover {
+	background: rgba(246, 247, 238, 0.12);
+}
+
+.bungry-btn--outline-dark {
+	border-color: var(--bungry-forest);
+	color: var(--bungry-forest);
+	background: transparent;
+}
+
+.bungry-btn--outline-dark:hover {
+	background: rgba(24, 91, 40, 0.08);
+}
+
+.bungry-btn:hover .bungry-btn__arrow {
+	transform: translateX(3px);
+}
+
+.bungry-btn__arrow {
+	display: inline-block;
+	transition: transform 0.2s ease;
+}
+
+/* ---------- Announcement strip ---------- */
+
+.bungry-announcement {
+	background: var(--bungry-orange);
+	color: var(--bungry-ink);
+	text-align: center;
+}
+
+.bungry-announcement__text {
+	margin: 0;
+	padding: 10px var(--bungry-gutter);
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 22px;
+}
+
+/* ---------- Header ---------- */
+
+.bungry-header {
+	position: sticky;
+	top: 0;
+	z-index: 50;
+	background: var(--bungry-cream);
+	border-bottom: 1px solid var(--bungry-cream-dark);
+}
+
+.bungry-header__inner {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 40px;
+	height: var(--bungry-header-h);
+	padding: 0 var(--bungry-gutter);
+}
+
+.bungry-logo {
+	display: inline-flex;
+	align-items: center;
+	flex-shrink: 0;
+	text-decoration: none;
+}
+
+.bungry-logo__img,
+.bungry-logo__svg svg {
+	display: block;
+	width: auto;
+	height: 46px;
+}
+
+.bungry-wordmark {
+	font-family: var(--bungry-font-heading);
+	font-size: 26px;
+	line-height: 26px;
+	text-transform: uppercase;
+	color: var(--bungry-forest);
+}
+
+.bungry-wordmark__sub {
+	display: block;
+	font-family: var(--bungry-font-body);
+	font-size: 12px;
+	font-weight: 700;
+	letter-spacing: 4px;
+	color: var(--bungry-olive);
+}
+
+.bungry-header__actions {
+	display: flex;
+	align-items: center;
+	gap: 16px;
+}
+
+.bungry-nav__list {
+	display: flex;
+	align-items: center;
+	gap: 40px;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.bungry-nav__link {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 6px;
+	color: var(--bungry-forest);
+	font-size: 15px;
+	font-weight: 600;
+	line-height: 20px;
+	letter-spacing: 0.3px;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.bungry-nav__bar {
+	display: block;
+	width: 100%;
+	height: 3px;
+	border-radius: 2px;
+	background: var(--bungry-orange);
+	opacity: 0;
+}
+
+.bungry-nav__link.is-active .bungry-nav__bar {
+	opacity: 1;
+}
+
+.bungry-nav__link:hover .bungry-nav__bar {
+	opacity: 0.5;
+}
+
+.bungry-menu-toggle {
+	display: none;
+	align-items: center;
+	justify-content: center;
+	width: 44px;
+	height: 44px;
+	padding: 0;
+	border: 0;
+	border-radius: 12px;
+	background: var(--bungry-forest);
+	cursor: pointer;
+}
+
+.bungry-menu-toggle__bars,
+.bungry-menu-toggle__bars::before,
+.bungry-menu-toggle__bars::after {
+	display: block;
+	width: 20px;
+	height: 2px;
+	border-radius: 2px;
+	background: var(--bungry-cream);
+}
+
+.bungry-menu-toggle__bars {
+	position: relative;
+}
+
+.bungry-menu-toggle__bars::before,
+.bungry-menu-toggle__bars::after {
+	position: absolute;
+	left: 0;
+	content: '';
+}
+
+.bungry-menu-toggle__bars::before {
+	top: -6px;
+}
+
+.bungry-menu-toggle__bars::after {
+	top: 6px;
+}
+
+/* ---------- Mobile menu overlay ---------- */
+
+.bungry-mobile-menu[hidden] {
+	display: none;
+}
+
+.bungry-mobile-menu {
+	position: fixed;
+	inset: 0;
+	z-index: 100;
+	overflow-y: auto;
+	background: var(--bungry-forest);
+	color: var(--bungry-cream);
+}
+
+.bungry-mobile-menu__panel {
+	display: flex;
+	flex-direction: column;
+	gap: 32px;
+	min-height: 100%;
+	padding: 16px 24px 32px;
+}
+
+.bungry-mobile-menu__top {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 52px;
+}
+
+.bungry-mobile-menu .bungry-logo__svg svg,
+.bungry-mobile-menu .bungry-logo__img {
+	height: 40px;
+}
+
+.bungry-mobile-menu .bungry-wordmark {
+	color: var(--bungry-cream);
+}
+
+.bungry-menu-close {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 44px;
+	height: 44px;
+	border: 2px solid var(--bungry-cream);
+	border-radius: 12px;
+	background: transparent;
+	color: var(--bungry-cream);
+	font-size: 28px;
+	line-height: 1;
+	cursor: pointer;
+}
+
+.bungry-mobile-menu .bungry-nav__list--stacked {
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	gap: 0;
+}
+
+.bungry-mobile-menu .bungry-nav__link {
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding: 18px 0;
+	border-bottom: 1px solid rgba(246, 247, 238, 0.2);
+	color: var(--bungry-cream);
+	font-family: var(--bungry-font-heading);
+	font-size: 28px;
+	font-weight: 400;
+	line-height: 32px;
+	letter-spacing: 0;
+}
+
+.bungry-mobile-menu .bungry-nav__bar {
+	display: none;
+}
+
+.bungry-mobile-menu .bungry-nav__link::after {
+	content: '\2192';
+	font-family: var(--bungry-font-body);
+	font-size: 20px;
+	color: var(--bungry-orange);
+}
+
+.bungry-mobile-menu .bungry-nav__link.is-active {
+	color: var(--bungry-orange);
+}
+
+.bungry-mobile-menu__order {
+	align-self: stretch;
+}
+
+/* ---------- Footer ---------- */
+
+.bungry-footer {
+	background: var(--bungry-forest);
+	color: var(--bungry-cream);
+	padding: 80px var(--bungry-gutter) 40px;
+}
+
+.bungry-footer__inner {
+	max-width: var(--bungry-max);
+	margin: 0 auto;
+}
+
+.bungry-footer__top {
+	display: flex;
+	gap: 64px;
+	align-items: flex-start;
+}
+
+.bungry-footer__top > * {
+	flex: 0 1 auto;
+}
+
+.bungry-footer__brand {
+	display: flex;
+	flex-direction: column;
+	gap: 18px;
+	width: 360px;
+	max-width: 100%;
+}
+
+.bungry-footer__brand .bungry-logo__svg svg,
+.bungry-footer__brand .bungry-logo__img {
+	height: 52px;
+}
+
+.bungry-footer__brand .bungry-wordmark {
+	color: var(--bungry-cream);
+}
+
+.bungry-footer__tagline {
+	margin: 0;
+	font-family: var(--bungry-font-heading);
+	font-size: 22px;
+	line-height: 26px;
+	letter-spacing: 0.11px;
+	text-transform: uppercase;
+	color: var(--bungry-orange);
+}
+
+.bungry-footer__blurb {
+	margin: 0;
+	color: rgba(246, 247, 238, 0.8);
+}
+
+.bungry-footer__col {
+	display: flex;
+	flex-direction: column;
+	gap: 14px;
+	min-width: 200px;
+}
+
+.bungry-footer__heading {
+	margin: 0;
+	font-family: var(--bungry-font-body);
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 20px;
+	letter-spacing: 1.4px;
+	color: var(--bungry-orange);
+}
+
+.bungry-footer__links,
+.bungry-footer__contact {
+	display: flex;
+	flex-direction: column;
+	gap: 14px;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.bungry-footer__links a,
+.bungry-footer__contact a {
+	color: var(--bungry-cream);
+}
+
+.bungry-footer__contact li {
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+}
+
+.bungry-footer__label {
+	font-size: 12px;
+	font-weight: 700;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	color: rgba(246, 247, 238, 0.7);
+}
+
+.bungry-social {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 10px 12px;
+}
+
+.bungry-social__link {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 44px;
+	height: 44px;
+	border-radius: 999px;
+	background: rgba(246, 247, 238, 0.12);
+	color: var(--bungry-cream);
+}
+
+.bungry-social__icon {
+	display: inline-flex;
+	width: 18px;
+	height: 18px;
+}
+
+.bungry-social__icon svg {
+	width: 18px;
+	height: 18px;
+	fill: currentColor;
+}
+
+.bungry-footer__bottom {
+	display: flex;
+	justify-content: space-between;
+	gap: 16px;
+	margin-top: 56px;
+	padding-top: 24px;
+	border-top: 1px solid rgba(246, 247, 238, 0.2);
+	font-size: 14px;
+	line-height: 22px;
+	color: rgba(246, 247, 238, 0.7);
+}
+
+.bungry-footer__bottom p {
+	margin: 0;
+}
+
+/* ---------- Responsive ---------- */
+
+@media (max-width: 1024px) {
+	h1 {
+		font-size: 64px;
+		line-height: 68px;
+	}
+
+	.bungry-nav__list {
+		gap: 24px;
+	}
+
+	.bungry-nav__link {
+		font-size: 14px;
+	}
+
+	.bungry-footer__top {
+		flex-wrap: wrap;
+		gap: 40px;
+	}
+}
+
+@media (max-width: 767px) {
+	h1 {
+		font-size: 44px;
+		line-height: 48px;
+	}
+
+	h2 {
+		font-size: 36px;
+		line-height: 40px;
+	}
+
+	h3 {
+		font-size: 30px;
+		line-height: 34px;
+	}
+
+	h4 {
+		font-size: 24px;
+		line-height: 28px;
+	}
+
+	h5 {
+		font-size: 20px;
+		line-height: 24px;
+	}
+
+	.bungry-header .bungry-nav,
+	.bungry-header__order {
+		display: none;
+	}
+
+	.bungry-menu-toggle {
+		display: inline-flex;
+	}
+
+	.bungry-footer {
+		padding: 56px var(--bungry-gutter) 32px;
+	}
+
+	.bungry-footer__top {
+		flex-direction: column;
+		gap: 40px;
+	}
+
+	.bungry-footer__brand {
+		width: 100%;
+	}
+
+	.bungry-footer__bottom {
+		flex-direction: column;
+		margin-top: 40px;
+	}
+
+	.bungry-page {
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	*,
+	*::before,
+	*::after {
+		animation: none !important;
+		transition: none !important;
+		scroll-behavior: auto !important;
+	}
+}
