@@ -38,6 +38,8 @@ function bungry_settings_fields(): array {
 		'social_facebook'      => array( 'social', __( 'Facebook URL', 'bungry-burger' ), 'url', '' ),
 		'social_tiktok'        => array( 'social', __( 'TikTok URL', 'bungry-burger' ), 'url', '' ),
 		'social_youtube'       => array( 'social', __( 'YouTube URL', 'bungry-burger' ), 'url', '' ),
+		'preloader_enabled'   => array( 'brand', __( 'Show preloader', 'bungry-burger' ), 'checkbox', __( 'A short loading screen on page load. It hides as soon as the page is ready (4 seconds at most).', 'bungry-burger' ) ),
+		'preloader_text'       => array( 'brand', __( 'Preloader text', 'bungry-burger' ), 'text', __( 'Optional text shown instead of the logo. Leave empty to show the logo.', 'bungry-burger' ) ),
 		'fx_mode'              => array( 'brand', __( 'Background animation', 'bungry-burger' ), 'fx_mode', __( 'Animated shapes behind the page. Visitors who ask for reduced motion see a still image.', 'bungry-burger' ) ),
 		'layout'               => array( 'brand', __( 'Page width', 'bungry-burger' ), 'layout', __( 'Full width runs edge to edge. Boxed frames the site in a centred panel at 70% width. Phones always use full width.', 'bungry-burger' ) ),
 		'footer_blurb'         => array( 'footer', __( 'Footer blurb', 'bungry-burger' ), 'textarea', '' ),

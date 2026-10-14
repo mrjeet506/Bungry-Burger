@@ -30,6 +30,8 @@ function bungry_default_settings(): array {
 		'social_tiktok'        => '',
 		'social_youtube'       => '',
 		'layout'               => 'full',
+		'preloader_enabled'   => 0,
+		'preloader_text'      => '',
 		'fx_mode'              => 'off',
 		'footer_blurb'         => 'Meet Bungry Burger. A fresh take on a familiar favourite, made memorable by our signature sealed-burger concept.',
 		'copyright_text'       => '',

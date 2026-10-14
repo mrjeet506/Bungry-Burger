@@ -1,0 +1,88 @@
+/*
+ * Bungry preloader. The overlay also fades out by itself after 4 seconds (CSS only),
+ * so the page is never blocked if JavaScript is off or fails.
+ */
+
+.bungry-preloader {
+	position: fixed;
+	inset: 0;
+	z-index: 100000;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: var(--bungry-cream);
+	transition: opacity 0.45s ease, visibility 0.45s ease;
+	animation: bungry-preloader-timeout 0s linear 4s forwards;
+}
+
+.bungry-preloader.is-done {
+	opacity: 0;
+	visibility: hidden;
+	pointer-events: none;
+}
+
+@keyframes bungry-preloader-timeout {
+	to {
+		opacity: 0;
+		visibility: hidden;
+		pointer-events: none;
+	}
+}
+
+.bungry-preloader__inner {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 24px;
+}
+
+.bungry-preloader__text {
+	font-family: var(--bungry-font-heading);
+	font-size: 32px;
+	line-height: 1.1;
+	letter-spacing: 0.04em;
+	color: var(--bungry-forest);
+}
+
+.bungry-preloader .bungry-logo__svg,
+.bungry-preloader .bungry-logo__img {
+	display: block;
+	height: 64px;
+	width: auto;
+}
+
+.bungry-preloader__bar {
+	position: relative;
+	width: 160px;
+	height: 4px;
+	border-radius: 4px;
+	overflow: hidden;
+	background: var(--bungry-cream-dark);
+}
+
+.bungry-preloader__bar::after {
+	content: '';
+	position: absolute;
+	inset: 0;
+	width: 40%;
+	border-radius: 4px;
+	background: var(--bungry-orange);
+	animation: bungry-preloader-slide 1.2s ease-in-out infinite;
+}
+
+@keyframes bungry-preloader-slide {
+	0% {
+		transform: translateX(-100%);
+	}
+	100% {
+		transform: translateX(250%);
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.bungry-preloader__bar::after {
+		animation: none;
+		width: 100%;
+		opacity: 0.6;
+	}
+}
