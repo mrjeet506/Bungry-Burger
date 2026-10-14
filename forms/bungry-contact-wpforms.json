@@ -1,0 +1,103 @@
+{
+  "field_id": "6",
+  "fields": {
+    "1": {
+      "id": "1",
+      "type": "name",
+      "format": "simple",
+      "label": "Name (optional)",
+      "required": "0",
+      "placeholder": "Your name",
+      "size": "large"
+    },
+    "2": {
+      "id": "2",
+      "type": "email",
+      "label": "Email",
+      "required": "1",
+      "placeholder": "you@example.com",
+      "size": "large"
+    },
+    "3": {
+      "id": "3",
+      "type": "select",
+      "label": "Topic",
+      "required": "1",
+      "placeholder": "Select a topic",
+      "size": "large",
+      "choices": {
+        "1": {
+          "label": "General enquiry",
+          "value": "",
+          "default": "",
+          "depth": "1"
+        },
+        "2": {
+          "label": "The menu",
+          "value": "",
+          "default": "",
+          "depth": "1"
+        },
+        "3": {
+          "label": "Order or delivery",
+          "value": "",
+          "default": "",
+          "depth": "1"
+        },
+        "4": {
+          "label": "Something else",
+          "value": "",
+          "default": "",
+          "depth": "1"
+        }
+      }
+    },
+    "4": {
+      "id": "4",
+      "type": "textarea",
+      "label": "Message",
+      "required": "1",
+      "placeholder": "How can we help?",
+      "size": "medium"
+    },
+    "5": {
+      "id": "5",
+      "type": "checkbox",
+      "label": "We’ll use your details only to reply. Read our Privacy Policy.",
+      "required": "1",
+      "size": "large",
+      "choices": {
+        "1": {
+          "label": "I agree",
+          "value": "",
+          "default": "",
+          "depth": "1"
+        }
+      }
+    }
+  },
+  "settings": {
+    "form_title": "Bungry Contact",
+    "form_class": "bungry-wpforms",
+    "submit_text": "Send message",
+    "submit_class": "bungry-btn bungry-btn--primary",
+    "submit_text_processing": "Sending...",
+    "confirmation_type": "message",
+    "confirmation_message": "Thanks. We’ll reply to your message soon.",
+    "notification_enable": "1",
+    "notifications": {
+      "1": {
+        "notification_name": "Admin enquiry",
+        "email": "{admin_email}",
+        "subject": "Bungry website enquiry: {field_id=\"3\"}",
+        "sender_name": "{site_name}",
+        "sender_address": "{admin_email}",
+        "replyto": "{field_id=\"2\"}",
+        "message": "<!doctype html>\n<html>\n<body style=\"margin:0;padding:0;background:#F6F7EE;font-family:Montserrat,Arial,sans-serif;color:#0E3A1A;\">\n<table role=\"presentation\" width=\"100%\" cellpadding=\"0\" cellspacing=\"0\" style=\"background:#F6F7EE;padding:24px 0;\">\n<tr><td align=\"center\">\n<table role=\"presentation\" width=\"600\" cellpadding=\"0\" cellspacing=\"0\" style=\"max-width:600px;width:100%;background:#FFFFFF;border-radius:20px;overflow:hidden;\">\n<tr><td style=\"background:#185B28;padding:28px 32px;\">\n<div style=\"font-family:'Bakbak One',Arial,sans-serif;font-size:26px;line-height:30px;color:#F6F7EE;text-transform:uppercase;\">Bungry Burger</div>\n<div style=\"font-size:12px;font-weight:700;letter-spacing:1.4px;color:#F6A531;margin-top:6px;text-transform:uppercase;\">New website enquiry</div>\n</td></tr>\n<tr><td style=\"padding:32px;\">\n<table role=\"presentation\" width=\"100%\" cellpadding=\"0\" cellspacing=\"0\">\n<tr><td style=\"padding:0 0 16px;font-size:12px;font-weight:700;letter-spacing:1px;color:#6D7A38;text-transform:uppercase;\">Name</td></tr>\n<tr><td style=\"padding:0 0 20px;font-size:16px;line-height:26px;\">{field_id=\"1\"}</td></tr>\n<tr><td style=\"padding:0 0 16px;font-size:12px;font-weight:700;letter-spacing:1px;color:#6D7A38;text-transform:uppercase;\">Email</td></tr>\n<tr><td style=\"padding:0 0 20px;font-size:16px;line-height:26px;\"><a href=\"mailto:{field_id=\"2\"}\" style=\"color:#185B28;\">{field_id=\"2\"}</a></td></tr>\n<tr><td style=\"padding:0 0 16px;font-size:12px;font-weight:700;letter-spacing:1px;color:#6D7A38;text-transform:uppercase;\">Topic</td></tr>\n<tr><td style=\"padding:0 0 20px;font-size:16px;line-height:26px;\">{field_id=\"3\"}</td></tr>\n<tr><td style=\"padding:0 0 16px;font-size:12px;font-weight:700;letter-spacing:1px;color:#6D7A38;text-transform:uppercase;\">Message</td></tr>\n<tr><td style=\"padding:16px 20px;background:#F6F7EE;border-radius:12px;font-size:16px;line-height:26px;\">{field_id=\"4\"}</td></tr>\n</table>\n</td></tr>\n<tr><td style=\"padding:20px 32px;background:#E9EBD7;font-size:13px;line-height:22px;color:#0E3A1A;\">\nReply to this email to answer the sender directly. Sent from {site_url} on {date_mdy} at {time}.\n</td></tr>\n</table>\n</td></tr>\n</table>\n</body>\n</html>"
+      }
+    }
+  },
+  "meta": {
+    "template": "blank"
+  }
+}

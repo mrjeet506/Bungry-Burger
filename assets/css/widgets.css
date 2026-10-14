@@ -600,3 +600,54 @@
 	color: rgba(14, 58, 26, 0.5);
 	opacity: 1;
 }
+
+/* WPForms inside the Find Us form card (Figma: 52px cream fields with olive borders). */
+.bungry-cf7 .wpforms-field-label {
+	font-size: 14px;
+	font-weight: 600;
+	color: var(--bungry-forest);
+}
+
+.bungry-cf7 .wpforms-field input[type="text"],
+.bungry-cf7 .wpforms-field input[type="email"],
+.bungry-cf7 .wpforms-field select,
+.bungry-cf7 .wpforms-field textarea {
+	width: 100%;
+	min-height: 52px;
+	padding: 14px 16px;
+	border: 1.5px solid var(--bungry-olive);
+	border-radius: 12px;
+	background: var(--bungry-cream);
+	color: var(--bungry-ink);
+	font: inherit;
+	box-shadow: none;
+}
+
+.bungry-cf7 .wpforms-field textarea {
+	min-height: 150px;
+}
+
+.bungry-cf7 .wpforms-field input::placeholder,
+.bungry-cf7 .wpforms-field textarea::placeholder {
+	color: rgba(14, 58, 26, 0.5);
+	opacity: 1;
+}
+
+.bungry-cf7 .wpforms-submit {
+	min-height: 52px;
+	padding: 16px 28px;
+	border: 0;
+	border-radius: 14px;
+	background: var(--bungry-orange);
+	color: var(--bungry-ink);
+	font-weight: 700;
+	letter-spacing: 0.45px;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+
+.bungry-cf7 .wpforms-field-label-inline,
+.bungry-cf7 .wpforms-field-sublabel {
+	font-size: 14px;
+	color: var(--bungry-ink);
+}
