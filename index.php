@@ -9,7 +9,12 @@ defined( 'ABSPATH' ) || exit;
 
 get_header();
 ?>
-<div class="bungry-container bungry-page">
+<?php
+// Elementor-built pages run full width (sections set their own width). Other content keeps the 1280px container.
+$bungry_doc  = is_singular() && class_exists( '\Elementor\Plugin' ) ? \Elementor\Plugin::$instance->documents->get( get_queried_object_id() ) : false;
+$bungry_wrap = $bungry_doc && $bungry_doc->is_built_with_elementor() ? 'bungry-page-elementor' : 'bungry-container bungry-page';
+?>
+<div class="<?php echo esc_attr( $bungry_wrap ); ?>">
 	<?php
 	if ( have_posts() ) {
 		while ( have_posts() ) {
