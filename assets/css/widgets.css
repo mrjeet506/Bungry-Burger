@@ -322,3 +322,39 @@
 	font-size: 20px;
 	line-height: 32px;
 }
+
+/* Elementor Theme Builder header and footer */
+.bungry-footer-heading {
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 20px;
+	letter-spacing: 1.4px;
+	text-transform: uppercase;
+	color: var(--bungry-orange);
+}
+
+.bungry-footer-tagline {
+	font-family: var(--bungry-font-heading);
+	font-size: 22px;
+	line-height: 26px;
+	text-transform: uppercase;
+	color: var(--bungry-orange) !important;
+}
+
+.bungry-footer-bottom {
+	font-size: 14px;
+	color: rgba(246, 247, 238, 0.7) !important;
+}
+
+.bungry-footer-dark .bungry-info-row__label {
+	color: rgba(246, 247, 238, 0.7);
+}
+
+.bungry-footer-dark .bungry-info-row__value,
+.bungry-footer-dark .bungry-info-row__icon-wrap {
+	color: var(--bungry-cream);
+}
+
+.bungry-footer-dark .bungry-info-row__icon-wrap {
+	background: rgba(246, 247, 238, 0.12);
+}

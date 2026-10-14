@@ -17,8 +17,8 @@ defined( 'ABSPATH' ) || exit;
 <?php wp_body_open(); ?>
 <a class="bungry-skip-link" href="#content"><?php esc_html_e( 'Skip to content', 'bungry-burger' ); ?></a>
 <?php
+get_template_part( 'template-parts/announcement' );
 if ( ! function_exists( 'elementor_theme_do_location' ) || ! elementor_theme_do_location( 'header' ) ) {
-	get_template_part( 'template-parts/announcement' );
 	get_template_part( 'template-parts/header' );
 	get_template_part( 'template-parts/mobile-menu' );
 }

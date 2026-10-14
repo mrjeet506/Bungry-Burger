@@ -1,0 +1,91 @@
+{
+  "version": "0.4",
+  "title": "Bungry Header",
+  "type": "header",
+  "page_settings": {},
+  "content": [
+    {
+      "id": "c8ffe9a",
+      "elType": "container",
+      "settings": {
+        "flex_direction": "row",
+        "flex_direction_mobile": "column",
+        "content_width": "full",
+        "flex_gap": {
+          "column": "40",
+          "row": "40",
+          "unit": "px",
+          "size": 40
+        },
+        "padding": {
+          "unit": "px",
+          "top": "19",
+          "right": "80",
+          "bottom": "19",
+          "left": "80",
+          "isLinked": false
+        },
+        "padding_mobile": {
+          "unit": "px",
+          "top": "56",
+          "right": "24",
+          "bottom": "56",
+          "left": "24",
+          "isLinked": false
+        },
+        "background_background": "classic",
+        "background_color": "#F6F7EE",
+        "__globals__": {
+          "background_color": "globals/colors?id=bungrycream"
+        }
+      },
+      "elements": [
+        {
+          "id": "4c56ff4",
+          "elType": "widget",
+          "widgetType": "theme-site-logo",
+          "settings": {
+            "width": {
+              "unit": "px",
+              "size": 182,
+              "sizes": []
+            },
+            "align": "left"
+          },
+          "elements": []
+        },
+        {
+          "id": "a0a080f",
+          "elType": "widget",
+          "widgetType": "nav-menu",
+          "settings": {
+            "menu": "bungry-primary",
+            "layout": "horizontal",
+            "mobile_layout": "full-screen",
+            "align_items": "center"
+          },
+          "elements": []
+        },
+        {
+          "id": "202cb96",
+          "elType": "widget",
+          "widgetType": "bungry-button",
+          "settings": {
+            "text": "Order online",
+            "link": {
+              "url": "",
+              "is_external": "",
+              "nofollow": ""
+            },
+            "style": "primary",
+            "size": "small",
+            "arrow": "",
+            "_css_classes": "bungry-header-order"
+          },
+          "elements": []
+        }
+      ],
+      "isInner": false
+    }
+  ]
+}

@@ -1,0 +1,441 @@
+{
+  "version": "0.4",
+  "title": "Bungry Footer",
+  "type": "footer",
+  "page_settings": {},
+  "content": [
+    {
+      "id": "903ce92",
+      "elType": "container",
+      "settings": {
+        "flex_direction": "column",
+        "flex_direction_mobile": "column",
+        "content_width": "full",
+        "flex_gap": {
+          "column": "56",
+          "row": "56",
+          "unit": "px",
+          "size": 56
+        },
+        "padding": {
+          "unit": "px",
+          "top": "80",
+          "right": "80",
+          "bottom": "80",
+          "left": "80",
+          "isLinked": false
+        },
+        "padding_mobile": {
+          "unit": "px",
+          "top": "56",
+          "right": "24",
+          "bottom": "56",
+          "left": "24",
+          "isLinked": false
+        },
+        "background_background": "classic",
+        "background_color": "#185B28",
+        "__globals__": {
+          "background_color": "globals/colors?id=bungryforest"
+        },
+        "_css_classes": "bungry-footer-dark"
+      },
+      "elements": [
+        {
+          "id": "1385974",
+          "elType": "container",
+          "settings": {
+            "flex_direction": "row",
+            "flex_direction_mobile": "column",
+            "content_width": "full",
+            "flex_gap": {
+              "column": "64",
+              "row": "64",
+              "unit": "px",
+              "size": 64
+            },
+            "padding": {
+              "unit": "px",
+              "top": "0",
+              "right": "80",
+              "bottom": "0",
+              "left": "80",
+              "isLinked": false
+            },
+            "padding_mobile": {
+              "unit": "px",
+              "top": "56",
+              "right": "24",
+              "bottom": "56",
+              "left": "24",
+              "isLinked": false
+            }
+          },
+          "elements": [
+            {
+              "id": "76dc611",
+              "elType": "container",
+              "settings": {
+                "flex_direction": "column",
+                "flex_direction_mobile": "column",
+                "content_width": "boxed",
+                "flex_gap": {
+                  "column": "20",
+                  "row": "20",
+                  "unit": "px",
+                  "size": 20
+                },
+                "padding": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "0",
+                  "left": "0",
+                  "isLinked": false
+                },
+                "padding_mobile": {
+                  "unit": "px",
+                  "top": "56",
+                  "right": "24",
+                  "bottom": "56",
+                  "left": "24",
+                  "isLinked": false
+                },
+                "width": {
+                  "unit": "%",
+                  "size": 50,
+                  "sizes": []
+                },
+                "width_mobile": {
+                  "unit": "%",
+                  "size": 100,
+                  "sizes": []
+                }
+              },
+              "elements": [
+                {
+                  "id": "3def184",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "BUNGRY BURGER",
+                    "header_size": "h3",
+                    "__globals__": {
+                      "title_color": "globals/colors?id=bungrycream"
+                    }
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "069059b",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p>FRESH. SEALED. DIFFERENT.</p>",
+                    "_css_classes": "bungry-footer-tagline",
+                    "__globals__": {
+                      "text_color": "globals/colors?id=bungrycream"
+                    }
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "ec5decc",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p>Meet Bungry Burger. A fresh take on a familiar favourite, made memorable by our signature sealed-burger concept.</p>",
+                    "__globals__": {
+                      "text_color": "globals/colors?id=bungrycream"
+                    }
+                  },
+                  "elements": []
+                }
+              ],
+              "isInner": false
+            },
+            {
+              "id": "1afa34a",
+              "elType": "container",
+              "settings": {
+                "flex_direction": "column",
+                "flex_direction_mobile": "column",
+                "content_width": "boxed",
+                "flex_gap": {
+                  "column": "14",
+                  "row": "14",
+                  "unit": "px",
+                  "size": 14
+                },
+                "padding": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "0",
+                  "left": "0",
+                  "isLinked": false
+                },
+                "padding_mobile": {
+                  "unit": "px",
+                  "top": "56",
+                  "right": "24",
+                  "bottom": "56",
+                  "left": "24",
+                  "isLinked": false
+                },
+                "width": {
+                  "unit": "%",
+                  "size": 20,
+                  "sizes": []
+                },
+                "width_mobile": {
+                  "unit": "%",
+                  "size": 100,
+                  "sizes": []
+                }
+              },
+              "elements": [
+                {
+                  "id": "d1f491a",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p>QUICK LINKS</p>",
+                    "_css_classes": "bungry-footer-heading",
+                    "__globals__": {
+                      "text_color": "globals/colors?id=bungrycream"
+                    }
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "9b86192",
+                  "elType": "widget",
+                  "widgetType": "nav-menu",
+                  "settings": {
+                    "menu": "bungry-footer-quick-links",
+                    "layout": "vertical",
+                    "mobile_layout": "full-screen",
+                    "align_items": "center",
+                    "__globals__": {
+                      "color_menu_item": "globals/colors?id=bungrycream"
+                    }
+                  },
+                  "elements": []
+                }
+              ],
+              "isInner": false
+            },
+            {
+              "id": "02522a2",
+              "elType": "container",
+              "settings": {
+                "flex_direction": "column",
+                "flex_direction_mobile": "column",
+                "content_width": "boxed",
+                "flex_gap": {
+                  "column": "14",
+                  "row": "14",
+                  "unit": "px",
+                  "size": 14
+                },
+                "padding": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "0",
+                  "left": "0",
+                  "isLinked": false
+                },
+                "padding_mobile": {
+                  "unit": "px",
+                  "top": "56",
+                  "right": "24",
+                  "bottom": "56",
+                  "left": "24",
+                  "isLinked": false
+                },
+                "width": {
+                  "unit": "%",
+                  "size": 20,
+                  "sizes": []
+                },
+                "width_mobile": {
+                  "unit": "%",
+                  "size": 100,
+                  "sizes": []
+                }
+              },
+              "elements": [
+                {
+                  "id": "65ded53",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p>NEED HELP?</p>",
+                    "_css_classes": "bungry-footer-heading",
+                    "__globals__": {
+                      "text_color": "globals/colors?id=bungrycream"
+                    }
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "9fc3d71",
+                  "elType": "widget",
+                  "widgetType": "nav-menu",
+                  "settings": {
+                    "menu": "bungry-footer-need-help",
+                    "layout": "vertical",
+                    "mobile_layout": "full-screen",
+                    "align_items": "center",
+                    "__globals__": {
+                      "color_menu_item": "globals/colors?id=bungrycream"
+                    }
+                  },
+                  "elements": []
+                }
+              ],
+              "isInner": false
+            },
+            {
+              "id": "e00da03",
+              "elType": "container",
+              "settings": {
+                "flex_direction": "column",
+                "flex_direction_mobile": "column",
+                "content_width": "boxed",
+                "flex_gap": {
+                  "column": "14",
+                  "row": "14",
+                  "unit": "px",
+                  "size": 14
+                },
+                "padding": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "0",
+                  "left": "0",
+                  "isLinked": false
+                },
+                "padding_mobile": {
+                  "unit": "px",
+                  "top": "56",
+                  "right": "24",
+                  "bottom": "56",
+                  "left": "24",
+                  "isLinked": false
+                },
+                "width": {
+                  "unit": "%",
+                  "size": 30,
+                  "sizes": []
+                },
+                "width_mobile": {
+                  "unit": "%",
+                  "size": 100,
+                  "sizes": []
+                },
+                "_css_classes": "bungry-footer-dark"
+              },
+              "elements": [
+                {
+                  "id": "7f1de29",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p>CONNECT</p>",
+                    "_css_classes": "bungry-footer-heading",
+                    "__globals__": {
+                      "text_color": "globals/colors?id=bungrycream"
+                    }
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "42a0e18",
+                  "elType": "widget",
+                  "widgetType": "bungry-info-rows",
+                  "settings": {
+                    "use_settings": "yes"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "3988c7f",
+                  "elType": "widget",
+                  "widgetType": "social-icons",
+                  "settings": {
+                    "social_icon_list": []
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "013d407",
+                  "elType": "widget",
+                  "widgetType": "bungry-placeholder-tag",
+                  "settings": {
+                    "label": "Official links TBC",
+                    "tone": "dark"
+                  },
+                  "elements": []
+                }
+              ],
+              "isInner": false
+            }
+          ],
+          "isInner": false
+        },
+        {
+          "id": "a8baa56",
+          "elType": "container",
+          "settings": {
+            "flex_direction": "column",
+            "flex_direction_mobile": "column",
+            "content_width": "full",
+            "flex_gap": {
+              "column": "40",
+              "row": "40",
+              "unit": "px",
+              "size": 40
+            },
+            "padding": {
+              "unit": "px",
+              "top": "0",
+              "right": "80",
+              "bottom": "0",
+              "left": "80",
+              "isLinked": false
+            },
+            "padding_mobile": {
+              "unit": "px",
+              "top": "56",
+              "right": "24",
+              "bottom": "56",
+              "left": "24",
+              "isLinked": false
+            }
+          },
+          "elements": [
+            {
+              "id": "0f28b5d",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>© 2026 Bungry Burger. All rights reserved.</p><p>New Zealand</p>",
+                "_css_classes": "bungry-footer-bottom",
+                "__globals__": {
+                  "text_color": "globals/colors?id=bungrycream"
+                }
+              },
+              "elements": []
+            }
+          ],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    }
+  ]
+}

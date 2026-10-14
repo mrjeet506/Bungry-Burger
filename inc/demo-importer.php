@@ -144,6 +144,7 @@ function bungry_handle_demo_import(): void {
 		$ids
 	);
 
+	bungry_import_theme_builder_templates();
 	wp_safe_redirect( add_query_arg( 'bungry_done', '1', admin_url( 'themes.php?page=bungry-demo' ) ) );
 	exit;
 }
@@ -188,4 +189,51 @@ function bungry_build_menu( string $name, string $location, array $page_keys, ar
 	$locations              = get_theme_mod( 'nav_menu_locations', array() );
 	$locations[ $location ] = $menu_id;
 	set_theme_mod( 'nav_menu_locations', $locations );
+}
+
+/**
+ * Creates or updates the Elementor Theme Builder header and footer from the bundled templates.
+ * Needs Elementor Pro (Theme Builder). Without Pro the coded header and footer stay in use.
+ */
+function bungry_import_theme_builder_templates(): void {
+	if ( ! class_exists( '\ElementorPro\Plugin' ) ) {
+		return;
+	}
+	$templates = array(
+		'header' => array(
+			'title' => 'Bungry Header',
+			'file'  => 'bungry-header.json',
+		),
+		'footer' => array(
+			'title' => 'Bungry Footer',
+			'file'  => 'bungry-footer.json',
+		),
+	);
+	foreach ( $templates as $type => $tpl ) {
+		$path = BUNGRY_DIR . '/elementor/templates/' . $tpl['file'];
+		if ( ! is_readable( $path ) ) {
+			continue;
+		}
+		$data = json_decode( (string) file_get_contents( $path ), true ); // phpcs:ignore WordPress.WP.AlternativeFunctions.file_get_contents_file_get_contents
+		if ( ! is_array( $data ) || empty( $data['content'] ) ) {
+			continue;
+		}
+		$existing = bungry_find_post_by_title( $tpl['title'], 'elementor_library' );
+		$post_id  = $existing ? $existing->ID : wp_insert_post(
+			array(
+				'post_type'   => 'elementor_library',
+				'post_title'  => $tpl['title'],
+				'post_status' => 'publish',
+			),
+			true
+		);
+		if ( is_wp_error( $post_id ) ) {
+			continue;
+		}
+		update_post_meta( $post_id, '_elementor_template_type', $type );
+		update_post_meta( $post_id, '_elementor_edit_mode', 'builder' );
+		update_post_meta( $post_id, '_elementor_data', wp_json_encode( $data['content'] ) );
+		update_post_meta( $post_id, '_elementor_page_settings', array() );
+		update_post_meta( $post_id, '_elementor_conditions', array( 'include/general' ) );
+	}
 }

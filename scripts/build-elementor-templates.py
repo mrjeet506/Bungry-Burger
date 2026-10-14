@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Builds Elementor import files (type: page) for the seven Bungry Burger pages.
 
-Output: elementor/templates/*.json. Import them in Elementor via
-Templates > Saved Templates > Import Templates, then insert or apply the template to a page.
+Output: elementor/templates/*.json. Import the page files via Templates > Saved Templates > Import Templates.
+Import bungry-header.json and bungry-footer.json via Templates > Theme Builder (Elementor Pro).
 
 Uses the Bungry widgets (elementor/widgets/) plus core Heading and Text widgets.
 Colours reference the Bungry kit globals, so retheming in Site Settings flows through.
@@ -361,6 +361,58 @@ def terms() -> dict:
     )
 
 
+# ---------------------------------------------------------------- THEME BUILDER HEADER / FOOTER
+CREAM_G = g("colors", "bungrycream")
+
+
+def nav(menu_slug: str, layout: str = "horizontal", color: str | None = None) -> dict:
+    """Elementor Pro Nav Menu, pointed at a menu the demo importer creates."""
+    settings = {"menu": menu_slug, "layout": layout, "mobile_layout": "full-screen", "align_items": "center"}
+    globals_ = {"color_menu_item": color} if color else None
+    return widget("nav-menu", settings, globals_=globals_)
+
+
+def header() -> dict:
+    bar = container([
+        widget("theme-site-logo", {"width": {"unit": "px", "size": 182, "sizes": []}, "align": "left"}),
+        nav("bungry-primary"),
+        widget("bungry-button", {
+            "text": "Order online", "link": {"url": "", "is_external": "", "nofollow": ""},
+            "style": "primary", "size": "small", "arrow": "",
+        }, css="bungry-header-order"),
+    ], row=True, full=True, pad=19, gap=40, bg=CREAM)
+    return {"version": "0.4", "title": "Bungry Header", "type": "header", "page_settings": {}, "content": [bar]}
+
+
+def footer() -> dict:
+    brand = half([
+        h("BUNGRY BURGER", "h3", color=CREAM_G),
+        p("<p>FRESH. SEALED. DIFFERENT.</p>", color=CREAM_G, css="bungry-footer-tagline"),
+        p("<p>Meet Bungry Burger. A fresh take on a familiar favourite, made memorable by our signature sealed-burger concept.</p>",
+          color=CREAM_G),
+    ])
+    quick = container([
+        p("<p>QUICK LINKS</p>", color=CREAM_G, css="bungry-footer-heading"),
+        nav("bungry-footer-quick-links", layout="vertical", color=CREAM_G),
+    ], gap=14, pad=0, width=20)
+    help_ = container([
+        p("<p>NEED HELP?</p>", color=CREAM_G, css="bungry-footer-heading"),
+        nav("bungry-footer-need-help", layout="vertical", color=CREAM_G),
+    ], gap=14, pad=0, width=20)
+    connect = container([
+        p("<p>CONNECT</p>", color=CREAM_G, css="bungry-footer-heading"),
+        widget("bungry-info-rows", {"use_settings": "yes"}),
+        widget("social-icons", {"social_icon_list": []}),
+        widget("bungry-placeholder-tag", {"label": "Official links TBC", "tone": "dark"}),
+    ], gap=14, pad=0, width=30, css="bungry-footer-dark")
+    top = container([brand, quick, help_, connect], row=True, full=True, pad=0, gap=64)
+    bottom = container([
+        p("<p>© 2026 Bungry Burger. All rights reserved.</p><p>New Zealand</p>", color=CREAM_G, css="bungry-footer-bottom"),
+    ], full=True, pad=0)
+    wrapper = container([top, bottom], full=True, pad=80, gap=56, bg=FOREST, css="bungry-footer-dark")
+    return {"version": "0.4", "title": "Bungry Footer", "type": "footer", "page_settings": {}, "content": [wrapper]}
+
+
 FILES = {
     "bungry-home.json": home,
     "bungry-menu.json": menu,
@@ -369,6 +421,8 @@ FILES = {
     "bungry-allergens-faqs.json": faqs,
     "bungry-privacy.json": privacy,
     "bungry-terms.json": terms,
+    "bungry-header.json": header,
+    "bungry-footer.json": footer,
 }
 
 
