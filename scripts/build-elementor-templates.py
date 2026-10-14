@@ -357,12 +357,7 @@ def find_us() -> dict:
                 p("<p>Questions about the menu or your order? Send us a message. We only ask for what we need to reply.</p>"),
             ], width=40, gap=16),
             col([
-                p("<p><strong>Name (optional)</strong></p><p class=\"bungry-field\">Your name</p>"
-                  "<p><strong>Email</strong></p><p class=\"bungry-field\">you@example.com</p>"
-                  "<p><strong>Topic</strong></p><p class=\"bungry-field\">Select a topic</p>"
-                  "<p><strong>Message</strong></p><p class=\"bungry-field bungry-field--tall\">How can we help?</p>"
-                  "<p>We’ll use your details only to reply. Read our Privacy Policy.</p>", color=INK),
-                tag("Form to be added: Elementor Pro Form or Contact Form 7"),
+                widget("shortcode", {"shortcode": "[bungry_contact_form]"}, css="bungry-cf7"),
             ], width=60, bg=WHITE, css="bungry-card", pad=(40, 40), side=40, gap=16),
         ], gap=80),
     ], bg=CREAM_DARK, pad=(96, 96))

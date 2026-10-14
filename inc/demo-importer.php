@@ -131,6 +131,7 @@ function bungry_handle_demo_import(): void {
 
 	bungry_seed_menu_items();
 	bungry_apply_elementor_kit();
+	bungry_create_contact_form();
 
 	bungry_build_menu(
 		'Bungry Primary',

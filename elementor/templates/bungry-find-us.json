@@ -323,7 +323,7 @@
       "isInner": false
     },
     {
-      "id": "3c59dc0",
+      "id": "98f1370",
       "elType": "container",
       "settings": {
         "flex_direction": "column",
@@ -359,7 +359,7 @@
       },
       "elements": [
         {
-          "id": "98f1370",
+          "id": "1f0e3da",
           "elType": "container",
           "settings": {
             "flex_direction": "row",
@@ -459,7 +459,7 @@
               "isInner": false
             },
             {
-              "id": "1f0e3da",
+              "id": "6f4922f",
               "elType": "container",
               "settings": {
                 "flex_direction": "column",
@@ -508,22 +508,10 @@
                 {
                   "id": "70efdf2",
                   "elType": "widget",
-                  "widgetType": "text-editor",
+                  "widgetType": "shortcode",
                   "settings": {
-                    "editor": "<p><strong>Name (optional)</strong></p><p class=\"bungry-field\">Your name</p><p><strong>Email</strong></p><p class=\"bungry-field\">you@example.com</p><p><strong>Topic</strong></p><p class=\"bungry-field\">Select a topic</p><p><strong>Message</strong></p><p class=\"bungry-field bungry-field--tall\">How can we help?</p><p>We’ll use your details only to reply. Read our Privacy Policy.</p>",
-                    "__globals__": {
-                      "text_color": "globals/colors?id=bungryink"
-                    }
-                  },
-                  "elements": []
-                },
-                {
-                  "id": "6f4922f",
-                  "elType": "widget",
-                  "widgetType": "bungry-placeholder-tag",
-                  "settings": {
-                    "label": "Form to be added: Elementor Pro Form or Contact Form 7",
-                    "tone": "light"
+                    "shortcode": "[bungry_contact_form]",
+                    "_css_classes": "bungry-cf7"
                   },
                   "elements": []
                 }
