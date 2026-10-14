@@ -35,7 +35,7 @@ $order_label = '' !== trim( $order_label ) ? $order_label : __( 'Order Online', 
 			?>
 			<button type="button" class="bungry-menu-toggle" aria-expanded="false" aria-controls="bungry-mobile-menu">
 				<span class="screen-reader-text"><?php esc_html_e( 'Open menu', 'bungry-burger' ); ?></span>
-				<span class="bungry-menu-toggle__bars" aria-hidden="true"></span>
+				<?php echo bungry_art( 'icons/menu', 'bungry-menu-toggle__icon' ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- bundled SVG. ?>
 			</button>
 		</div>
 	</div>

@@ -794,3 +794,45 @@ body.bungry-layout-boxed .bungry-footer {
 	display: inline-flex;
 	margin-left: 4px;
 }
+
+/* Header menu: the hamburger replaces the links from tablet width down (Figma mobile header:
+   logo, orange ORDER button and a 44px forest menu button). */
+@media (max-width: 1024px) {
+	.bungry-header .bungry-nav {
+		display: none;
+	}
+
+	.bungry-menu-toggle {
+		display: inline-flex;
+	}
+}
+
+@media (max-width: 767px) {
+	.bungry-header__inner {
+		height: 68px;
+	}
+
+	.bungry-logo__img,
+	.bungry-logo__svg svg {
+		height: 34px;
+	}
+
+	.bungry-header__order {
+		display: inline-flex;
+	}
+}
+
+.bungry-menu-toggle__icon {
+	display: inline-flex;
+	width: 22px;
+	height: 22px;
+}
+
+.bungry-menu-toggle__icon svg {
+	width: 22px;
+	height: 22px;
+}
+
+.bungry-menu-toggle__icon svg path {
+	stroke: var(--bungry-cream);
+}
