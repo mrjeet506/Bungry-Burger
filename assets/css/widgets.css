@@ -590,53 +590,209 @@
 	opacity: 1;
 }
 
-/* WPForms inside the Find Us form card (Figma: 52px cream fields with olive borders). */
-.bungry-cf7 .wpforms-field-label {
-	font-size: 14px;
-	font-weight: 600;
-	color: var(--bungry-forest);
-}
-
-.bungry-cf7 .wpforms-field input[type="text"],
-.bungry-cf7 .wpforms-field input[type="email"],
-.bungry-cf7 .wpforms-field select,
-.bungry-cf7 .wpforms-field textarea {
-	width: 100%;
-	min-height: 52px;
-	padding: 14px 16px;
-	border: 1.5px solid var(--bungry-olive);
-	border-radius: 12px;
-	background: var(--bungry-cream);
+/* WPForms contact form (Find Us). Forced to the Figma look: 52px cream fields, olive borders, orange button.
+   Scoped to .wpforms-container so it applies with or without the bungry-cf7 class. !important is used on
+   the fields because WPForms and Elementor print their own inline/ID-level styles. */
+.wpforms-container {
+	font-family: inherit;
 	color: var(--bungry-ink);
-	font: inherit;
-	box-shadow: none;
 }
 
-.bungry-cf7 .wpforms-field textarea {
-	min-height: 150px;
+.wpforms-container .wpforms-field {
+	margin: 0 0 18px;
+	padding: 0;
 }
 
-.bungry-cf7 .wpforms-field input::placeholder,
-.bungry-cf7 .wpforms-field textarea::placeholder {
+/* Hide internal WPForms helper fields: the honeypot and any field whose input is aria-hidden. */
+.wpforms-container .wpforms-field:has(> [aria-hidden="true"]) {
+	display: none !important;
+}
+
+.wpforms-container .wpforms-field-label,
+.wpforms-container fieldset legend.wpforms-field-label {
+	display: block;
+	margin: 0 0 8px !important;
+	padding: 0 !important;
+	font-size: 14px !important;
+	line-height: 20px !important;
+	font-weight: 600 !important;
+	color: var(--bungry-forest) !important;
+}
+
+.wpforms-container fieldset {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	min-width: 0;
+}
+
+.wpforms-container .wpforms-field-row {
+	display: flex;
+	gap: 12px;
+}
+
+.wpforms-container .wpforms-field-row-block {
+	flex: 1 1 0;
+	min-width: 0;
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
+.wpforms-container .wpforms-field-sublabel {
+	display: block;
+	margin: 6px 0 0 !important;
+	font-size: 13px !important;
+	line-height: 18px !important;
+	color: var(--bungry-ink) !important;
+}
+
+.wpforms-container input[type="text"],
+.wpforms-container input[type="email"],
+.wpforms-container input[type="tel"],
+.wpforms-container select,
+.wpforms-container textarea {
+	display: block;
+	box-sizing: border-box;
+	width: 100% !important;
+	min-height: 52px !important;
+	height: auto;
+	margin: 0 !important;
+	padding: 14px 16px !important;
+	border: 1.5px solid var(--bungry-olive) !important;
+	border-radius: 12px !important;
+	background: var(--bungry-cream) !important;
+	color: var(--bungry-ink) !important;
+	font: inherit !important;
+	font-size: 16px !important;
+	line-height: 22px !important;
+	box-shadow: none !important;
+	outline: none;
+	-webkit-appearance: none;
+	appearance: none;
+}
+
+.wpforms-container select {
+	background-image: linear-gradient(45deg, transparent 50%, var(--bungry-forest) 50%), linear-gradient(135deg, var(--bungry-forest) 50%, transparent 50%);
+	background-position: calc(100% - 20px) 50%, calc(100% - 14px) 50%;
+	background-size: 6px 6px, 6px 6px;
+	background-repeat: no-repeat;
+	padding-right: 40px !important;
+}
+
+.wpforms-container textarea {
+	min-height: 150px !important;
+	resize: vertical;
+}
+
+.wpforms-container input:focus,
+.wpforms-container select:focus,
+.wpforms-container textarea:focus {
+	border-color: var(--bungry-forest) !important;
+	box-shadow: 0 0 0 3px rgba(14, 58, 26, 0.15) !important;
+}
+
+.wpforms-container input::placeholder,
+.wpforms-container textarea::placeholder {
 	color: rgba(14, 58, 26, 0.5);
 	opacity: 1;
 }
 
-.bungry-cf7 .wpforms-submit {
-	min-height: 52px;
-	padding: 16px 28px;
-	border: 0;
-	border-radius: 14px;
-	background: var(--bungry-orange);
-	color: var(--bungry-ink);
-	font-weight: 700;
+.wpforms-container .wpforms-field-checkbox ul,
+.wpforms-container .wpforms-field-checkbox .wpforms-field-row {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.wpforms-container .wpforms-field-checkbox li {
+	display: flex;
+	align-items: flex-start;
+	gap: 10px;
+	margin: 0;
+}
+
+.wpforms-container .wpforms-field-checkbox input[type="checkbox"] {
+	width: 18px !important;
+	min-height: 18px !important;
+	height: 18px;
+	margin: 3px 0 0 !important;
+	padding: 0 !important;
+	accent-color: var(--bungry-forest);
+	flex: 0 0 auto;
+}
+
+.wpforms-container .wpforms-field-checkbox label {
+	font-size: 14px !important;
+	line-height: 22px !important;
+	color: var(--bungry-ink) !important;
+	font-weight: 400 !important;
+}
+
+.wpforms-container .wpforms-error,
+.wpforms-container label.wpforms-error {
+	margin-top: 6px;
+	font-size: 13px;
+	color: #a8402b;
+}
+
+.wpforms-container input.wpforms-error,
+.wpforms-container select.wpforms-error,
+.wpforms-container textarea.wpforms-error {
+	border-color: #a8402b !important;
+}
+
+.wpforms-container .wpforms-submit-container {
+	margin: 8px 0 0;
+}
+
+.wpforms-container button.wpforms-submit,
+.wpforms-container .wpforms-submit {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 52px !important;
+	height: auto;
+	width: auto;
+	margin: 0 !important;
+	padding: 16px 28px !important;
+	border: 0 !important;
+	border-radius: 14px !important;
+	background: var(--bungry-orange) !important;
+	color: var(--bungry-ink) !important;
+	font: inherit !important;
+	font-size: 15px !important;
+	font-weight: 700 !important;
 	letter-spacing: 0.45px;
 	text-transform: uppercase;
 	cursor: pointer;
+	box-shadow: none !important;
 }
 
-.bungry-cf7 .wpforms-field-label-inline,
-.bungry-cf7 .wpforms-field-sublabel {
-	font-size: 14px;
-	color: var(--bungry-ink);
+.wpforms-container button.wpforms-submit:hover,
+.wpforms-container button.wpforms-submit:focus-visible {
+	background: var(--bungry-orange-dark, var(--bungry-orange)) !important;
+	filter: brightness(0.95);
+}
+
+.wpforms-container .wpforms-submit-spinner {
+	display: none;
+}
+
+.wpforms-container .wpforms-confirmation-container-full {
+	padding: 16px 20px;
+	border-radius: 12px;
+	background: var(--bungry-cream);
+	color: var(--bungry-forest);
+	font-size: 15px;
+}
+
+@media (max-width: 480px) {
+	.wpforms-container .wpforms-field-row {
+		flex-direction: column;
+		gap: 0;
+	}
+
+	.wpforms-container .wpforms-submit {
+		width: 100%;
+	}
 }
