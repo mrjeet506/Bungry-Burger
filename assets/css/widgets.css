@@ -471,3 +471,45 @@
 		border-top: 0;
 	}
 }
+
+/* Figma artwork inside Elementor HTML widgets */
+.bungry-art-slot svg,
+.bungry-wave svg {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+.bungry-art-slot svg {
+	max-width: 520px;
+	margin: 0 auto;
+}
+
+.bungry-logo-art svg {
+	display: block;
+	width: 182px;
+	height: auto;
+}
+
+.bungry-logo-art--footer svg {
+	width: 206px;
+}
+
+.bungry-social-art svg {
+	width: 18px;
+	height: 18px;
+}
+
+.bungry-footer-dark .bungry-social-art svg path,
+.bungry-footer-dark .bungry-social-art svg {
+	stroke: var(--bungry-cream);
+}
+
+.bungry-disc-icon svg {
+	width: 32px;
+	height: 32px;
+}
+
+.bungry-disc-icon svg path {
+	stroke: var(--bungry-cream);
+}

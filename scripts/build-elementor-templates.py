@@ -146,6 +146,7 @@ def hero(eyebrow_text: str, title: str, body: str = "") -> dict:
     items = [kicker(eyebrow_text, ORANGE), h(title, "h1", CREAM)]
     if body:
         items.append(p(f"<p>{body}</p>", color=CREAM, css="bungry-lead bungry-hero-body"))
+    items.append(art("patterns/wave-strip", css="bungry-wave"))
     return section(items, bg=FOREST, pad=(72, 100), gap=20)
 
 
@@ -153,11 +154,30 @@ def page(title: str, sections: list) -> dict:
     return {"version": "0.4", "title": title, "type": "page", "page_settings": {"hide_title": "yes"}, "content": sections}
 
 
+def art(name: str, css: str = "") -> dict:
+    """Figma artwork as an inline SVG (Elementor HTML widget). Source: assets/svg/<name>.svg."""
+    svg = (OUT.parent.parent / "assets" / "svg" / f"{name}.svg").read_text(encoding="utf8").strip()
+    return widget("html", {"html": svg}, css=css)
+
+
+def disc(icon: str) -> dict:
+    """Forest circle holding a Figma icon."""
+    return container([art(f"icons/{icon}", css="bungry-disc-icon")], bg=FOREST, css="bungry-disc")
+
+
+def socials() -> dict:
+    return row([art(f"icons/{n}", css="bungry-social-art") for n in ("instagram", "facebook", "tiktok", "youtube")], gap=12)
+
+
 def divider() -> dict:
     return container([], bg=OLIVE, css="bungry-divider")
 
 
 # ---------------------------------------------------------------- HOME (Figma 7:225)
+PILLAR_ICONS = ["burger", "chef", "diamond", "bag"]
+VALUE_ICONS = ["diamond", "burger", "leaf", "chef"]
+
+
 def home() -> dict:
     hero_band = section([
         row([
@@ -169,15 +189,14 @@ def home() -> dict:
                 row([btn("Explore the menu", "/menu/", "primary"),
                      btn("Find us", "/find-us/", "outline-light")], gap=16),
             ], width=50, gap=24),
-            col([photo("Hero: close-up product photography showing the sealed edge and branded mark.",
-                       "Product photo TBC")], width=50),
+            col([art("illustrations/sealed-burger", css="bungry-art-slot")], width=50),
         ], gap=80),
+        art("patterns/wave-strip", css="bungry-wave"),
     ], bg=FOREST, pad=(96, 96))
 
     signature = section([
         row([
-            col([photo("Sealed cutaway illustration: add the Figma export or a real product photo.",
-                       "Visual TBC")], width=50),
+            col([art("illustrations/sealed-cutaway", css="bungry-art-slot")], width=50),
             col([
                 kicker("THE SIGNATURE CONCEPT"),
                 h("NOT JUST A BURGER. A BUNGRY."),
@@ -213,9 +232,9 @@ def home() -> dict:
     ]
     why = section([
         section_heading("WHY BUNGRY", "FRESH. SEALED. SIMPLE. MEMORABLE.", align="center", title_tag="h2"),
-        row([col([container([], bg=FOREST, css="bungry-disc"),
+        row([col([disc(PILLAR_ICONS[i]),
                   h(t, "h5"), p(f"<p>{b}</p>")], width=25, gap=12)
-             for t, b in pillars], gap=32),
+             for i, (t, b) in enumerate(pillars)], gap=32),
     ], pad=(96, 96), gap=48)
 
     kitchen = section([
@@ -241,7 +260,7 @@ def home() -> dict:
     social = section([
         section_heading("FOLLOW ALONG", "WHICH BUNGRY ARE YOU?",
                         "Follow along for product close-ups and behind-the-scenes prep.", title_tag="h3"),
-        widget("social-icons", {"social_icon_list": []}),
+        socials(),
         tag("Official links TBC"),
     ], pad=(80, 80), gap=20)
 
@@ -305,10 +324,10 @@ def our_story() -> dict:
     ]
     value_band = section([
         section_heading("OUR VALUES", "WHAT BUNGRY STANDS FOR", align="center", title_tag="h3"),
-        row([col([container([], bg=FOREST, css="bungry-disc"),
+        row([col([disc(VALUE_ICONS[i]),
                   h(t, "h5", css="bungry-center"), p(f"<p>{b}</p>")],
                  bg=WHITE, css="bungry-card", width=25, gap=12, pad=(28, 28), side=28)
-             for t, b in values], gap=24),
+             for i, (t, b) in enumerate(values)], gap=24),
     ], bg=CREAM_DARK, pad=(96, 96), gap=56)
     photos = section([photo("Store, packaging and team photography. Add only when verified.", "Photos TBC")],
                      pad=(96, 96))
@@ -503,7 +522,7 @@ def nav(menu_slug: str, layout: str = "horizontal", color: str | None = None) ->
 
 def header() -> dict:
     bar = container([
-        widget("theme-site-logo", {"width": {"unit": "px", "size": 182, "sizes": []}, "align": "left"}),
+        art("logos/logo-full-dark", css="bungry-logo-art"),
         nav("bungry-primary"),
         widget("bungry-button", {
             "text": "Order online", "link": {"url": "", "is_external": "", "nofollow": ""},
@@ -515,7 +534,7 @@ def header() -> dict:
 
 def footer() -> dict:
     brand = col([
-        h("BUNGRY BURGER", "h3", CREAM),
+        art("logos/logo-full-light", css="bungry-logo-art bungry-logo-art--footer"),
         p("<p>FRESH. SEALED. DIFFERENT.</p>", color=ORANGE, css="bungry-footer-tagline"),
         p("<p>Meet Bungry Burger. A fresh take on a familiar favourite, made memorable by our signature sealed-burger concept.</p>",
           color=CREAM),
@@ -531,7 +550,7 @@ def footer() -> dict:
     connect = col([
         p("<p>CONNECT</p>", color=ORANGE, css="bungry-footer-heading"),
         widget("bungry-info-rows", {"use_settings": "yes"}),
-        widget("social-icons", {"social_icon_list": []}),
+        socials(),
         tag("Official links TBC", "dark"),
     ], width=30, gap=14, css="bungry-footer-dark")
     top = row([brand, quick, help_, connect], gap=64)

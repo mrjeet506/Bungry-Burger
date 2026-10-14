@@ -1,0 +1,18 @@
+<svg width="400" height="300" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_1_477)">
+<path d="M10 200C10 95.0659 95.0659 10 200 10C304.934 10 390 95.0659 390 200V226C390 250.301 370.301 270 346 270H54C29.6995 270 10 250.301 10 226V200Z" fill="#F9E2B0"/>
+<rect x="10" y="106" width="380" height="30" fill="#98A75B"/>
+<path d="M10 126.6C16 109.8 28 109.8 34 126.6C40 109.8 52 109.8 58 126.6C64 109.8 76 109.8 82 126.6C88 109.8 100 109.8 106 126.6C112 109.8 124 109.8 130 126.6C136 109.8 148 109.8 154 126.6C160 109.8 172 109.8 178 126.6C184 109.8 196 109.8 202 126.6C208 109.8 220 109.8 226 126.6C232 109.8 244 109.8 250 126.6C256 109.8 268 109.8 274 126.6C280 109.8 292 109.8 298 126.6C304 109.8 316 109.8 322 126.6C328 109.8 340 109.8 346 126.6C352 109.8 364 109.8 370 126.6C376 109.8 388 109.8 394 126.6" stroke="#5E8441" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="10" y="138" width="380" height="22" fill="#D9472B"/>
+<rect x="10" y="160" width="380" height="22" fill="#F6A531"/>
+<rect x="10" y="182" width="380" height="52" fill="url(#paint0_linear_1_477)"/>
+<rect x="10" y="234" width="380" height="18" fill="#F6A531"/>
+<rect x="10" y="252" width="380" height="30" fill="#E08A2A"/>
+</g>
+<path d="M200 19C299.964 19 381 100.036 381 200V226C381 245.33 365.33 261 346 261H54C34.67 261 19 245.33 19 226V200C19 100.036 100.036 19 200 19Z" stroke="#E08A2A" stroke-width="18"/>
+<ellipse cx="200" cy="282" rx="170" ry="10" fill="#0E3A1A" fill-opacity="0.12"/>
+<defs>
+<linearGradient id="paint0_linear_1_477" x1="200" y1="182" x2="200" y2="234" gradientUnits="userSpaceOnUse"><stop stop-color="#6B3A1C"/><stop offset="1" stop-color="#4A2511"/></linearGradient>
+<clipPath id="clip0_1_477"><path d="M10 200C10 95.0659 95.0659 10 200 10C304.934 10 390 95.0659 390 200V226C390 250.301 370.301 270 346 270H54C29.6995 270 10 250.301 10 226V200Z" fill="white"/></clipPath>
+</defs>
+</svg>

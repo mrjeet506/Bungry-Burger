@@ -7,7 +7,7 @@
   },
   "content": [
     {
-      "id": "a87ff67",
+      "id": "e4da3b7",
       "elType": "container",
       "settings": {
         "flex_direction": "column",
@@ -80,12 +80,22 @@
             }
           },
           "elements": []
+        },
+        {
+          "id": "a87ff67",
+          "elType": "widget",
+          "widgetType": "html",
+          "settings": {
+            "html": "<svg width=\"1440\" height=\"44\" viewBox=\"0 0 1440 44\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<g clip-path=\"url(#clip0_1_581)\">\n<path d=\"M10.5981 -2C19.5981 6 1.5981 16 10.5981 24C19.5981 32 1.5981 38 10.5981 42\" stroke=\"#98A75B\" stroke-width=\"9\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M40.5981 -2C49.5981 6 31.5981 16 40.5981 24C49.5981 32 31.5981 38 40.5981 42\" stroke=\"#98A75B\" stroke-width=\"9\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M70.5981 -2C79.5981 6 61.5981 16 70.5981 24C79.5981 32 61.5981 38 70.5981 42\" stroke=\"#98A75B\" stroke-width=\"9\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M100.598 -2C109.598 6 91.5981 16 100.598 24C109.598 32 91.5981 38 100.598 42\" stroke=\"#98A75B\" stroke-width=\"9\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M130.598 -2C139.598 6 121.598 16 130.598 24C139.598 32 121.598 38 130.598 42\" stroke=\"#98A75B\" stroke-width=\"9\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M160.598 -2C169.598 6 151.598 16 160.598 24C169.598 32 151.598 38 160.598 42\" stroke=\"#98A75B\" stroke-width=\"9\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M190.598 -2C199.598 6 181.598 16 190.598 24C199.598 32 181.598 38 190.598 42\" stroke=\"#98A75B\" stroke-width=\"9\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M220.598 -2C229.598 6 211.598 16 220.598 24C229.598 32 211.598 38 220.598 42\" stroke=\"#98A75B\" stroke-width=\"9\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M250.598 -2C259.598 6 241.598 16 250.598 24C259.598 32 241.598 38 250.598 42\" stroke=\"#98A75B\" stroke-width=\"9\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M280.598 -2C289.598 6 271.598 16 280.598 24C289.598 32 271.598 38 280.598 42\" stroke=\"#98A75B\" stroke-width=\"9\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M310.598 -2C319.598 6 301.598 16 310.598 24C319.598 32 301.598 38 310.598 42\" stroke=\"#98A75B\" stroke-width=\"9\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M340.598 -2C349.598 6 331.598 16 340.598 24C349.598 32 331.598 38 340.598 42\" stroke=\"#98A75B\" stroke-width=\"9\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M370.598 -2C379.598 6 361.598 16 370.598 24C379.598 32 361.598 38 370.598 42\" stroke=\"#98A75B\" stroke-width=\"9\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M400.598 -2C409.598 6 391.598 16 400.598 24C409.598 32 391.598 38 400.598 42\" stroke=\"#98A75B\" stroke-width=\"9\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M430.598 -2C439.598 6 421.598 16 430.598 24C439.598 32 421.598 38 430.598 42\" stroke=\"#98A75B\" stroke-width=\"9\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M460.598 -2C469.598 6 451.598 16 460.598 24C469.598 32 451.598 38 460.598 42\" stroke=\"#98A75B\" stroke-width=\"9\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M490.598 -2C499.598 6 481.598 16 490.598 24C499.598 32 481.598 38 490.598 42\" stroke=\"#98A75B\" stroke-width=\"9\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M520.598 -2C529.598 6 511.598 16 520.598 24C529.598 32 511.598 38 520.598 42\" stroke=\"#98A75B\" stroke-width=\"9\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M550.598 -2C559.598 6 541.598 16 550.598 24C559.598 32 541.598 38 550.598 42\" stroke=\"#98A75B\" stroke-width=\"9\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M580.598 -2C589.598 6 571.598 16 580.598 24C589.598 32 571.598 38 580.598 42\" stroke=\"#98A75B\" stroke-width=\"9\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M610.598 -2C619.598 6 601.598 16 610.598 24C619.598 32 601.598 38 610.598 42\" stroke=\"#98A75B\" stroke-width=\"9\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M640.598 -2C649.598 6 631.598 16 640.598 24C649.598 32 631.598 38 640.598 42\" stroke=\"#98A75B\" stroke-width=\"9\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M670.598 -2C679.598 6 661.598 16 670.598 24C679.598 32 661.598 38 670.598 42\" stroke=\"#98A75B\" stroke-width=\"9\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M700.598 -2C709.598 6 691.598 16 700.598 24C709.598 32 691.598 38 700.598 42\" stroke=\"#98A75B\" stroke-width=\"9\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M730.598 -2C739.598 6 721.598 16 730.598 24C739.598 32 721.598 38 730.598 42\" stroke=\"#98A75B\" stroke-width=\"9\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M760.598 -2C769.598 6 751.598 16 760.598 24C769.598 32 751.598 38 760.598 42\" stroke=\"#98A75B\" stroke-width=\"9\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M790.598 -2C799.598 6 781.598 16 790.598 24C799.598 32 781.598 38 790.598 42\" stroke=\"#98A75B\" stroke-width=\"9\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M820.598 -2C829.598 6 811.598 16 820.598 24C829.598 32 811.598 38 820.598 42\" stroke=\"#98A75B\" stroke-width=\"9\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M850.598 -2C859.598 6 841.598 16 850.598 24C859.598 32 841.598 38 850.598 42\" stroke=\"#98A75B\" stroke-width=\"9\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M880.598 -2C889.598 6 871.598 16 880.598 24C889.598 32 871.598 38 880.598 42\" stroke=\"#98A75B\" stroke-width=\"9\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M910.598 -2C919.598 6 901.598 16 910.598 24C919.598 32 901.598 38 910.598 42\" stroke=\"#98A75B\" stroke-width=\"9\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M940.598 -2C949.598 6 931.598 16 940.598 24C949.598 32 931.598 38 940.598 42\" stroke=\"#98A75B\" stroke-width=\"9\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M970.598 -2C979.598 6 961.598 16 970.598 24C979.598 32 961.598 38 970.598 42\" stroke=\"#98A75B\" stroke-width=\"9\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M1000.6 -2C1009.6 6 991.598 16 1000.6 24C1009.6 32 991.598 38 1000.6 42\" stroke=\"#98A75B\" stroke-width=\"9\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M1030.6 -2C1039.6 6 1021.6 16 1030.6 24C1039.6 32 1021.6 38 1030.6 42\" stroke=\"#98A75B\" stroke-width=\"9\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M1060.6 -2C1069.6 6 1051.6 16 1060.6 24C1069.6 32 1051.6 38 1060.6 42\" stroke=\"#98A75B\" stroke-width=\"9\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M1090.6 -2C1099.6 6 1081.6 16 1090.6 24C1099.6 32 1081.6 38 1090.6 42\" stroke=\"#98A75B\" stroke-width=\"9\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M1120.6 -2C1129.6 6 1111.6 16 1120.6 24C1129.6 32 1111.6 38 1120.6 42\" stroke=\"#98A75B\" stroke-width=\"9\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M1150.6 -2C1159.6 6 1141.6 16 1150.6 24C1159.6 32 1141.6 38 1150.6 42\" stroke=\"#98A75B\" stroke-width=\"9\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M1180.6 -2C1189.6 6 1171.6 16 1180.6 24C1189.6 32 1171.6 38 1180.6 42\" stroke=\"#98A75B\" stroke-width=\"9\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M1210.6 -2C1219.6 6 1201.6 16 1210.6 24C1219.6 32 1201.6 38 1210.6 42\" stroke=\"#98A75B\" stroke-width=\"9\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M1240.6 -2C1249.6 6 1231.6 16 1240.6 24C1249.6 32 1231.6 38 1240.6 42\" stroke=\"#98A75B\" stroke-width=\"9\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M1270.6 -2C1279.6 6 1261.6 16 1270.6 24C1279.6 32 1261.6 38 1270.6 42\" stroke=\"#98A75B\" stroke-width=\"9\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M1300.6 -2C1309.6 6 1291.6 16 1300.6 24C1309.6 32 1291.6 38 1300.6 42\" stroke=\"#98A75B\" stroke-width=\"9\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M1330.6 -2C1339.6 6 1321.6 16 1330.6 24C1339.6 32 1321.6 38 1330.6 42\" stroke=\"#98A75B\" stroke-width=\"9\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M1360.6 -2C1369.6 6 1351.6 16 1360.6 24C1369.6 32 1351.6 38 1360.6 42\" stroke=\"#98A75B\" stroke-width=\"9\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M1390.6 -2C1399.6 6 1381.6 16 1390.6 24C1399.6 32 1381.6 38 1390.6 42\" stroke=\"#98A75B\" stroke-width=\"9\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M1420.6 -2C1429.6 6 1411.6 16 1420.6 24C1429.6 32 1411.6 38 1420.6 42\" stroke=\"#98A75B\" stroke-width=\"9\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</g>\n<defs>\n<clipPath id=\"clip0_1_581\">\n<rect width=\"1440\" height=\"44\" fill=\"white\"/>\n</clipPath>\n</defs>\n</svg>",
+            "_css_classes": "bungry-wave"
+          },
+          "elements": []
         }
       ],
       "isInner": false
     },
     {
-      "id": "c20ad4d",
+      "id": "c51ce41",
       "elType": "container",
       "settings": {
         "flex_direction": "column",
@@ -116,7 +126,7 @@
       },
       "elements": [
         {
-          "id": "6512bd4",
+          "id": "c20ad4d",
           "elType": "container",
           "settings": {
             "flex_direction": "row",
@@ -147,7 +157,7 @@
           },
           "elements": [
             {
-              "id": "45c48cc",
+              "id": "d3d9446",
               "elType": "container",
               "settings": {
                 "flex_direction": "row",
@@ -178,7 +188,7 @@
               },
               "elements": [
                 {
-                  "id": "e4da3b7",
+                  "id": "1679091",
                   "elType": "widget",
                   "widgetType": "bungry-button",
                   "settings": {
@@ -195,7 +205,7 @@
                   "elements": []
                 },
                 {
-                  "id": "1679091",
+                  "id": "8f14e45",
                   "elType": "widget",
                   "widgetType": "bungry-button",
                   "settings": {
@@ -212,7 +222,7 @@
                   "elements": []
                 },
                 {
-                  "id": "8f14e45",
+                  "id": "c9f0f89",
                   "elType": "widget",
                   "widgetType": "bungry-button",
                   "settings": {
@@ -229,7 +239,7 @@
                   "elements": []
                 },
                 {
-                  "id": "c9f0f89",
+                  "id": "45c48cc",
                   "elType": "widget",
                   "widgetType": "bungry-button",
                   "settings": {
@@ -249,7 +259,7 @@
               "isInner": false
             },
             {
-              "id": "d3d9446",
+              "id": "6512bd4",
               "elType": "widget",
               "widgetType": "bungry-placeholder-tag",
               "settings": {
@@ -265,7 +275,7 @@
       "isInner": false
     },
     {
-      "id": "c74d97b",
+      "id": "70efdf2",
       "elType": "container",
       "settings": {
         "flex_direction": "column",
@@ -296,7 +306,7 @@
       },
       "elements": [
         {
-          "id": "c51ce41",
+          "id": "aab3238",
           "elType": "widget",
           "widgetType": "bungry-notice",
           "settings": {
@@ -307,7 +317,7 @@
           "elements": []
         },
         {
-          "id": "9bf31c7",
+          "id": "c74d97b",
           "elType": "container",
           "settings": {
             "flex_direction": "row",
@@ -338,7 +348,7 @@
           },
           "elements": [
             {
-              "id": "aab3238",
+              "id": "9bf31c7",
               "elType": "widget",
               "widgetType": "bungry-button",
               "settings": {
@@ -361,7 +371,7 @@
       "isInner": false
     },
     {
-      "id": "3c59dc0",
+      "id": "b6d767d",
       "elType": "container",
       "settings": {
         "flex_direction": "column",
@@ -392,7 +402,7 @@
       },
       "elements": [
         {
-          "id": "70efdf2",
+          "id": "6f4922f",
           "elType": "widget",
           "widgetType": "bungry-menu-cards",
           "settings": {
@@ -410,7 +420,7 @@
           "elements": []
         },
         {
-          "id": "98f1370",
+          "id": "3c59dc0",
           "elType": "container",
           "settings": {
             "flex_direction": "column",
@@ -442,7 +452,7 @@
           },
           "elements": [
             {
-              "id": "6f4922f",
+              "id": "1f0e3da",
               "elType": "widget",
               "widgetType": "heading",
               "settings": {
@@ -455,7 +465,7 @@
               "elements": []
             },
             {
-              "id": "1f0e3da",
+              "id": "98f1370",
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {
