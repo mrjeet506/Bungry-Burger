@@ -39,7 +39,7 @@ function bungry_setup(): void {
 		)
 	);
 
-	add_image_size( 'bungry-card', 600, 450, true );
+	add_image_size( 'bungry-card', 600, 600, false );
 }
 add_action( 'after_setup_theme', 'bungry_setup' );
 

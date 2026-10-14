@@ -52,7 +52,7 @@
 	border: 1px solid var(--bungry-cream-dark);
 }
 
-/* Menu card photo area: square (1:1). The image is pinned inside it so it can never grow past the card. */
+/* Menu card photo area: square (1:1). The 600x600 image is fitted with object-fit: contain so the whole picture stays visible. */
 .bungry-menu-card__media {
 	position: relative;
 	width: 100%;
@@ -78,7 +78,7 @@
 	max-height: none;
 	margin: 0;
 	padding: 0;
-	object-fit: cover;
+	object-fit: contain;
 }
 
 .bungry-menu-card__art svg {
