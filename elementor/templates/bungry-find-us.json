@@ -7,23 +7,23 @@
   },
   "content": [
     {
-      "id": "fe9fc28",
+      "id": "a87ff67",
       "elType": "container",
       "settings": {
         "flex_direction": "column",
         "flex_direction_mobile": "column",
         "content_width": "full",
         "flex_gap": {
-          "column": "40",
-          "row": "40",
+          "column": "20",
+          "row": "20",
           "unit": "px",
-          "size": 40
+          "size": 20
         },
         "padding": {
           "unit": "px",
-          "top": "80",
+          "top": "72",
           "right": "80",
-          "bottom": "80",
+          "bottom": "100",
           "left": "80",
           "isLinked": false
         },
@@ -34,22 +34,49 @@
           "bottom": "56",
           "left": "24",
           "isLinked": false
+        },
+        "background_background": "classic",
+        "background_color": "#F6F7EE",
+        "__globals__": {
+          "background_color": "globals/colors?id=bungryforest"
         }
       },
       "elements": [
         {
-          "id": "9778d5d",
+          "id": "c4ca423",
           "elType": "widget",
-          "widgetType": "bungry-section-heading",
+          "widgetType": "text-editor",
           "settings": {
-            "eyebrow": "FIND US",
+            "editor": "<p>FIND US / CONTACT</p>",
+            "_css_classes": "bungry-kicker",
+            "__globals__": {
+              "text_color": "globals/colors?id=bungryorange"
+            }
+          },
+          "elements": []
+        },
+        {
+          "id": "c81e728",
+          "elType": "widget",
+          "widgetType": "heading",
+          "settings": {
             "title": "COME FIND YOUR BUNGRY.",
-            "title_tag": "h2",
-            "text": "Have a question about the menu, your order or where to find us? Get in touch using the details below.",
-            "align": "left",
-            "button_text": "",
-            "button_link": {
-              "url": ""
+            "header_size": "h1",
+            "__globals__": {
+              "title_color": "globals/colors?id=bungrycream"
+            }
+          },
+          "elements": []
+        },
+        {
+          "id": "eccbc87",
+          "elType": "widget",
+          "widgetType": "text-editor",
+          "settings": {
+            "editor": "<p>Have a question about the menu, your order or where to find us? Get in touch using the details below.</p>",
+            "_css_classes": "bungry-lead bungry-hero-body",
+            "__globals__": {
+              "text_color": "globals/colors?id=bungrycream"
             }
           },
           "elements": []
@@ -58,7 +85,7 @@
       "isInner": false
     },
     {
-      "id": "812b4ba",
+      "id": "c20ad4d",
       "elType": "container",
       "settings": {
         "flex_direction": "column",
@@ -72,9 +99,9 @@
         },
         "padding": {
           "unit": "px",
-          "top": "80",
+          "top": "72",
           "right": "80",
-          "bottom": "80",
+          "bottom": "72",
           "left": "80",
           "isLinked": false
         },
@@ -89,79 +116,85 @@
       },
       "elements": [
         {
-          "id": "8613985",
+          "id": "6512bd4",
           "elType": "container",
           "settings": {
             "flex_direction": "row",
             "flex_direction_mobile": "column",
             "content_width": "full",
             "flex_gap": {
-              "column": "80",
-              "row": "80",
+              "column": "56",
+              "row": "56",
               "unit": "px",
-              "size": 80
+              "size": 56
             },
             "padding": {
               "unit": "px",
-              "top": "80",
-              "right": "80",
-              "bottom": "80",
-              "left": "80",
+              "top": "0",
+              "right": "0",
+              "bottom": "0",
+              "left": "0",
               "isLinked": false
             },
             "padding_mobile": {
               "unit": "px",
-              "top": "56",
+              "top": "0",
               "right": "24",
-              "bottom": "56",
+              "bottom": "0",
               "left": "24",
               "isLinked": false
             }
           },
           "elements": [
             {
-              "id": "3ef8154",
+              "id": "1679091",
               "elType": "container",
               "settings": {
                 "flex_direction": "column",
                 "flex_direction_mobile": "column",
                 "content_width": "full",
                 "flex_gap": {
-                  "column": "20",
-                  "row": "20",
+                  "column": "28",
+                  "row": "28",
                   "unit": "px",
-                  "size": 20
+                  "size": 28
                 },
                 "padding": {
                   "unit": "px",
-                  "top": "0",
-                  "right": "0",
-                  "bottom": "0",
-                  "left": "0",
+                  "top": "40",
+                  "right": "40",
+                  "bottom": "40",
+                  "left": "40",
                   "isLinked": false
                 },
                 "padding_mobile": {
                   "unit": "px",
-                  "top": "56",
+                  "top": "40",
                   "right": "24",
-                  "bottom": "56",
+                  "bottom": "40",
                   "left": "24",
                   "isLinked": false
                 },
+                "background_background": "classic",
+                "background_color": "#F6F7EE",
+                "__globals__": {
+                  "background_color": "globals/colors?id=bungrywhite"
+                },
                 "width": {
                   "unit": "%",
-                  "size": 50,
+                  "size": 45,
                   "sizes": []
                 },
                 "width_mobile": {
                   "unit": "%",
                   "size": 100,
                   "sizes": []
-                }
+                },
+                "_css_classes": "bungry-card"
               },
               "elements": [
                 {
-                  "id": "68d30a9",
+                  "id": "e4da3b7",
                   "elType": "widget",
                   "widgetType": "bungry-info-rows",
                   "settings": {
@@ -173,7 +206,7 @@
               "isInner": false
             },
             {
-              "id": "7647966",
+              "id": "d3d9446",
               "elType": "container",
               "settings": {
                 "flex_direction": "column",
@@ -195,15 +228,15 @@
                 },
                 "padding_mobile": {
                   "unit": "px",
-                  "top": "56",
+                  "top": "0",
                   "right": "24",
-                  "bottom": "56",
+                  "bottom": "0",
                   "left": "24",
                   "isLinked": false
                 },
                 "width": {
                   "unit": "%",
-                  "size": 50,
+                  "size": 55,
                   "sizes": []
                 },
                 "width_mobile": {
@@ -214,7 +247,7 @@
               },
               "elements": [
                 {
-                  "id": "2a38a4a",
+                  "id": "45c48cc",
                   "elType": "container",
                   "settings": {
                     "flex_direction": "column",
@@ -229,16 +262,16 @@
                     "padding": {
                       "unit": "px",
                       "top": "40",
-                      "right": "80",
+                      "right": "40",
                       "bottom": "40",
-                      "left": "80",
+                      "left": "40",
                       "isLinked": false
                     },
                     "padding_mobile": {
                       "unit": "px",
-                      "top": "56",
+                      "top": "40",
                       "right": "24",
-                      "bottom": "56",
+                      "bottom": "40",
                       "left": "24",
                       "isLinked": false
                     },
@@ -246,11 +279,11 @@
                   },
                   "elements": [
                     {
-                      "id": "93db85e",
+                      "id": "8f14e45",
                       "elType": "widget",
                       "widgetType": "text-editor",
                       "settings": {
-                        "editor": "<p><strong>PHOTO PLACEHOLDER</strong></p><p>Map embed: add once the address is confirmed.</p>",
+                        "editor": "<p><strong>PHOTO PLACEHOLDER</strong></p><p>Map placeholder: add a verified pin once the address is confirmed.</p>",
                         "__globals__": {
                           "text_color": "globals/colors?id=bungryforest"
                         }
@@ -258,7 +291,7 @@
                       "elements": []
                     },
                     {
-                      "id": "c7e1249",
+                      "id": "c9f0f89",
                       "elType": "widget",
                       "widgetType": "bungry-placeholder-tag",
                       "settings": {
@@ -280,23 +313,23 @@
       "isInner": false
     },
     {
-      "id": "f4b9ec3",
+      "id": "98f1370",
       "elType": "container",
       "settings": {
         "flex_direction": "column",
         "flex_direction_mobile": "column",
         "content_width": "full",
         "flex_gap": {
-          "column": "16",
-          "row": "16",
+          "column": "40",
+          "row": "40",
           "unit": "px",
-          "size": 16
+          "size": 40
         },
         "padding": {
           "unit": "px",
-          "top": "64",
+          "top": "96",
           "right": "80",
-          "bottom": "64",
+          "bottom": "96",
           "left": "80",
           "isLinked": false
         },
@@ -307,43 +340,188 @@
           "bottom": "56",
           "left": "24",
           "isLinked": false
+        },
+        "background_background": "classic",
+        "background_color": "#F6F7EE",
+        "__globals__": {
+          "background_color": "globals/colors?id=bungrycreamdark"
         }
       },
       "elements": [
         {
-          "id": "54229ab",
-          "elType": "widget",
-          "widgetType": "heading",
+          "id": "1f0e3da",
+          "elType": "container",
           "settings": {
-            "title": "SEND US A MESSAGE",
-            "header_size": "h3",
-            "__globals__": {
-              "title_color": "globals/colors?id=bungryforest"
+            "flex_direction": "row",
+            "flex_direction_mobile": "column",
+            "content_width": "full",
+            "flex_gap": {
+              "column": "80",
+              "row": "80",
+              "unit": "px",
+              "size": 80
+            },
+            "padding": {
+              "unit": "px",
+              "top": "0",
+              "right": "0",
+              "bottom": "0",
+              "left": "0",
+              "isLinked": false
+            },
+            "padding_mobile": {
+              "unit": "px",
+              "top": "0",
+              "right": "24",
+              "bottom": "0",
+              "left": "24",
+              "isLinked": false
             }
           },
-          "elements": []
-        },
-        {
-          "id": "92cc227",
-          "elType": "widget",
-          "widgetType": "text-editor",
-          "settings": {
-            "editor": "<p>Contact form goes here. Use Elementor Pro Form or Contact Form 7. Suggested fields: name (optional), email, topic, message, and a link to the privacy policy.</p>",
-            "__globals__": {
-              "text_color": "globals/colors?id=bungryink"
+          "elements": [
+            {
+              "id": "9bf31c7",
+              "elType": "container",
+              "settings": {
+                "flex_direction": "column",
+                "flex_direction_mobile": "column",
+                "content_width": "full",
+                "flex_gap": {
+                  "column": "16",
+                  "row": "16",
+                  "unit": "px",
+                  "size": 16
+                },
+                "padding": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "0",
+                  "left": "0",
+                  "isLinked": false
+                },
+                "padding_mobile": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "24",
+                  "bottom": "0",
+                  "left": "24",
+                  "isLinked": false
+                },
+                "width": {
+                  "unit": "%",
+                  "size": 40,
+                  "sizes": []
+                },
+                "width_mobile": {
+                  "unit": "%",
+                  "size": 100,
+                  "sizes": []
+                }
+              },
+              "elements": [
+                {
+                  "id": "c51ce41",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "GET IN TOUCH",
+                    "header_size": "h2",
+                    "__globals__": {
+                      "title_color": "globals/colors?id=bungryforest"
+                    }
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "aab3238",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p>Questions about the menu or your order? Send us a message. We only ask for what we need to reply.</p>",
+                    "__globals__": {
+                      "text_color": "globals/colors?id=bungryink"
+                    }
+                  },
+                  "elements": []
+                }
+              ],
+              "isInner": false
+            },
+            {
+              "id": "6f4922f",
+              "elType": "container",
+              "settings": {
+                "flex_direction": "column",
+                "flex_direction_mobile": "column",
+                "content_width": "full",
+                "flex_gap": {
+                  "column": "16",
+                  "row": "16",
+                  "unit": "px",
+                  "size": 16
+                },
+                "padding": {
+                  "unit": "px",
+                  "top": "40",
+                  "right": "40",
+                  "bottom": "40",
+                  "left": "40",
+                  "isLinked": false
+                },
+                "padding_mobile": {
+                  "unit": "px",
+                  "top": "40",
+                  "right": "24",
+                  "bottom": "40",
+                  "left": "24",
+                  "isLinked": false
+                },
+                "background_background": "classic",
+                "background_color": "#F6F7EE",
+                "__globals__": {
+                  "background_color": "globals/colors?id=bungrywhite"
+                },
+                "width": {
+                  "unit": "%",
+                  "size": 60,
+                  "sizes": []
+                },
+                "width_mobile": {
+                  "unit": "%",
+                  "size": 100,
+                  "sizes": []
+                },
+                "_css_classes": "bungry-card"
+              },
+              "elements": [
+                {
+                  "id": "c74d97b",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p><strong>Name (optional)</strong></p><p class=\"bungry-field\">Your name</p><p><strong>Email</strong></p><p class=\"bungry-field\">you@example.com</p><p><strong>Topic</strong></p><p class=\"bungry-field\">Select a topic</p><p><strong>Message</strong></p><p class=\"bungry-field bungry-field--tall\">How can we help?</p><p>We’ll use your details only to reply. Read our Privacy Policy.</p>",
+                    "__globals__": {
+                      "text_color": "globals/colors?id=bungryink"
+                    }
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "70efdf2",
+                  "elType": "widget",
+                  "widgetType": "bungry-placeholder-tag",
+                  "settings": {
+                    "label": "Form to be added: Elementor Pro Form or Contact Form 7",
+                    "tone": "light"
+                  },
+                  "elements": []
+                }
+              ],
+              "isInner": false
             }
-          },
-          "elements": []
-        },
-        {
-          "id": "98dce83",
-          "elType": "widget",
-          "widgetType": "bungry-placeholder-tag",
-          "settings": {
-            "label": "Form to be added",
-            "tone": "light"
-          },
-          "elements": []
+          ],
+          "isInner": false
         }
       ],
       "isInner": false

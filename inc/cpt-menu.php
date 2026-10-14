@@ -350,7 +350,7 @@ function bungry_menu_seed_items(): array {
 			'title'        => 'Smoky Bungry',
 			'illustration' => 'burger-smoky',
 			'diet'         => 'beef',
-			'excerpt'      => 'A bold smoky-style beef burger with cheese, crispy elements and smoky Bungry sauce.',
+			'excerpt'      => 'A bold smoky-style beef burger with cheese and smoky Bungry sauce.',
 			'verification' => 'Confirm what "crispy elements" are and whether the sauce contains allergens.',
 		),
 		array(
@@ -364,7 +364,7 @@ function bungry_menu_seed_items(): array {
 			'title'        => 'Green Bungry',
 			'illustration' => 'burger-green',
 			'diet'         => 'vegetarian',
-			'excerpt'      => 'A vegetarian option with a plant-based patty, fresh vegetables, cheese and signature Bungry sauce.',
+			'excerpt'      => 'A vegetarian option with a plant-based patty, vegetables, cheese and Bungry sauce.',
 			'verification' => 'Confirm the patty is fully plant-based, cheese and sauce are vegetarian, and cross-contact risk. Do not call it vegan without full confirmation.',
 		),
 	);

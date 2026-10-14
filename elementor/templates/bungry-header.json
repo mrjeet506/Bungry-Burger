@@ -5,7 +5,7 @@
   "page_settings": {},
   "content": [
     {
-      "id": "c8ffe9a",
+      "id": "a87ff67",
       "elType": "container",
       "settings": {
         "flex_direction": "row",
@@ -27,16 +27,21 @@
         },
         "padding_mobile": {
           "unit": "px",
-          "top": "56",
+          "top": "19",
           "right": "24",
-          "bottom": "56",
+          "bottom": "19",
           "left": "24",
           "isLinked": false
+        },
+        "background_background": "classic",
+        "background_color": "#F6F7EE",
+        "__globals__": {
+          "background_color": "globals/colors?id=bungrycream"
         }
       },
       "elements": [
         {
-          "id": "4c56ff4",
+          "id": "c4ca423",
           "elType": "widget",
           "widgetType": "theme-site-logo",
           "settings": {
@@ -50,7 +55,7 @@
           "elements": []
         },
         {
-          "id": "a0a080f",
+          "id": "c81e728",
           "elType": "widget",
           "widgetType": "nav-menu",
           "settings": {
@@ -62,7 +67,7 @@
           "elements": []
         },
         {
-          "id": "202cb96",
+          "id": "eccbc87",
           "elType": "widget",
           "widgetType": "bungry-button",
           "settings": {

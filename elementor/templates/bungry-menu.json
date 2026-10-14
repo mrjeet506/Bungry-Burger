@@ -7,110 +7,7 @@
   },
   "content": [
     {
-      "id": "03afdbd",
-      "elType": "container",
-      "settings": {
-        "flex_direction": "column",
-        "flex_direction_mobile": "column",
-        "content_width": "full",
-        "flex_gap": {
-          "column": "40",
-          "row": "40",
-          "unit": "px",
-          "size": 40
-        },
-        "padding": {
-          "unit": "px",
-          "top": "80",
-          "right": "80",
-          "bottom": "80",
-          "left": "80",
-          "isLinked": false
-        },
-        "padding_mobile": {
-          "unit": "px",
-          "top": "56",
-          "right": "24",
-          "bottom": "56",
-          "left": "24",
-          "isLinked": false
-        }
-      },
-      "elements": [
-        {
-          "id": "44f683a",
-          "elType": "widget",
-          "widgetType": "bungry-section-heading",
-          "settings": {
-            "eyebrow": "MENU",
-            "title": "THE BUNGRY LINE-UP",
-            "title_tag": "h2",
-            "text": "Five burger concepts. One signature sealed-burger idea. Take a look through the line-up and choose your Bungry.",
-            "align": "left",
-            "button_text": "",
-            "button_link": {
-              "url": ""
-            }
-          },
-          "elements": []
-        }
-      ],
-      "isInner": false
-    },
-    {
-      "id": "fc490ca",
-      "elType": "container",
-      "settings": {
-        "flex_direction": "column",
-        "flex_direction_mobile": "column",
-        "content_width": "full",
-        "flex_gap": {
-          "column": "40",
-          "row": "40",
-          "unit": "px",
-          "size": 40
-        },
-        "padding": {
-          "unit": "px",
-          "top": "40",
-          "right": "80",
-          "bottom": "40",
-          "left": "80",
-          "isLinked": false
-        },
-        "padding_mobile": {
-          "unit": "px",
-          "top": "56",
-          "right": "24",
-          "bottom": "56",
-          "left": "24",
-          "isLinked": false
-        }
-      },
-      "elements": [
-        {
-          "id": "ea5d2f1",
-          "elType": "widget",
-          "widgetType": "bungry-menu-cards",
-          "settings": {
-            "category": "",
-            "limit": -1,
-            "columns": "5",
-            "columns_tablet": "2",
-            "columns_mobile": "1",
-            "show_price": "yes",
-            "show_order": "yes",
-            "allergen_link": {
-              "url": "/food-allergens-faqs/"
-            }
-          },
-          "elements": []
-        }
-      ],
-      "isInner": false
-    },
-    {
-      "id": "a3f390d",
+      "id": "a87ff67",
       "elType": "container",
       "settings": {
         "flex_direction": "column",
@@ -124,9 +21,9 @@
         },
         "padding": {
           "unit": "px",
-          "top": "40",
+          "top": "72",
           "right": "80",
-          "bottom": "40",
+          "bottom": "100",
           "left": "80",
           "isLinked": false
         },
@@ -137,36 +34,440 @@
           "bottom": "56",
           "left": "24",
           "isLinked": false
+        },
+        "background_background": "classic",
+        "background_color": "#F6F7EE",
+        "__globals__": {
+          "background_color": "globals/colors?id=bungryforest"
         }
       },
       "elements": [
         {
-          "id": "3295c76",
+          "id": "c4ca423",
           "elType": "widget",
-          "widgetType": "bungry-notice",
+          "widgetType": "text-editor",
           "settings": {
-            "type": "info",
-            "title": "Check before you order",
-            "text": "Menu availability and ingredients may change. Check allergen information before you order."
+            "editor": "<p>OUR MENU</p>",
+            "_css_classes": "bungry-kicker",
+            "__globals__": {
+              "text_color": "globals/colors?id=bungryorange"
+            }
           },
           "elements": []
         },
         {
-          "id": "735b90b",
+          "id": "c81e728",
           "elType": "widget",
-          "widgetType": "bungry-button",
+          "widgetType": "heading",
           "settings": {
-            "text": "Allergens & FAQs",
-            "link": {
-              "url": "/food-allergens-faqs/",
-              "is_external": "",
-              "nofollow": ""
-            },
-            "style": "dark",
-            "size": "default",
-            "arrow": "yes"
+            "title": "THE BUNGRY LINE-UP",
+            "header_size": "h1",
+            "__globals__": {
+              "title_color": "globals/colors?id=bungrycream"
+            }
           },
           "elements": []
+        },
+        {
+          "id": "eccbc87",
+          "elType": "widget",
+          "widgetType": "text-editor",
+          "settings": {
+            "editor": "<p>Five burger concepts. One signature sealed-burger idea. Take a look through the line-up and choose your Bungry.</p>",
+            "_css_classes": "bungry-lead bungry-hero-body",
+            "__globals__": {
+              "text_color": "globals/colors?id=bungrycream"
+            }
+          },
+          "elements": []
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "c20ad4d",
+      "elType": "container",
+      "settings": {
+        "flex_direction": "column",
+        "flex_direction_mobile": "column",
+        "content_width": "full",
+        "flex_gap": {
+          "column": "0",
+          "row": "0",
+          "unit": "px",
+          "size": 0
+        },
+        "padding": {
+          "unit": "px",
+          "top": "56",
+          "right": "80",
+          "bottom": "0",
+          "left": "80",
+          "isLinked": false
+        },
+        "padding_mobile": {
+          "unit": "px",
+          "top": "56",
+          "right": "24",
+          "bottom": "0",
+          "left": "24",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "6512bd4",
+          "elType": "container",
+          "settings": {
+            "flex_direction": "row",
+            "flex_direction_mobile": "column",
+            "content_width": "full",
+            "flex_gap": {
+              "column": "24",
+              "row": "24",
+              "unit": "px",
+              "size": 24
+            },
+            "padding": {
+              "unit": "px",
+              "top": "0",
+              "right": "0",
+              "bottom": "0",
+              "left": "0",
+              "isLinked": false
+            },
+            "padding_mobile": {
+              "unit": "px",
+              "top": "0",
+              "right": "24",
+              "bottom": "0",
+              "left": "24",
+              "isLinked": false
+            }
+          },
+          "elements": [
+            {
+              "id": "45c48cc",
+              "elType": "container",
+              "settings": {
+                "flex_direction": "row",
+                "flex_direction_mobile": "column",
+                "content_width": "full",
+                "flex_gap": {
+                  "column": "12",
+                  "row": "12",
+                  "unit": "px",
+                  "size": 12
+                },
+                "padding": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "0",
+                  "left": "0",
+                  "isLinked": false
+                },
+                "padding_mobile": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "24",
+                  "bottom": "0",
+                  "left": "24",
+                  "isLinked": false
+                }
+              },
+              "elements": [
+                {
+                  "id": "e4da3b7",
+                  "elType": "widget",
+                  "widgetType": "bungry-button",
+                  "settings": {
+                    "text": "All",
+                    "link": {
+                      "url": "/menu/",
+                      "is_external": "",
+                      "nofollow": ""
+                    },
+                    "style": "dark",
+                    "size": "small",
+                    "arrow": "yes"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "1679091",
+                  "elType": "widget",
+                  "widgetType": "bungry-button",
+                  "settings": {
+                    "text": "Beef",
+                    "link": {
+                      "url": "/menu-category/beef/",
+                      "is_external": "",
+                      "nofollow": ""
+                    },
+                    "style": "outline-dark",
+                    "size": "small",
+                    "arrow": "yes"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "8f14e45",
+                  "elType": "widget",
+                  "widgetType": "bungry-button",
+                  "settings": {
+                    "text": "Chicken",
+                    "link": {
+                      "url": "/menu-category/chicken/",
+                      "is_external": "",
+                      "nofollow": ""
+                    },
+                    "style": "outline-dark",
+                    "size": "small",
+                    "arrow": "yes"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "c9f0f89",
+                  "elType": "widget",
+                  "widgetType": "bungry-button",
+                  "settings": {
+                    "text": "Vegetarian",
+                    "link": {
+                      "url": "/menu-category/vegetarian/",
+                      "is_external": "",
+                      "nofollow": ""
+                    },
+                    "style": "outline-dark",
+                    "size": "small",
+                    "arrow": "yes"
+                  },
+                  "elements": []
+                }
+              ],
+              "isInner": false
+            },
+            {
+              "id": "d3d9446",
+              "elType": "widget",
+              "widgetType": "bungry-placeholder-tag",
+              "settings": {
+                "label": "Categories optional: confirm final menu",
+                "tone": "light"
+              },
+              "elements": []
+            }
+          ],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "c74d97b",
+      "elType": "container",
+      "settings": {
+        "flex_direction": "column",
+        "flex_direction_mobile": "column",
+        "content_width": "full",
+        "flex_gap": {
+          "column": "20",
+          "row": "20",
+          "unit": "px",
+          "size": 20
+        },
+        "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "80",
+          "bottom": "0",
+          "left": "80",
+          "isLinked": false
+        },
+        "padding_mobile": {
+          "unit": "px",
+          "top": "0",
+          "right": "24",
+          "bottom": "0",
+          "left": "24",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "c51ce41",
+          "elType": "widget",
+          "widgetType": "bungry-notice",
+          "settings": {
+            "type": "info",
+            "title": "CHECK INGREDIENTS AND ALLERGENS BEFORE YOU ORDER.",
+            "text": "Menu availability and ingredients may change. If you have a food allergy, contact the team to discuss the specific item."
+          },
+          "elements": []
+        },
+        {
+          "id": "9bf31c7",
+          "elType": "container",
+          "settings": {
+            "flex_direction": "row",
+            "flex_direction_mobile": "column",
+            "content_width": "full",
+            "flex_gap": {
+              "column": "80",
+              "row": "80",
+              "unit": "px",
+              "size": 80
+            },
+            "padding": {
+              "unit": "px",
+              "top": "0",
+              "right": "0",
+              "bottom": "0",
+              "left": "0",
+              "isLinked": false
+            },
+            "padding_mobile": {
+              "unit": "px",
+              "top": "0",
+              "right": "24",
+              "bottom": "0",
+              "left": "24",
+              "isLinked": false
+            }
+          },
+          "elements": [
+            {
+              "id": "aab3238",
+              "elType": "widget",
+              "widgetType": "bungry-button",
+              "settings": {
+                "text": "Allergen information",
+                "link": {
+                  "url": "/food-allergens-faqs/",
+                  "is_external": "",
+                  "nofollow": ""
+                },
+                "style": "dark",
+                "size": "small",
+                "arrow": "yes"
+              },
+              "elements": []
+            }
+          ],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "3c59dc0",
+      "elType": "container",
+      "settings": {
+        "flex_direction": "column",
+        "flex_direction_mobile": "column",
+        "content_width": "full",
+        "flex_gap": {
+          "column": "40",
+          "row": "40",
+          "unit": "px",
+          "size": 40
+        },
+        "padding": {
+          "unit": "px",
+          "top": "40",
+          "right": "80",
+          "bottom": "96",
+          "left": "80",
+          "isLinked": false
+        },
+        "padding_mobile": {
+          "unit": "px",
+          "top": "40",
+          "right": "24",
+          "bottom": "56",
+          "left": "24",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "70efdf2",
+          "elType": "widget",
+          "widgetType": "bungry-menu-cards",
+          "settings": {
+            "category": "",
+            "limit": -1,
+            "columns": "3",
+            "columns_tablet": "2",
+            "columns_mobile": "1",
+            "show_price": "yes",
+            "show_order": "yes",
+            "allergen_link": {
+              "url": "/food-allergens-faqs/"
+            }
+          },
+          "elements": []
+        },
+        {
+          "id": "98f1370",
+          "elType": "container",
+          "settings": {
+            "flex_direction": "column",
+            "flex_direction_mobile": "column",
+            "content_width": "full",
+            "flex_gap": {
+              "column": "12",
+              "row": "12",
+              "unit": "px",
+              "size": 12
+            },
+            "padding": {
+              "unit": "px",
+              "top": "32",
+              "right": "32",
+              "bottom": "32",
+              "left": "32",
+              "isLinked": false
+            },
+            "padding_mobile": {
+              "unit": "px",
+              "top": "32",
+              "right": "24",
+              "bottom": "32",
+              "left": "24",
+              "isLinked": false
+            },
+            "_css_classes": "bungry-more-coming"
+          },
+          "elements": [
+            {
+              "id": "6f4922f",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "SIDES, DRINKS & ADD-ONS",
+                "header_size": "h4",
+                "__globals__": {
+                  "title_color": "globals/colors?id=bungrydeepolive"
+                }
+              },
+              "elements": []
+            },
+            {
+              "id": "1f0e3da",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>To be added once the client confirms the complete menu and prices.</p>",
+                "__globals__": {
+                  "text_color": "globals/colors?id=bungrydeepolive"
+                }
+              },
+              "elements": []
+            }
+          ],
+          "isInner": false
         }
       ],
       "isInner": false

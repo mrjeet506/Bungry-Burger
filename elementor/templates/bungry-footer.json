@@ -5,7 +5,7 @@
   "page_settings": {},
   "content": [
     {
-      "id": "903ce92",
+      "id": "98f1370",
       "elType": "container",
       "settings": {
         "flex_direction": "column",
@@ -21,7 +21,7 @@
           "unit": "px",
           "top": "80",
           "right": "80",
-          "bottom": "80",
+          "bottom": "40",
           "left": "80",
           "isLinked": false
         },
@@ -29,12 +29,12 @@
           "unit": "px",
           "top": "56",
           "right": "24",
-          "bottom": "56",
+          "bottom": "40",
           "left": "24",
           "isLinked": false
         },
         "background_background": "classic",
-        "background_color": "#185B28",
+        "background_color": "#F6F7EE",
         "__globals__": {
           "background_color": "globals/colors?id=bungryforest"
         },
@@ -42,7 +42,7 @@
       },
       "elements": [
         {
-          "id": "1385974",
+          "id": "c74d97b",
           "elType": "container",
           "settings": {
             "flex_direction": "row",
@@ -64,26 +64,26 @@
             },
             "padding_mobile": {
               "unit": "px",
-              "top": "56",
+              "top": "0",
               "right": "24",
-              "bottom": "56",
+              "bottom": "0",
               "left": "24",
               "isLinked": false
             }
           },
           "elements": [
             {
-              "id": "76dc611",
+              "id": "a87ff67",
               "elType": "container",
               "settings": {
                 "flex_direction": "column",
                 "flex_direction_mobile": "column",
                 "content_width": "full",
                 "flex_gap": {
-                  "column": "20",
-                  "row": "20",
+                  "column": "18",
+                  "row": "18",
                   "unit": "px",
-                  "size": 20
+                  "size": 18
                 },
                 "padding": {
                   "unit": "px",
@@ -95,15 +95,15 @@
                 },
                 "padding_mobile": {
                   "unit": "px",
-                  "top": "56",
+                  "top": "0",
                   "right": "24",
-                  "bottom": "56",
+                  "bottom": "0",
                   "left": "24",
                   "isLinked": false
                 },
                 "width": {
                   "unit": "%",
-                  "size": 50,
+                  "size": 28,
                   "sizes": []
                 },
                 "width_mobile": {
@@ -114,7 +114,7 @@
               },
               "elements": [
                 {
-                  "id": "3def184",
+                  "id": "c4ca423",
                   "elType": "widget",
                   "widgetType": "heading",
                   "settings": {
@@ -127,20 +127,20 @@
                   "elements": []
                 },
                 {
-                  "id": "069059b",
+                  "id": "c81e728",
                   "elType": "widget",
                   "widgetType": "text-editor",
                   "settings": {
                     "editor": "<p>FRESH. SEALED. DIFFERENT.</p>",
                     "_css_classes": "bungry-footer-tagline",
                     "__globals__": {
-                      "text_color": "globals/colors?id=bungrycream"
+                      "text_color": "globals/colors?id=bungryorange"
                     }
                   },
                   "elements": []
                 },
                 {
-                  "id": "ec5decc",
+                  "id": "eccbc87",
                   "elType": "widget",
                   "widgetType": "text-editor",
                   "settings": {
@@ -155,7 +155,7 @@
               "isInner": false
             },
             {
-              "id": "1afa34a",
+              "id": "8f14e45",
               "elType": "container",
               "settings": {
                 "flex_direction": "column",
@@ -177,15 +177,15 @@
                 },
                 "padding_mobile": {
                   "unit": "px",
-                  "top": "56",
+                  "top": "0",
                   "right": "24",
-                  "bottom": "56",
+                  "bottom": "0",
                   "left": "24",
                   "isLinked": false
                 },
                 "width": {
                   "unit": "%",
-                  "size": 20,
+                  "size": 18,
                   "sizes": []
                 },
                 "width_mobile": {
@@ -196,20 +196,20 @@
               },
               "elements": [
                 {
-                  "id": "d1f491a",
+                  "id": "e4da3b7",
                   "elType": "widget",
                   "widgetType": "text-editor",
                   "settings": {
                     "editor": "<p>QUICK LINKS</p>",
                     "_css_classes": "bungry-footer-heading",
                     "__globals__": {
-                      "text_color": "globals/colors?id=bungrycream"
+                      "text_color": "globals/colors?id=bungryorange"
                     }
                   },
                   "elements": []
                 },
                 {
-                  "id": "9b86192",
+                  "id": "1679091",
                   "elType": "widget",
                   "widgetType": "nav-menu",
                   "settings": {
@@ -227,7 +227,7 @@
               "isInner": false
             },
             {
-              "id": "02522a2",
+              "id": "d3d9446",
               "elType": "container",
               "settings": {
                 "flex_direction": "column",
@@ -249,9 +249,9 @@
                 },
                 "padding_mobile": {
                   "unit": "px",
-                  "top": "56",
+                  "top": "0",
                   "right": "24",
-                  "bottom": "56",
+                  "bottom": "0",
                   "left": "24",
                   "isLinked": false
                 },
@@ -268,20 +268,20 @@
               },
               "elements": [
                 {
-                  "id": "65ded53",
+                  "id": "c9f0f89",
                   "elType": "widget",
                   "widgetType": "text-editor",
                   "settings": {
                     "editor": "<p>NEED HELP?</p>",
                     "_css_classes": "bungry-footer-heading",
                     "__globals__": {
-                      "text_color": "globals/colors?id=bungrycream"
+                      "text_color": "globals/colors?id=bungryorange"
                     }
                   },
                   "elements": []
                 },
                 {
-                  "id": "9fc3d71",
+                  "id": "45c48cc",
                   "elType": "widget",
                   "widgetType": "nav-menu",
                   "settings": {
@@ -299,7 +299,7 @@
               "isInner": false
             },
             {
-              "id": "e00da03",
+              "id": "9bf31c7",
               "elType": "container",
               "settings": {
                 "flex_direction": "column",
@@ -321,9 +321,9 @@
                 },
                 "padding_mobile": {
                   "unit": "px",
-                  "top": "56",
+                  "top": "0",
                   "right": "24",
-                  "bottom": "56",
+                  "bottom": "0",
                   "left": "24",
                   "isLinked": false
                 },
@@ -341,20 +341,20 @@
               },
               "elements": [
                 {
-                  "id": "7f1de29",
+                  "id": "6512bd4",
                   "elType": "widget",
                   "widgetType": "text-editor",
                   "settings": {
                     "editor": "<p>CONNECT</p>",
                     "_css_classes": "bungry-footer-heading",
                     "__globals__": {
-                      "text_color": "globals/colors?id=bungrycream"
+                      "text_color": "globals/colors?id=bungryorange"
                     }
                   },
                   "elements": []
                 },
                 {
-                  "id": "42a0e18",
+                  "id": "c20ad4d",
                   "elType": "widget",
                   "widgetType": "bungry-info-rows",
                   "settings": {
@@ -363,7 +363,7 @@
                   "elements": []
                 },
                 {
-                  "id": "3988c7f",
+                  "id": "c51ce41",
                   "elType": "widget",
                   "widgetType": "social-icons",
                   "settings": {
@@ -372,7 +372,7 @@
                   "elements": []
                 },
                 {
-                  "id": "013d407",
+                  "id": "aab3238",
                   "elType": "widget",
                   "widgetType": "bungry-placeholder-tag",
                   "settings": {
@@ -388,7 +388,7 @@
           "isInner": false
         },
         {
-          "id": "a8baa56",
+          "id": "1f0e3da",
           "elType": "container",
           "settings": {
             "flex_direction": "column",
@@ -410,16 +410,55 @@
             },
             "padding_mobile": {
               "unit": "px",
-              "top": "56",
+              "top": "0",
               "right": "24",
-              "bottom": "56",
+              "bottom": "0",
+              "left": "24",
+              "isLinked": false
+            },
+            "background_background": "classic",
+            "background_color": "#F6F7EE",
+            "__globals__": {
+              "background_color": "globals/colors?id=bungryolive"
+            },
+            "_css_classes": "bungry-divider"
+          },
+          "elements": [],
+          "isInner": false
+        },
+        {
+          "id": "6f4922f",
+          "elType": "container",
+          "settings": {
+            "flex_direction": "column",
+            "flex_direction_mobile": "column",
+            "content_width": "full",
+            "flex_gap": {
+              "column": "40",
+              "row": "40",
+              "unit": "px",
+              "size": 40
+            },
+            "padding": {
+              "unit": "px",
+              "top": "0",
+              "right": "0",
+              "bottom": "0",
+              "left": "0",
+              "isLinked": false
+            },
+            "padding_mobile": {
+              "unit": "px",
+              "top": "0",
+              "right": "24",
+              "bottom": "0",
               "left": "24",
               "isLinked": false
             }
           },
           "elements": [
             {
-              "id": "0f28b5d",
+              "id": "70efdf2",
               "elType": "widget",
               "widgetType": "text-editor",
               "settings": {

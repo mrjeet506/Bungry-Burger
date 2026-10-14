@@ -358,3 +358,116 @@
 .bungry-footer-dark .bungry-info-row__icon-wrap {
 	background: rgba(246, 247, 238, 0.12);
 }
+
+/* Figma-matched Elementor page templates */
+.bungry-kicker {
+	margin: 0;
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 20px;
+	letter-spacing: 1.4px;
+	text-transform: uppercase;
+}
+
+.bungry-hero-body {
+	max-width: 760px;
+}
+
+.bungry-center {
+	text-align: center;
+}
+
+.bungry-card {
+	border-radius: 28px;
+	overflow: clip;
+}
+
+.bungry-disc {
+	width: 72px;
+	height: 72px;
+	border-radius: 999px;
+}
+
+.bungry-step {
+	margin: 0;
+	padding: 18px 20px;
+	min-width: 180px;
+	border-radius: 20px;
+	background: var(--bungry-white);
+	font-family: var(--bungry-font-heading);
+	font-size: 22px;
+	line-height: 26px;
+	text-transform: uppercase;
+	color: var(--bungry-forest);
+}
+
+.bungry-more-coming {
+	border: 2px dashed var(--bungry-olive);
+	border-radius: 28px;
+	background: rgba(152, 167, 91, 0.12);
+	align-items: center;
+	text-align: center;
+}
+
+.bungry-divider {
+	height: 1px;
+	min-height: 1px;
+	opacity: 0.35;
+}
+
+.bungry-field {
+	margin: 0 0 8px;
+	padding: 14px 16px;
+	border: 1.5px solid var(--bungry-olive);
+	border-radius: 12px;
+	background: var(--bungry-cream);
+	color: rgba(14, 58, 26, 0.5);
+}
+
+.bungry-field--tall {
+	min-height: 120px;
+}
+
+.bungry-allergen-table {
+	width: 100%;
+	border-collapse: collapse;
+	background: var(--bungry-white);
+	border-radius: 24px;
+	overflow: hidden;
+	font-size: 15px;
+}
+
+.bungry-allergen-table th {
+	padding: 18px 28px;
+	background: var(--bungry-forest);
+	color: var(--bungry-orange);
+	font-size: 14px;
+	font-weight: 700;
+	letter-spacing: 1.4px;
+	text-align: left;
+	text-transform: uppercase;
+}
+
+.bungry-allergen-table td {
+	padding: 18px 28px;
+	border-top: 1px solid rgba(152, 167, 91, 0.3);
+	color: var(--bungry-ink);
+	vertical-align: top;
+}
+
+.bungry-allergen-table td:first-child {
+	font-weight: 700;
+	text-transform: uppercase;
+	color: var(--bungry-forest);
+}
+
+@media (max-width: 767px) {
+	.bungry-allergen-table thead {
+		display: none;
+	}
+
+	.bungry-allergen-table td {
+		display: block;
+		border-top: 0;
+	}
+}

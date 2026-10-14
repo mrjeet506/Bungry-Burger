@@ -7,7 +7,72 @@
   },
   "content": [
     {
-      "id": "43ec517",
+      "id": "eccbc87",
+      "elType": "container",
+      "settings": {
+        "flex_direction": "column",
+        "flex_direction_mobile": "column",
+        "content_width": "full",
+        "flex_gap": {
+          "column": "20",
+          "row": "20",
+          "unit": "px",
+          "size": 20
+        },
+        "padding": {
+          "unit": "px",
+          "top": "72",
+          "right": "80",
+          "bottom": "100",
+          "left": "80",
+          "isLinked": false
+        },
+        "padding_mobile": {
+          "unit": "px",
+          "top": "56",
+          "right": "24",
+          "bottom": "56",
+          "left": "24",
+          "isLinked": false
+        },
+        "background_background": "classic",
+        "background_color": "#F6F7EE",
+        "__globals__": {
+          "background_color": "globals/colors?id=bungryforest"
+        }
+      },
+      "elements": [
+        {
+          "id": "c4ca423",
+          "elType": "widget",
+          "widgetType": "text-editor",
+          "settings": {
+            "editor": "<p>OUR STORY</p>",
+            "_css_classes": "bungry-kicker",
+            "__globals__": {
+              "text_color": "globals/colors?id=bungryorange"
+            }
+          },
+          "elements": []
+        },
+        {
+          "id": "c81e728",
+          "elType": "widget",
+          "widgetType": "heading",
+          "settings": {
+            "title": "A FAMILIAR FAVOURITE, WITH A BUNGRY TWIST.",
+            "header_size": "h1",
+            "__globals__": {
+              "title_color": "globals/colors?id=bungrycream"
+            }
+          },
+          "elements": []
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "c20ad4d",
       "elType": "container",
       "settings": {
         "flex_direction": "column",
@@ -21,9 +86,9 @@
         },
         "padding": {
           "unit": "px",
-          "top": "80",
+          "top": "96",
           "right": "80",
-          "bottom": "80",
+          "bottom": "96",
           "left": "80",
           "isLinked": false
         },
@@ -38,7 +103,7 @@
       },
       "elements": [
         {
-          "id": "28dd2c7",
+          "id": "6512bd4",
           "elType": "container",
           "settings": {
             "flex_direction": "row",
@@ -52,34 +117,34 @@
             },
             "padding": {
               "unit": "px",
-              "top": "80",
-              "right": "80",
-              "bottom": "80",
-              "left": "80",
+              "top": "0",
+              "right": "0",
+              "bottom": "0",
+              "left": "0",
               "isLinked": false
             },
             "padding_mobile": {
               "unit": "px",
-              "top": "56",
+              "top": "0",
               "right": "24",
-              "bottom": "56",
+              "bottom": "0",
               "left": "24",
               "isLinked": false
             }
           },
           "elements": [
             {
-              "id": "32bb90e",
+              "id": "1679091",
               "elType": "container",
               "settings": {
                 "flex_direction": "column",
                 "flex_direction_mobile": "column",
                 "content_width": "full",
                 "flex_gap": {
-                  "column": "20",
-                  "row": "20",
+                  "column": "24",
+                  "row": "24",
                   "unit": "px",
-                  "size": 20
+                  "size": 24
                 },
                 "padding": {
                   "unit": "px",
@@ -91,9 +156,9 @@
                 },
                 "padding_mobile": {
                   "unit": "px",
-                  "top": "56",
+                  "top": "0",
                   "right": "24",
-                  "bottom": "56",
+                  "bottom": "0",
                   "left": "24",
                   "isLinked": false
                 },
@@ -110,25 +175,12 @@
               },
               "elements": [
                 {
-                  "id": "14bfa6b",
-                  "elType": "widget",
-                  "widgetType": "text-editor",
-                  "settings": {
-                    "editor": "<p>OUR STORY</p>",
-                    "_css_classes": "bungry-eyebrow",
-                    "__globals__": {
-                      "text_color": "globals/colors?id=bungryink"
-                    }
-                  },
-                  "elements": []
-                },
-                {
-                  "id": "7cbbc40",
+                  "id": "a87ff67",
                   "elType": "widget",
                   "widgetType": "heading",
                   "settings": {
-                    "title": "A FAMILIAR FAVOURITE, WITH A BUNGRY TWIST.",
-                    "header_size": "h1",
+                    "title": "At Bungry, we believe a burger can be familiar and still feel different.",
+                    "header_size": "h4",
                     "__globals__": {
                       "title_color": "globals/colors?id=bungryforest"
                     }
@@ -136,11 +188,12 @@
                   "elements": []
                 },
                 {
-                  "id": "e2c420d",
+                  "id": "e4da3b7",
                   "elType": "widget",
                   "widgetType": "text-editor",
                   "settings": {
-                    "editor": "<p>At Bungry, we believe a burger can be familiar and still feel different. Our idea centres on a distinctive sealed-burger format — a recognisable shape designed to give the Bungry experience its own identity. From the product presentation to the packaging and the way the brand shows up, every detail is intended to be simple, bold and memorable.</p>",
+                    "editor": "<p>Our idea centres on a distinctive sealed-burger format — a recognisable shape designed to give the Bungry experience its own identity. From the product presentation to the packaging and the way the brand shows up, every detail is intended to be simple, bold and memorable.</p>",
+                    "_css_classes": "bungry-lead",
                     "__globals__": {
                       "text_color": "globals/colors?id=bungryink"
                     }
@@ -151,7 +204,7 @@
               "isInner": false
             },
             {
-              "id": "fbd7939",
+              "id": "d3d9446",
               "elType": "container",
               "settings": {
                 "flex_direction": "column",
@@ -173,9 +226,9 @@
                 },
                 "padding_mobile": {
                   "unit": "px",
-                  "top": "56",
+                  "top": "0",
                   "right": "24",
-                  "bottom": "56",
+                  "bottom": "0",
                   "left": "24",
                   "isLinked": false
                 },
@@ -192,7 +245,7 @@
               },
               "elements": [
                 {
-                  "id": "d09bf41",
+                  "id": "45c48cc",
                   "elType": "container",
                   "settings": {
                     "flex_direction": "column",
@@ -207,16 +260,16 @@
                     "padding": {
                       "unit": "px",
                       "top": "40",
-                      "right": "80",
+                      "right": "40",
                       "bottom": "40",
-                      "left": "80",
+                      "left": "40",
                       "isLinked": false
                     },
                     "padding_mobile": {
                       "unit": "px",
-                      "top": "56",
+                      "top": "40",
                       "right": "24",
-                      "bottom": "56",
+                      "bottom": "40",
                       "left": "24",
                       "isLinked": false
                     },
@@ -224,11 +277,11 @@
                   },
                   "elements": [
                     {
-                      "id": "d2ddea1",
+                      "id": "8f14e45",
                       "elType": "widget",
                       "widgetType": "text-editor",
                       "settings": {
-                        "editor": "<p><strong>PHOTO PLACEHOLDER</strong></p><p>Packaging: real production packaging photo.</p>",
+                        "editor": "<p><strong>PHOTO PLACEHOLDER</strong></p><p>Packaging illustration: add the Figma export or a real packaging photo.</p>",
                         "__globals__": {
                           "text_color": "globals/colors?id=bungryforest"
                         }
@@ -236,11 +289,11 @@
                       "elements": []
                     },
                     {
-                      "id": "ad61ab1",
+                      "id": "c9f0f89",
                       "elType": "widget",
                       "widgetType": "bungry-placeholder-tag",
                       "settings": {
-                        "label": "Packaging photo TBC",
+                        "label": "Replace with real packaging photo",
                         "tone": "light"
                       },
                       "elements": []
@@ -258,23 +311,573 @@
       "isInner": false
     },
     {
-      "id": "f033ab3",
+      "id": "c16a532",
       "elType": "container",
       "settings": {
         "flex_direction": "column",
         "flex_direction_mobile": "column",
         "content_width": "full",
         "flex_gap": {
-          "column": "24",
-          "row": "24",
+          "column": "56",
+          "row": "56",
           "unit": "px",
-          "size": 24
+          "size": 56
         },
         "padding": {
           "unit": "px",
-          "top": "80",
+          "top": "96",
           "right": "80",
-          "bottom": "80",
+          "bottom": "96",
+          "left": "80",
+          "isLinked": false
+        },
+        "padding_mobile": {
+          "unit": "px",
+          "top": "56",
+          "right": "24",
+          "bottom": "56",
+          "left": "24",
+          "isLinked": false
+        },
+        "background_background": "classic",
+        "background_color": "#F6F7EE",
+        "__globals__": {
+          "background_color": "globals/colors?id=bungrycreamdark"
+        }
+      },
+      "elements": [
+        {
+          "id": "c51ce41",
+          "elType": "widget",
+          "widgetType": "bungry-section-heading",
+          "settings": {
+            "eyebrow": "OUR VALUES",
+            "title": "WHAT BUNGRY STANDS FOR",
+            "title_tag": "h3",
+            "text": "",
+            "align": "center",
+            "button_text": "",
+            "button_link": {
+              "url": ""
+            }
+          },
+          "elements": []
+        },
+        {
+          "id": "34173cb",
+          "elType": "container",
+          "settings": {
+            "flex_direction": "row",
+            "flex_direction_mobile": "column",
+            "content_width": "full",
+            "flex_gap": {
+              "column": "24",
+              "row": "24",
+              "unit": "px",
+              "size": 24
+            },
+            "padding": {
+              "unit": "px",
+              "top": "0",
+              "right": "0",
+              "bottom": "0",
+              "left": "0",
+              "isLinked": false
+            },
+            "padding_mobile": {
+              "unit": "px",
+              "top": "0",
+              "right": "24",
+              "bottom": "0",
+              "left": "24",
+              "isLinked": false
+            }
+          },
+          "elements": [
+            {
+              "id": "70efdf2",
+              "elType": "container",
+              "settings": {
+                "flex_direction": "column",
+                "flex_direction_mobile": "column",
+                "content_width": "full",
+                "flex_gap": {
+                  "column": "12",
+                  "row": "12",
+                  "unit": "px",
+                  "size": 12
+                },
+                "padding": {
+                  "unit": "px",
+                  "top": "28",
+                  "right": "28",
+                  "bottom": "28",
+                  "left": "28",
+                  "isLinked": false
+                },
+                "padding_mobile": {
+                  "unit": "px",
+                  "top": "28",
+                  "right": "24",
+                  "bottom": "28",
+                  "left": "24",
+                  "isLinked": false
+                },
+                "background_background": "classic",
+                "background_color": "#F6F7EE",
+                "__globals__": {
+                  "background_color": "globals/colors?id=bungrywhite"
+                },
+                "width": {
+                  "unit": "%",
+                  "size": 25,
+                  "sizes": []
+                },
+                "width_mobile": {
+                  "unit": "%",
+                  "size": 100,
+                  "sizes": []
+                },
+                "_css_classes": "bungry-card"
+              },
+              "elements": [
+                {
+                  "id": "aab3238",
+                  "elType": "container",
+                  "settings": {
+                    "flex_direction": "column",
+                    "flex_direction_mobile": "column",
+                    "content_width": "full",
+                    "flex_gap": {
+                      "column": "40",
+                      "row": "40",
+                      "unit": "px",
+                      "size": 40
+                    },
+                    "padding": {
+                      "unit": "px",
+                      "top": "0",
+                      "right": "0",
+                      "bottom": "0",
+                      "left": "0",
+                      "isLinked": false
+                    },
+                    "padding_mobile": {
+                      "unit": "px",
+                      "top": "0",
+                      "right": "24",
+                      "bottom": "0",
+                      "left": "24",
+                      "isLinked": false
+                    },
+                    "background_background": "classic",
+                    "background_color": "#F6F7EE",
+                    "__globals__": {
+                      "background_color": "globals/colors?id=bungryforest"
+                    },
+                    "_css_classes": "bungry-disc"
+                  },
+                  "elements": [],
+                  "isInner": false
+                },
+                {
+                  "id": "9bf31c7",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "SIMPLE",
+                    "header_size": "h5",
+                    "_css_classes": "bungry-center",
+                    "__globals__": {
+                      "title_color": "globals/colors?id=bungryforest"
+                    }
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "c74d97b",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p>Every detail is intended to be easy to choose and easy to enjoy.</p>",
+                    "__globals__": {
+                      "text_color": "globals/colors?id=bungryink"
+                    }
+                  },
+                  "elements": []
+                }
+              ],
+              "isInner": false
+            },
+            {
+              "id": "3c59dc0",
+              "elType": "container",
+              "settings": {
+                "flex_direction": "column",
+                "flex_direction_mobile": "column",
+                "content_width": "full",
+                "flex_gap": {
+                  "column": "12",
+                  "row": "12",
+                  "unit": "px",
+                  "size": 12
+                },
+                "padding": {
+                  "unit": "px",
+                  "top": "28",
+                  "right": "28",
+                  "bottom": "28",
+                  "left": "28",
+                  "isLinked": false
+                },
+                "padding_mobile": {
+                  "unit": "px",
+                  "top": "28",
+                  "right": "24",
+                  "bottom": "28",
+                  "left": "24",
+                  "isLinked": false
+                },
+                "background_background": "classic",
+                "background_color": "#F6F7EE",
+                "__globals__": {
+                  "background_color": "globals/colors?id=bungrywhite"
+                },
+                "width": {
+                  "unit": "%",
+                  "size": 25,
+                  "sizes": []
+                },
+                "width_mobile": {
+                  "unit": "%",
+                  "size": 100,
+                  "sizes": []
+                },
+                "_css_classes": "bungry-card"
+              },
+              "elements": [
+                {
+                  "id": "6f4922f",
+                  "elType": "container",
+                  "settings": {
+                    "flex_direction": "column",
+                    "flex_direction_mobile": "column",
+                    "content_width": "full",
+                    "flex_gap": {
+                      "column": "40",
+                      "row": "40",
+                      "unit": "px",
+                      "size": 40
+                    },
+                    "padding": {
+                      "unit": "px",
+                      "top": "0",
+                      "right": "0",
+                      "bottom": "0",
+                      "left": "0",
+                      "isLinked": false
+                    },
+                    "padding_mobile": {
+                      "unit": "px",
+                      "top": "0",
+                      "right": "24",
+                      "bottom": "0",
+                      "left": "24",
+                      "isLinked": false
+                    },
+                    "background_background": "classic",
+                    "background_color": "#F6F7EE",
+                    "__globals__": {
+                      "background_color": "globals/colors?id=bungryforest"
+                    },
+                    "_css_classes": "bungry-disc"
+                  },
+                  "elements": [],
+                  "isInner": false
+                },
+                {
+                  "id": "1f0e3da",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "BOLD",
+                    "header_size": "h5",
+                    "_css_classes": "bungry-center",
+                    "__globals__": {
+                      "title_color": "globals/colors?id=bungryforest"
+                    }
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "98f1370",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p>A recognisable shape and a confident, modern look.</p>",
+                    "__globals__": {
+                      "text_color": "globals/colors?id=bungryink"
+                    }
+                  },
+                  "elements": []
+                }
+              ],
+              "isInner": false
+            },
+            {
+              "id": "8e296a0",
+              "elType": "container",
+              "settings": {
+                "flex_direction": "column",
+                "flex_direction_mobile": "column",
+                "content_width": "full",
+                "flex_gap": {
+                  "column": "12",
+                  "row": "12",
+                  "unit": "px",
+                  "size": 12
+                },
+                "padding": {
+                  "unit": "px",
+                  "top": "28",
+                  "right": "28",
+                  "bottom": "28",
+                  "left": "28",
+                  "isLinked": false
+                },
+                "padding_mobile": {
+                  "unit": "px",
+                  "top": "28",
+                  "right": "24",
+                  "bottom": "28",
+                  "left": "24",
+                  "isLinked": false
+                },
+                "background_background": "classic",
+                "background_color": "#F6F7EE",
+                "__globals__": {
+                  "background_color": "globals/colors?id=bungrywhite"
+                },
+                "width": {
+                  "unit": "%",
+                  "size": 25,
+                  "sizes": []
+                },
+                "width_mobile": {
+                  "unit": "%",
+                  "size": 100,
+                  "sizes": []
+                },
+                "_css_classes": "bungry-card"
+              },
+              "elements": [
+                {
+                  "id": "b6d767d",
+                  "elType": "container",
+                  "settings": {
+                    "flex_direction": "column",
+                    "flex_direction_mobile": "column",
+                    "content_width": "full",
+                    "flex_gap": {
+                      "column": "40",
+                      "row": "40",
+                      "unit": "px",
+                      "size": 40
+                    },
+                    "padding": {
+                      "unit": "px",
+                      "top": "0",
+                      "right": "0",
+                      "bottom": "0",
+                      "left": "0",
+                      "isLinked": false
+                    },
+                    "padding_mobile": {
+                      "unit": "px",
+                      "top": "0",
+                      "right": "24",
+                      "bottom": "0",
+                      "left": "24",
+                      "isLinked": false
+                    },
+                    "background_background": "classic",
+                    "background_color": "#F6F7EE",
+                    "__globals__": {
+                      "background_color": "globals/colors?id=bungryforest"
+                    },
+                    "_css_classes": "bungry-disc"
+                  },
+                  "elements": [],
+                  "isInner": false
+                },
+                {
+                  "id": "37693cf",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "MEMORABLE",
+                    "header_size": "h5",
+                    "_css_classes": "bungry-center",
+                    "__globals__": {
+                      "title_color": "globals/colors?id=bungryforest"
+                    }
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "1ff1de7",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p>From the product to the packaging, made to be remembered.</p>",
+                    "__globals__": {
+                      "text_color": "globals/colors?id=bungryink"
+                    }
+                  },
+                  "elements": []
+                }
+              ],
+              "isInner": false
+            },
+            {
+              "id": "6ea9ab1",
+              "elType": "container",
+              "settings": {
+                "flex_direction": "column",
+                "flex_direction_mobile": "column",
+                "content_width": "full",
+                "flex_gap": {
+                  "column": "12",
+                  "row": "12",
+                  "unit": "px",
+                  "size": 12
+                },
+                "padding": {
+                  "unit": "px",
+                  "top": "28",
+                  "right": "28",
+                  "bottom": "28",
+                  "left": "28",
+                  "isLinked": false
+                },
+                "padding_mobile": {
+                  "unit": "px",
+                  "top": "28",
+                  "right": "24",
+                  "bottom": "28",
+                  "left": "24",
+                  "isLinked": false
+                },
+                "background_background": "classic",
+                "background_color": "#F6F7EE",
+                "__globals__": {
+                  "background_color": "globals/colors?id=bungrywhite"
+                },
+                "width": {
+                  "unit": "%",
+                  "size": 25,
+                  "sizes": []
+                },
+                "width_mobile": {
+                  "unit": "%",
+                  "size": 100,
+                  "sizes": []
+                },
+                "_css_classes": "bungry-card"
+              },
+              "elements": [
+                {
+                  "id": "4e732ce",
+                  "elType": "container",
+                  "settings": {
+                    "flex_direction": "column",
+                    "flex_direction_mobile": "column",
+                    "content_width": "full",
+                    "flex_gap": {
+                      "column": "40",
+                      "row": "40",
+                      "unit": "px",
+                      "size": 40
+                    },
+                    "padding": {
+                      "unit": "px",
+                      "top": "0",
+                      "right": "0",
+                      "bottom": "0",
+                      "left": "0",
+                      "isLinked": false
+                    },
+                    "padding_mobile": {
+                      "unit": "px",
+                      "top": "0",
+                      "right": "24",
+                      "bottom": "0",
+                      "left": "24",
+                      "isLinked": false
+                    },
+                    "background_background": "classic",
+                    "background_color": "#F6F7EE",
+                    "__globals__": {
+                      "background_color": "globals/colors?id=bungryforest"
+                    },
+                    "_css_classes": "bungry-disc"
+                  },
+                  "elements": [],
+                  "isInner": false
+                },
+                {
+                  "id": "02e74f1",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "WELCOMING",
+                    "header_size": "h5",
+                    "_css_classes": "bungry-center",
+                    "__globals__": {
+                      "title_color": "globals/colors?id=bungryforest"
+                    }
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "33e75ff",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p>A friendly, conversational voice for everyone.</p>",
+                    "__globals__": {
+                      "text_color": "globals/colors?id=bungryink"
+                    }
+                  },
+                  "elements": []
+                }
+              ],
+              "isInner": false
+            }
+          ],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "1c383cd",
+      "elType": "container",
+      "settings": {
+        "flex_direction": "column",
+        "flex_direction_mobile": "column",
+        "content_width": "full",
+        "flex_gap": {
+          "column": "40",
+          "row": "40",
+          "unit": "px",
+          "size": 40
+        },
+        "padding": {
+          "unit": "px",
+          "top": "96",
+          "right": "80",
+          "bottom": "96",
           "left": "80",
           "isLinked": false
         },
@@ -289,34 +892,164 @@
       },
       "elements": [
         {
-          "id": "35f4a8d",
+          "id": "e369853",
+          "elType": "container",
+          "settings": {
+            "flex_direction": "column",
+            "flex_direction_mobile": "column",
+            "content_width": "full",
+            "flex_gap": {
+              "column": "12",
+              "row": "12",
+              "unit": "px",
+              "size": 12
+            },
+            "padding": {
+              "unit": "px",
+              "top": "40",
+              "right": "40",
+              "bottom": "40",
+              "left": "40",
+              "isLinked": false
+            },
+            "padding_mobile": {
+              "unit": "px",
+              "top": "40",
+              "right": "24",
+              "bottom": "40",
+              "left": "24",
+              "isLinked": false
+            },
+            "_css_classes": "bungry-photo-slot"
+          },
+          "elements": [
+            {
+              "id": "6364d3f",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p><strong>PHOTO PLACEHOLDER</strong></p><p>Store, packaging and team photography. Add only when verified.</p>",
+                "__globals__": {
+                  "text_color": "globals/colors?id=bungryforest"
+                }
+              },
+              "elements": []
+            },
+            {
+              "id": "182be0c",
+              "elType": "widget",
+              "widgetType": "bungry-placeholder-tag",
+              "settings": {
+                "label": "Photos TBC",
+                "tone": "light"
+              },
+              "elements": []
+            }
+          ],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "d67d8ab",
+      "elType": "container",
+      "settings": {
+        "flex_direction": "column",
+        "flex_direction_mobile": "column",
+        "content_width": "full",
+        "flex_gap": {
+          "column": "32",
+          "row": "32",
+          "unit": "px",
+          "size": 32
+        },
+        "padding": {
+          "unit": "px",
+          "top": "96",
+          "right": "80",
+          "bottom": "96",
+          "left": "80",
+          "isLinked": false
+        },
+        "padding_mobile": {
+          "unit": "px",
+          "top": "56",
+          "right": "24",
+          "bottom": "56",
+          "left": "24",
+          "isLinked": false
+        },
+        "background_background": "classic",
+        "background_color": "#F6F7EE",
+        "__globals__": {
+          "background_color": "globals/colors?id=bungryforest"
+        }
+      },
+      "elements": [
+        {
+          "id": "19ca14e",
           "elType": "widget",
           "widgetType": "heading",
           "settings": {
             "title": "ONE DISTINCTIVE BURGER. ONE RECOGNISABLE BRAND.",
             "header_size": "h2",
             "__globals__": {
-              "title_color": "globals/colors?id=bungryforest"
+              "title_color": "globals/colors?id=bungrycream"
             }
           },
           "elements": []
         },
         {
-          "id": "d1fe173",
-          "elType": "widget",
-          "widgetType": "bungry-button",
+          "id": "a5771bc",
+          "elType": "container",
           "settings": {
-            "text": "Explore the menu",
-            "link": {
-              "url": "/menu/",
-              "is_external": "",
-              "nofollow": ""
+            "flex_direction": "row",
+            "flex_direction_mobile": "column",
+            "content_width": "full",
+            "flex_gap": {
+              "column": "80",
+              "row": "80",
+              "unit": "px",
+              "size": 80
             },
-            "style": "dark",
-            "size": "default",
-            "arrow": "yes"
+            "padding": {
+              "unit": "px",
+              "top": "0",
+              "right": "0",
+              "bottom": "0",
+              "left": "0",
+              "isLinked": false
+            },
+            "padding_mobile": {
+              "unit": "px",
+              "top": "0",
+              "right": "24",
+              "bottom": "0",
+              "left": "24",
+              "isLinked": false
+            }
           },
-          "elements": []
+          "elements": [
+            {
+              "id": "a5bfc9e",
+              "elType": "widget",
+              "widgetType": "bungry-button",
+              "settings": {
+                "text": "Explore the menu",
+                "link": {
+                  "url": "/menu/",
+                  "is_external": "",
+                  "nofollow": ""
+                },
+                "style": "primary",
+                "size": "default",
+                "arrow": "yes"
+              },
+              "elements": []
+            }
+          ],
+          "isInner": false
         }
       ],
       "isInner": false

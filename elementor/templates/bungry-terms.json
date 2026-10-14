@@ -1,13 +1,13 @@
 {
   "version": "0.4",
-  "title": "Terms / Ordering Information",
+  "title": "TERMS & ORDERING INFORMATION",
   "type": "page",
   "page_settings": {
     "hide_title": "yes"
   },
   "content": [
     {
-      "id": "5ef0599",
+      "id": "e4da3b7",
       "elType": "container",
       "settings": {
         "flex_direction": "column",
@@ -21,9 +21,87 @@
         },
         "padding": {
           "unit": "px",
-          "top": "64",
+          "top": "72",
           "right": "80",
-          "bottom": "64",
+          "bottom": "100",
+          "left": "80",
+          "isLinked": false
+        },
+        "padding_mobile": {
+          "unit": "px",
+          "top": "56",
+          "right": "24",
+          "bottom": "56",
+          "left": "24",
+          "isLinked": false
+        },
+        "background_background": "classic",
+        "background_color": "#F6F7EE",
+        "__globals__": {
+          "background_color": "globals/colors?id=bungryforest"
+        }
+      },
+      "elements": [
+        {
+          "id": "c81e728",
+          "elType": "widget",
+          "widgetType": "text-editor",
+          "settings": {
+            "editor": "<p>ORDERING INFORMATION</p>",
+            "_css_classes": "bungry-kicker",
+            "__globals__": {
+              "text_color": "globals/colors?id=bungryorange"
+            }
+          },
+          "elements": []
+        },
+        {
+          "id": "eccbc87",
+          "elType": "widget",
+          "widgetType": "heading",
+          "settings": {
+            "title": "TERMS & ORDERING INFORMATION",
+            "header_size": "h1",
+            "__globals__": {
+              "title_color": "globals/colors?id=bungrycream"
+            }
+          },
+          "elements": []
+        },
+        {
+          "id": "a87ff67",
+          "elType": "widget",
+          "widgetType": "text-editor",
+          "settings": {
+            "editor": "<p>Last updated: [date to confirm]</p>",
+            "_css_classes": "bungry-lead bungry-hero-body",
+            "__globals__": {
+              "text_color": "globals/colors?id=bungrycream"
+            }
+          },
+          "elements": []
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "642e92e",
+      "elType": "container",
+      "settings": {
+        "flex_direction": "column",
+        "flex_direction_mobile": "column",
+        "content_width": "full",
+        "flex_gap": {
+          "column": "40",
+          "row": "40",
+          "unit": "px",
+          "size": 40
+        },
+        "padding": {
+          "unit": "px",
+          "top": "72",
+          "right": "80",
+          "bottom": "96",
           "left": "80",
           "isLinked": false
         },
@@ -38,86 +116,956 @@
       },
       "elements": [
         {
-          "id": "2b44928",
-          "elType": "widget",
-          "widgetType": "bungry-notice",
+          "id": "67c6a1e",
+          "elType": "container",
           "settings": {
-            "type": "warning",
-            "title": "DRAFT OUTLINE — NOT LEGAL ADVICE",
-            "text": "This page is a draft outline and must be reviewed before publishing."
-          },
-          "elements": []
-        },
-        {
-          "id": "c45147d",
-          "elType": "widget",
-          "widgetType": "heading",
-          "settings": {
-            "title": "Terms / Ordering Information",
-            "header_size": "h1",
-            "__globals__": {
-              "title_color": "globals/colors?id=bungryforest"
+            "flex_direction": "row",
+            "flex_direction_mobile": "column",
+            "content_width": "full",
+            "flex_gap": {
+              "column": "64",
+              "row": "64",
+              "unit": "px",
+              "size": 64
+            },
+            "padding": {
+              "unit": "px",
+              "top": "0",
+              "right": "0",
+              "bottom": "0",
+              "left": "0",
+              "isLinked": false
+            },
+            "padding_mobile": {
+              "unit": "px",
+              "top": "0",
+              "right": "24",
+              "bottom": "0",
+              "left": "24",
+              "isLinked": false
             }
           },
-          "elements": []
-        },
-        {
-          "id": "eb160de",
-          "elType": "widget",
-          "widgetType": "text-editor",
-          "settings": {
-            "editor": "<p>This page explains ordering. Publish it only if online ordering is enabled.</p>",
-            "__globals__": {
-              "text_color": "globals/colors?id=bungryink"
+          "elements": [
+            {
+              "id": "aab3238",
+              "elType": "container",
+              "settings": {
+                "flex_direction": "column",
+                "flex_direction_mobile": "column",
+                "content_width": "full",
+                "flex_gap": {
+                  "column": "14",
+                  "row": "14",
+                  "unit": "px",
+                  "size": 14
+                },
+                "padding": {
+                  "unit": "px",
+                  "top": "28",
+                  "right": "28",
+                  "bottom": "28",
+                  "left": "28",
+                  "isLinked": false
+                },
+                "padding_mobile": {
+                  "unit": "px",
+                  "top": "28",
+                  "right": "24",
+                  "bottom": "28",
+                  "left": "24",
+                  "isLinked": false
+                },
+                "background_background": "classic",
+                "background_color": "#F6F7EE",
+                "__globals__": {
+                  "background_color": "globals/colors?id=bungrywhite"
+                },
+                "width": {
+                  "unit": "%",
+                  "size": 30,
+                  "sizes": []
+                },
+                "width_mobile": {
+                  "unit": "%",
+                  "size": 100,
+                  "sizes": []
+                },
+                "_css_classes": "bungry-card"
+              },
+              "elements": [
+                {
+                  "id": "1679091",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p>ON THIS PAGE</p>",
+                    "_css_classes": "bungry-kicker",
+                    "__globals__": {
+                      "text_color": "globals/colors?id=bungryorangedark"
+                    }
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "8f14e45",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p>1. About online ordering</p>",
+                    "__globals__": {
+                      "text_color": "globals/colors?id=bungryforest"
+                    }
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "c9f0f89",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p>2. Pickup and delivery</p>",
+                    "__globals__": {
+                      "text_color": "globals/colors?id=bungryforest"
+                    }
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "45c48cc",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p>3. Prices and payment</p>",
+                    "__globals__": {
+                      "text_color": "globals/colors?id=bungryforest"
+                    }
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "d3d9446",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p>4. Menu and availability</p>",
+                    "__globals__": {
+                      "text_color": "globals/colors?id=bungryforest"
+                    }
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "6512bd4",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p>5. Food allergies</p>",
+                    "__globals__": {
+                      "text_color": "globals/colors?id=bungryforest"
+                    }
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "c20ad4d",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p>6. Changes to these terms</p>",
+                    "__globals__": {
+                      "text_color": "globals/colors?id=bungryforest"
+                    }
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "c51ce41",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p>7. Contact us</p>",
+                    "__globals__": {
+                      "text_color": "globals/colors?id=bungryforest"
+                    }
+                  },
+                  "elements": []
+                }
+              ],
+              "isInner": false
+            },
+            {
+              "id": "d9d4f49",
+              "elType": "container",
+              "settings": {
+                "flex_direction": "column",
+                "flex_direction_mobile": "column",
+                "content_width": "full",
+                "flex_gap": {
+                  "column": "28",
+                  "row": "28",
+                  "unit": "px",
+                  "size": 28
+                },
+                "padding": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "0",
+                  "left": "0",
+                  "isLinked": false
+                },
+                "padding_mobile": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "24",
+                  "bottom": "0",
+                  "left": "24",
+                  "isLinked": false
+                },
+                "width": {
+                  "unit": "%",
+                  "size": 70,
+                  "sizes": []
+                },
+                "width_mobile": {
+                  "unit": "%",
+                  "size": 100,
+                  "sizes": []
+                }
+              },
+              "elements": [
+                {
+                  "id": "c4ca423",
+                  "elType": "widget",
+                  "widgetType": "bungry-notice",
+                  "settings": {
+                    "type": "info",
+                    "title": "Online ordering is not available right now",
+                    "text": "Please check back soon, or find us in store once our details are confirmed. [Show this state if ordering is unavailable, the menu is out of date or the store is temporarily closed.]"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "6f4922f",
+                  "elType": "container",
+                  "settings": {
+                    "flex_direction": "column",
+                    "flex_direction_mobile": "column",
+                    "content_width": "full",
+                    "flex_gap": {
+                      "column": "40",
+                      "row": "40",
+                      "unit": "px",
+                      "size": 40
+                    },
+                    "padding": {
+                      "unit": "px",
+                      "top": "0",
+                      "right": "0",
+                      "bottom": "0",
+                      "left": "0",
+                      "isLinked": false
+                    },
+                    "padding_mobile": {
+                      "unit": "px",
+                      "top": "0",
+                      "right": "24",
+                      "bottom": "0",
+                      "left": "24",
+                      "isLinked": false
+                    },
+                    "background_background": "classic",
+                    "background_color": "#F6F7EE",
+                    "__globals__": {
+                      "background_color": "globals/colors?id=bungryolive"
+                    },
+                    "_css_classes": "bungry-divider"
+                  },
+                  "elements": [],
+                  "isInner": false
+                },
+                {
+                  "id": "1f0e3da",
+                  "elType": "container",
+                  "settings": {
+                    "flex_direction": "column",
+                    "flex_direction_mobile": "column",
+                    "content_width": "full",
+                    "flex_gap": {
+                      "column": "12",
+                      "row": "12",
+                      "unit": "px",
+                      "size": 12
+                    },
+                    "padding": {
+                      "unit": "px",
+                      "top": "0",
+                      "right": "0",
+                      "bottom": "0",
+                      "left": "0",
+                      "isLinked": false
+                    },
+                    "padding_mobile": {
+                      "unit": "px",
+                      "top": "0",
+                      "right": "24",
+                      "bottom": "0",
+                      "left": "24",
+                      "isLinked": false
+                    }
+                  },
+                  "elements": [
+                    {
+                      "id": "9bf31c7",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": {
+                        "title": "1. ABOUT ONLINE ORDERING",
+                        "header_size": "h4",
+                        "__globals__": {
+                          "title_color": "globals/colors?id=bungryforest"
+                        }
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "c74d97b",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p>Online ordering is [available / not currently available]. When available, orders are placed through our official ordering provider.</p>",
+                        "__globals__": {
+                          "text_color": "globals/colors?id=bungryink"
+                        }
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "70efdf2",
+                      "elType": "widget",
+                      "widgetType": "bungry-placeholder-tag",
+                      "settings": {
+                        "label": "Ordering provider & URL: client to confirm",
+                        "tone": "light"
+                      },
+                      "elements": []
+                    }
+                  ],
+                  "isInner": false
+                },
+                {
+                  "id": "37693cf",
+                  "elType": "container",
+                  "settings": {
+                    "flex_direction": "column",
+                    "flex_direction_mobile": "column",
+                    "content_width": "full",
+                    "flex_gap": {
+                      "column": "40",
+                      "row": "40",
+                      "unit": "px",
+                      "size": 40
+                    },
+                    "padding": {
+                      "unit": "px",
+                      "top": "0",
+                      "right": "0",
+                      "bottom": "0",
+                      "left": "0",
+                      "isLinked": false
+                    },
+                    "padding_mobile": {
+                      "unit": "px",
+                      "top": "0",
+                      "right": "24",
+                      "bottom": "0",
+                      "left": "24",
+                      "isLinked": false
+                    },
+                    "background_background": "classic",
+                    "background_color": "#F6F7EE",
+                    "__globals__": {
+                      "background_color": "globals/colors?id=bungryolive"
+                    },
+                    "_css_classes": "bungry-divider"
+                  },
+                  "elements": [],
+                  "isInner": false
+                },
+                {
+                  "id": "1ff1de7",
+                  "elType": "container",
+                  "settings": {
+                    "flex_direction": "column",
+                    "flex_direction_mobile": "column",
+                    "content_width": "full",
+                    "flex_gap": {
+                      "column": "12",
+                      "row": "12",
+                      "unit": "px",
+                      "size": 12
+                    },
+                    "padding": {
+                      "unit": "px",
+                      "top": "0",
+                      "right": "0",
+                      "bottom": "0",
+                      "left": "0",
+                      "isLinked": false
+                    },
+                    "padding_mobile": {
+                      "unit": "px",
+                      "top": "0",
+                      "right": "24",
+                      "bottom": "0",
+                      "left": "24",
+                      "isLinked": false
+                    }
+                  },
+                  "elements": [
+                    {
+                      "id": "98f1370",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": {
+                        "title": "2. PICKUP AND DELIVERY",
+                        "header_size": "h4",
+                        "__globals__": {
+                          "title_color": "globals/colors?id=bungryforest"
+                        }
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "3c59dc0",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p>Pickup and delivery options, zones and any fees will be shown clearly before you pay.</p>",
+                        "__globals__": {
+                          "text_color": "globals/colors?id=bungryink"
+                        }
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "b6d767d",
+                      "elType": "widget",
+                      "widgetType": "bungry-placeholder-tag",
+                      "settings": {
+                        "label": "Pickup / delivery scope: client to confirm",
+                        "tone": "light"
+                      },
+                      "elements": []
+                    }
+                  ],
+                  "isInner": false
+                },
+                {
+                  "id": "33e75ff",
+                  "elType": "container",
+                  "settings": {
+                    "flex_direction": "column",
+                    "flex_direction_mobile": "column",
+                    "content_width": "full",
+                    "flex_gap": {
+                      "column": "40",
+                      "row": "40",
+                      "unit": "px",
+                      "size": 40
+                    },
+                    "padding": {
+                      "unit": "px",
+                      "top": "0",
+                      "right": "0",
+                      "bottom": "0",
+                      "left": "0",
+                      "isLinked": false
+                    },
+                    "padding_mobile": {
+                      "unit": "px",
+                      "top": "0",
+                      "right": "24",
+                      "bottom": "0",
+                      "left": "24",
+                      "isLinked": false
+                    },
+                    "background_background": "classic",
+                    "background_color": "#F6F7EE",
+                    "__globals__": {
+                      "background_color": "globals/colors?id=bungryolive"
+                    },
+                    "_css_classes": "bungry-divider"
+                  },
+                  "elements": [],
+                  "isInner": false
+                },
+                {
+                  "id": "6ea9ab1",
+                  "elType": "container",
+                  "settings": {
+                    "flex_direction": "column",
+                    "flex_direction_mobile": "column",
+                    "content_width": "full",
+                    "flex_gap": {
+                      "column": "12",
+                      "row": "12",
+                      "unit": "px",
+                      "size": 12
+                    },
+                    "padding": {
+                      "unit": "px",
+                      "top": "0",
+                      "right": "0",
+                      "bottom": "0",
+                      "left": "0",
+                      "isLinked": false
+                    },
+                    "padding_mobile": {
+                      "unit": "px",
+                      "top": "0",
+                      "right": "24",
+                      "bottom": "0",
+                      "left": "24",
+                      "isLinked": false
+                    }
+                  },
+                  "elements": [
+                    {
+                      "id": "8e296a0",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": {
+                        "title": "3. PRICES AND PAYMENT",
+                        "header_size": "h4",
+                        "__globals__": {
+                          "title_color": "globals/colors?id=bungryforest"
+                        }
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "4e732ce",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p>All prices are in New Zealand dollars (NZD). Any material fees, conditions or delivery charges are shown clearly during the ordering journey.</p>",
+                        "__globals__": {
+                          "text_color": "globals/colors?id=bungryink"
+                        }
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "02e74f1",
+                      "elType": "widget",
+                      "widgetType": "bungry-placeholder-tag",
+                      "settings": {
+                        "label": "Prices & payment methods: client to confirm",
+                        "tone": "light"
+                      },
+                      "elements": []
+                    }
+                  ],
+                  "isInner": false
+                },
+                {
+                  "id": "6364d3f",
+                  "elType": "container",
+                  "settings": {
+                    "flex_direction": "column",
+                    "flex_direction_mobile": "column",
+                    "content_width": "full",
+                    "flex_gap": {
+                      "column": "40",
+                      "row": "40",
+                      "unit": "px",
+                      "size": 40
+                    },
+                    "padding": {
+                      "unit": "px",
+                      "top": "0",
+                      "right": "0",
+                      "bottom": "0",
+                      "left": "0",
+                      "isLinked": false
+                    },
+                    "padding_mobile": {
+                      "unit": "px",
+                      "top": "0",
+                      "right": "24",
+                      "bottom": "0",
+                      "left": "24",
+                      "isLinked": false
+                    },
+                    "background_background": "classic",
+                    "background_color": "#F6F7EE",
+                    "__globals__": {
+                      "background_color": "globals/colors?id=bungryolive"
+                    },
+                    "_css_classes": "bungry-divider"
+                  },
+                  "elements": [],
+                  "isInner": false
+                },
+                {
+                  "id": "182be0c",
+                  "elType": "container",
+                  "settings": {
+                    "flex_direction": "column",
+                    "flex_direction_mobile": "column",
+                    "content_width": "full",
+                    "flex_gap": {
+                      "column": "12",
+                      "row": "12",
+                      "unit": "px",
+                      "size": 12
+                    },
+                    "padding": {
+                      "unit": "px",
+                      "top": "0",
+                      "right": "0",
+                      "bottom": "0",
+                      "left": "0",
+                      "isLinked": false
+                    },
+                    "padding_mobile": {
+                      "unit": "px",
+                      "top": "0",
+                      "right": "24",
+                      "bottom": "0",
+                      "left": "24",
+                      "isLinked": false
+                    }
+                  },
+                  "elements": [
+                    {
+                      "id": "34173cb",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": {
+                        "title": "4. MENU AND AVAILABILITY",
+                        "header_size": "h4",
+                        "__globals__": {
+                          "title_color": "globals/colors?id=bungryforest"
+                        }
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "c16a532",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p>Menu availability and ingredients may change. The live menu is the current source of truth.</p>",
+                        "__globals__": {
+                          "text_color": "globals/colors?id=bungryink"
+                        }
+                      },
+                      "elements": []
+                    }
+                  ],
+                  "isInner": false
+                },
+                {
+                  "id": "19ca14e",
+                  "elType": "container",
+                  "settings": {
+                    "flex_direction": "column",
+                    "flex_direction_mobile": "column",
+                    "content_width": "full",
+                    "flex_gap": {
+                      "column": "40",
+                      "row": "40",
+                      "unit": "px",
+                      "size": 40
+                    },
+                    "padding": {
+                      "unit": "px",
+                      "top": "0",
+                      "right": "0",
+                      "bottom": "0",
+                      "left": "0",
+                      "isLinked": false
+                    },
+                    "padding_mobile": {
+                      "unit": "px",
+                      "top": "0",
+                      "right": "24",
+                      "bottom": "0",
+                      "left": "24",
+                      "isLinked": false
+                    },
+                    "background_background": "classic",
+                    "background_color": "#F6F7EE",
+                    "__globals__": {
+                      "background_color": "globals/colors?id=bungryolive"
+                    },
+                    "_css_classes": "bungry-divider"
+                  },
+                  "elements": [],
+                  "isInner": false
+                },
+                {
+                  "id": "a5bfc9e",
+                  "elType": "container",
+                  "settings": {
+                    "flex_direction": "column",
+                    "flex_direction_mobile": "column",
+                    "content_width": "full",
+                    "flex_gap": {
+                      "column": "12",
+                      "row": "12",
+                      "unit": "px",
+                      "size": 12
+                    },
+                    "padding": {
+                      "unit": "px",
+                      "top": "0",
+                      "right": "0",
+                      "bottom": "0",
+                      "left": "0",
+                      "isLinked": false
+                    },
+                    "padding_mobile": {
+                      "unit": "px",
+                      "top": "0",
+                      "right": "24",
+                      "bottom": "0",
+                      "left": "24",
+                      "isLinked": false
+                    }
+                  },
+                  "elements": [
+                    {
+                      "id": "e369853",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": {
+                        "title": "5. FOOD ALLERGIES",
+                        "header_size": "h4",
+                        "__globals__": {
+                          "title_color": "globals/colors?id=bungryforest"
+                        }
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "1c383cd",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p>Please check our allergen information before ordering and contact the team if you have a food allergy.</p>",
+                        "__globals__": {
+                          "text_color": "globals/colors?id=bungryink"
+                        }
+                      },
+                      "elements": []
+                    }
+                  ],
+                  "isInner": false
+                },
+                {
+                  "id": "d645920",
+                  "elType": "container",
+                  "settings": {
+                    "flex_direction": "column",
+                    "flex_direction_mobile": "column",
+                    "content_width": "full",
+                    "flex_gap": {
+                      "column": "40",
+                      "row": "40",
+                      "unit": "px",
+                      "size": 40
+                    },
+                    "padding": {
+                      "unit": "px",
+                      "top": "0",
+                      "right": "0",
+                      "bottom": "0",
+                      "left": "0",
+                      "isLinked": false
+                    },
+                    "padding_mobile": {
+                      "unit": "px",
+                      "top": "0",
+                      "right": "24",
+                      "bottom": "0",
+                      "left": "24",
+                      "isLinked": false
+                    },
+                    "background_background": "classic",
+                    "background_color": "#F6F7EE",
+                    "__globals__": {
+                      "background_color": "globals/colors?id=bungryolive"
+                    },
+                    "_css_classes": "bungry-divider"
+                  },
+                  "elements": [],
+                  "isInner": false
+                },
+                {
+                  "id": "3416a75",
+                  "elType": "container",
+                  "settings": {
+                    "flex_direction": "column",
+                    "flex_direction_mobile": "column",
+                    "content_width": "full",
+                    "flex_gap": {
+                      "column": "12",
+                      "row": "12",
+                      "unit": "px",
+                      "size": 12
+                    },
+                    "padding": {
+                      "unit": "px",
+                      "top": "0",
+                      "right": "0",
+                      "bottom": "0",
+                      "left": "0",
+                      "isLinked": false
+                    },
+                    "padding_mobile": {
+                      "unit": "px",
+                      "top": "0",
+                      "right": "24",
+                      "bottom": "0",
+                      "left": "24",
+                      "isLinked": false
+                    }
+                  },
+                  "elements": [
+                    {
+                      "id": "a5771bc",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": {
+                        "title": "6. CHANGES TO THESE TERMS",
+                        "header_size": "h4",
+                        "__globals__": {
+                          "title_color": "globals/colors?id=bungryforest"
+                        }
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "d67d8ab",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p>We may update these terms from time to time. The latest version will always be published on this page.</p>",
+                        "__globals__": {
+                          "text_color": "globals/colors?id=bungryink"
+                        }
+                      },
+                      "elements": []
+                    }
+                  ],
+                  "isInner": false
+                },
+                {
+                  "id": "f717716",
+                  "elType": "container",
+                  "settings": {
+                    "flex_direction": "column",
+                    "flex_direction_mobile": "column",
+                    "content_width": "full",
+                    "flex_gap": {
+                      "column": "40",
+                      "row": "40",
+                      "unit": "px",
+                      "size": 40
+                    },
+                    "padding": {
+                      "unit": "px",
+                      "top": "0",
+                      "right": "0",
+                      "bottom": "0",
+                      "left": "0",
+                      "isLinked": false
+                    },
+                    "padding_mobile": {
+                      "unit": "px",
+                      "top": "0",
+                      "right": "24",
+                      "bottom": "0",
+                      "left": "24",
+                      "isLinked": false
+                    },
+                    "background_background": "classic",
+                    "background_color": "#F6F7EE",
+                    "__globals__": {
+                      "background_color": "globals/colors?id=bungryolive"
+                    },
+                    "_css_classes": "bungry-divider"
+                  },
+                  "elements": [],
+                  "isInner": false
+                },
+                {
+                  "id": "6c8349c",
+                  "elType": "container",
+                  "settings": {
+                    "flex_direction": "column",
+                    "flex_direction_mobile": "column",
+                    "content_width": "full",
+                    "flex_gap": {
+                      "column": "12",
+                      "row": "12",
+                      "unit": "px",
+                      "size": 12
+                    },
+                    "padding": {
+                      "unit": "px",
+                      "top": "0",
+                      "right": "0",
+                      "bottom": "0",
+                      "left": "0",
+                      "isLinked": false
+                    },
+                    "padding_mobile": {
+                      "unit": "px",
+                      "top": "0",
+                      "right": "24",
+                      "bottom": "0",
+                      "left": "24",
+                      "isLinked": false
+                    }
+                  },
+                  "elements": [
+                    {
+                      "id": "a1d0c6e",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": {
+                        "title": "7. CONTACT US",
+                        "header_size": "h4",
+                        "__globals__": {
+                          "title_color": "globals/colors?id=bungryforest"
+                        }
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "17e6216",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p>Questions about an order? Get in touch using the details on our Find Us page.</p>",
+                        "__globals__": {
+                          "text_color": "globals/colors?id=bungryink"
+                        }
+                      },
+                      "elements": []
+                    }
+                  ],
+                  "isInner": false
+                }
+              ],
+              "isInner": false
             }
-          },
-          "elements": []
-        }
-      ],
-      "isInner": false
-    },
-    {
-      "id": "da4fb5c",
-      "elType": "container",
-      "settings": {
-        "flex_direction": "column",
-        "flex_direction_mobile": "column",
-        "content_width": "full",
-        "flex_gap": {
-          "column": "40",
-          "row": "40",
-          "unit": "px",
-          "size": 40
-        },
-        "padding": {
-          "unit": "px",
-          "top": "0",
-          "right": "0",
-          "bottom": "0",
-          "left": "0",
-          "isLinked": false
-        },
-        "padding_mobile": {
-          "unit": "px",
-          "top": "56",
-          "right": "24",
-          "bottom": "56",
-          "left": "24",
-          "isLinked": false
-        }
-      },
-      "elements": [
-        {
-          "id": "07e1cd7",
-          "elType": "widget",
-          "widgetType": "text-editor",
-          "settings": {
-            "editor": "<h3>1. Ordering</h3><p>[CLIENT TO CONFIRM: ordering provider and URL]</p><h3>2. Pickup and delivery</h3><p>[CLIENT TO CONFIRM: pickup and delivery zones, and any fees]</p><h3>3. Payment</h3><p>[CLIENT TO CONFIRM: accepted payment methods]</p><h3>4. Prices</h3><p>Prices are shown in NZD. [CLIENT TO CONFIRM: any surcharges or conditions]</p><h3>5. Menu changes</h3><p>Menu availability and ingredients may change.</p><h3>6. Allergens</h3><p>Please check allergen information before ordering.</p>",
-            "__globals__": {
-              "text_color": "globals/colors?id=bungryink"
-            }
-          },
-          "elements": []
+          ],
+          "isInner": false
         }
       ],
       "isInner": false

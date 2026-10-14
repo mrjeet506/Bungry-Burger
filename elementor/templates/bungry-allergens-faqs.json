@@ -7,134 +7,7 @@
   },
   "content": [
     {
-      "id": "e2ef524",
-      "elType": "container",
-      "settings": {
-        "flex_direction": "column",
-        "flex_direction_mobile": "column",
-        "content_width": "full",
-        "flex_gap": {
-          "column": "40",
-          "row": "40",
-          "unit": "px",
-          "size": 40
-        },
-        "padding": {
-          "unit": "px",
-          "top": "80",
-          "right": "80",
-          "bottom": "80",
-          "left": "80",
-          "isLinked": false
-        },
-        "padding_mobile": {
-          "unit": "px",
-          "top": "56",
-          "right": "24",
-          "bottom": "56",
-          "left": "24",
-          "isLinked": false
-        }
-      },
-      "elements": [
-        {
-          "id": "26657d5",
-          "elType": "widget",
-          "widgetType": "bungry-section-heading",
-          "settings": {
-            "eyebrow": "FOOD ALLERGENS & FAQS",
-            "title": "FREQUENTLY ASKED QUESTIONS",
-            "title_tag": "h2",
-            "text": "Answers about our menu, ordering and food information.",
-            "align": "left",
-            "button_text": "",
-            "button_link": {
-              "url": ""
-            }
-          },
-          "elements": []
-        }
-      ],
-      "isInner": false
-    },
-    {
-      "id": "65b9eea",
-      "elType": "container",
-      "settings": {
-        "flex_direction": "column",
-        "flex_direction_mobile": "column",
-        "content_width": "full",
-        "flex_gap": {
-          "column": "40",
-          "row": "40",
-          "unit": "px",
-          "size": 40
-        },
-        "padding": {
-          "unit": "px",
-          "top": "40",
-          "right": "80",
-          "bottom": "40",
-          "left": "80",
-          "isLinked": false
-        },
-        "padding_mobile": {
-          "unit": "px",
-          "top": "56",
-          "right": "24",
-          "bottom": "56",
-          "left": "24",
-          "isLinked": false
-        }
-      },
-      "elements": [
-        {
-          "id": "c9e1074",
-          "elType": "widget",
-          "widgetType": "bungry-faq",
-          "settings": {
-            "items": [
-              {
-                "_id": "ed3d2c2",
-                "question": "What makes Bungry different?",
-                "answer": "<p>Our signature concept is the distinctive sealed-burger format. Explore the menu to see the current line-up.</p>"
-              },
-              {
-                "_id": "ac627ab",
-                "question": "Where can I find Bungry?",
-                "answer": "<p>We are based in New Zealand. See our address and opening hours on the Find Us page. [CLIENT TO CONFIRM: suburb or city]</p>"
-              },
-              {
-                "_id": "f899139",
-                "question": "Can I order online?",
-                "answer": "<p>Online ordering is [CLIENT TO CONFIRM: available / not currently available]. When it is available, use the official Order Online link.</p>"
-              },
-              {
-                "_id": "38b3eff",
-                "question": "Do you have vegetarian options?",
-                "answer": "<p>The proposed menu includes Green Bungry. Confirm the final ingredients and preparation practices before publishing dietary assurances.</p>"
-              },
-              {
-                "_id": "ec89566",
-                "question": "Where can I check allergens?",
-                "answer": "<p>Please check the current ingredient and allergen information before ordering. If you have a food allergy, contact the team to discuss the specific item and preparation process.</p>"
-              },
-              {
-                "_id": "6974ce5",
-                "question": "Can ingredients or menu items change?",
-                "answer": "<p>Menu availability and ingredients may change. We keep the live menu and allergen information aligned with the current kitchen specification.</p>"
-              }
-            ],
-            "open_first": "",
-            "schema": ""
-          },
-          "elements": []
-        }
-      ],
-      "isInner": false
-    },
-    {
-      "id": "a3c65c2",
+      "id": "a87ff67",
       "elType": "container",
       "settings": {
         "flex_direction": "column",
@@ -148,9 +21,87 @@
         },
         "padding": {
           "unit": "px",
-          "top": "40",
+          "top": "72",
           "right": "80",
-          "bottom": "40",
+          "bottom": "100",
+          "left": "80",
+          "isLinked": false
+        },
+        "padding_mobile": {
+          "unit": "px",
+          "top": "56",
+          "right": "24",
+          "bottom": "56",
+          "left": "24",
+          "isLinked": false
+        },
+        "background_background": "classic",
+        "background_color": "#F6F7EE",
+        "__globals__": {
+          "background_color": "globals/colors?id=bungryforest"
+        }
+      },
+      "elements": [
+        {
+          "id": "c4ca423",
+          "elType": "widget",
+          "widgetType": "text-editor",
+          "settings": {
+            "editor": "<p>FOOD INFORMATION</p>",
+            "_css_classes": "bungry-kicker",
+            "__globals__": {
+              "text_color": "globals/colors?id=bungryorange"
+            }
+          },
+          "elements": []
+        },
+        {
+          "id": "c81e728",
+          "elType": "widget",
+          "widgetType": "heading",
+          "settings": {
+            "title": "ALLERGENS & FAQS",
+            "header_size": "h1",
+            "__globals__": {
+              "title_color": "globals/colors?id=bungrycream"
+            }
+          },
+          "elements": []
+        },
+        {
+          "id": "eccbc87",
+          "elType": "widget",
+          "widgetType": "text-editor",
+          "settings": {
+            "editor": "<p>Please check the current ingredient and allergen information before ordering.</p>",
+            "_css_classes": "bungry-lead bungry-hero-body",
+            "__globals__": {
+              "text_color": "globals/colors?id=bungrycream"
+            }
+          },
+          "elements": []
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "c9f0f89",
+      "elType": "container",
+      "settings": {
+        "flex_direction": "column",
+        "flex_direction_mobile": "column",
+        "content_width": "full",
+        "flex_gap": {
+          "column": "28",
+          "row": "28",
+          "unit": "px",
+          "size": 28
+        },
+        "padding": {
+          "unit": "px",
+          "top": "80",
+          "right": "80",
+          "bottom": "56",
           "left": "80",
           "isLinked": false
         },
@@ -165,25 +116,371 @@
       },
       "elements": [
         {
-          "id": "f0935e4",
+          "id": "e4da3b7",
           "elType": "widget",
-          "widgetType": "bungry-notice",
+          "widgetType": "heading",
           "settings": {
-            "type": "warning",
-            "title": "ITEM-LEVEL ALLERGEN INFORMATION",
-            "text": "To be verified by the kitchen before publishing. Contact the team to discuss a specific item and its preparation before you order."
+            "title": "ALLERGEN INFORMATION",
+            "header_size": "h3",
+            "__globals__": {
+              "title_color": "globals/colors?id=bungryforest"
+            }
           },
           "elements": []
         },
         {
-          "id": "a97da62",
+          "id": "1679091",
           "elType": "widget",
-          "widgetType": "bungry-placeholder-tag",
+          "widgetType": "bungry-notice",
           "settings": {
-            "label": "Allergen table TBC",
-            "tone": "light"
+            "type": "warning",
+            "title": "Have a food allergy?",
+            "text": "Please contact the team to discuss the specific item and preparation process. Item-level information is published only after the kitchen has verified it. Menu availability and ingredients may change."
           },
           "elements": []
+        },
+        {
+          "id": "8f14e45",
+          "elType": "widget",
+          "widgetType": "text-editor",
+          "settings": {
+            "editor": "<table class=\"bungry-allergen-table\"><thead><tr><th>BURGER</th><th>ALLERGENS (CONTAINS)</th><th>CROSS-CONTACT NOTES</th></tr></thead><tbody><tr><td>Classic Bungry</td><td>To be verified by kitchen</td><td>To be verified</td></tr><tr><td>Double Bungry</td><td>To be verified by kitchen</td><td>To be verified</td></tr><tr><td>Smoky Bungry</td><td>To be verified by kitchen</td><td>To be verified</td></tr><tr><td>Free-Range Bungry</td><td>To be verified by kitchen</td><td>To be verified</td></tr><tr><td>Green Bungry</td><td>To be verified by kitchen</td><td>To be verified</td></tr></tbody></table>",
+            "__globals__": {
+              "text_color": "globals/colors?id=bungryink"
+            }
+          },
+          "elements": []
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "3c59dc0",
+      "elType": "container",
+      "settings": {
+        "flex_direction": "column",
+        "flex_direction_mobile": "column",
+        "content_width": "full",
+        "flex_gap": {
+          "column": "40",
+          "row": "40",
+          "unit": "px",
+          "size": 40
+        },
+        "padding": {
+          "unit": "px",
+          "top": "96",
+          "right": "80",
+          "bottom": "96",
+          "left": "80",
+          "isLinked": false
+        },
+        "padding_mobile": {
+          "unit": "px",
+          "top": "56",
+          "right": "24",
+          "bottom": "56",
+          "left": "24",
+          "isLinked": false
+        },
+        "background_background": "classic",
+        "background_color": "#F6F7EE",
+        "__globals__": {
+          "background_color": "globals/colors?id=bungrycreamdark"
+        }
+      },
+      "elements": [
+        {
+          "id": "98f1370",
+          "elType": "container",
+          "settings": {
+            "flex_direction": "row",
+            "flex_direction_mobile": "column",
+            "content_width": "full",
+            "flex_gap": {
+              "column": "72",
+              "row": "72",
+              "unit": "px",
+              "size": 72
+            },
+            "padding": {
+              "unit": "px",
+              "top": "0",
+              "right": "0",
+              "bottom": "0",
+              "left": "0",
+              "isLinked": false
+            },
+            "padding_mobile": {
+              "unit": "px",
+              "top": "0",
+              "right": "24",
+              "bottom": "0",
+              "left": "24",
+              "isLinked": false
+            }
+          },
+          "elements": [
+            {
+              "id": "6512bd4",
+              "elType": "container",
+              "settings": {
+                "flex_direction": "column",
+                "flex_direction_mobile": "column",
+                "content_width": "full",
+                "flex_gap": {
+                  "column": "16",
+                  "row": "16",
+                  "unit": "px",
+                  "size": 16
+                },
+                "padding": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "0",
+                  "left": "0",
+                  "isLinked": false
+                },
+                "padding_mobile": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "24",
+                  "bottom": "0",
+                  "left": "24",
+                  "isLinked": false
+                },
+                "width": {
+                  "unit": "%",
+                  "size": 35,
+                  "sizes": []
+                },
+                "width_mobile": {
+                  "unit": "%",
+                  "size": 100,
+                  "sizes": []
+                }
+              },
+              "elements": [
+                {
+                  "id": "45c48cc",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "FREQUENTLY ASKED QUESTIONS",
+                    "header_size": "h2",
+                    "__globals__": {
+                      "title_color": "globals/colors?id=bungryforest"
+                    }
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "d3d9446",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p>Quick answers about Bungry, ordering and food information.</p>",
+                    "__globals__": {
+                      "text_color": "globals/colors?id=bungryink"
+                    }
+                  },
+                  "elements": []
+                }
+              ],
+              "isInner": false
+            },
+            {
+              "id": "1f0e3da",
+              "elType": "container",
+              "settings": {
+                "flex_direction": "column",
+                "flex_direction_mobile": "column",
+                "content_width": "full",
+                "flex_gap": {
+                  "column": "20",
+                  "row": "20",
+                  "unit": "px",
+                  "size": 20
+                },
+                "padding": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "0",
+                  "left": "0",
+                  "isLinked": false
+                },
+                "padding_mobile": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "24",
+                  "bottom": "0",
+                  "left": "24",
+                  "isLinked": false
+                },
+                "width": {
+                  "unit": "%",
+                  "size": 65,
+                  "sizes": []
+                },
+                "width_mobile": {
+                  "unit": "%",
+                  "size": 100,
+                  "sizes": []
+                }
+              },
+              "elements": [
+                {
+                  "id": "6f4922f",
+                  "elType": "widget",
+                  "widgetType": "bungry-faq",
+                  "settings": {
+                    "items": [
+                      {
+                        "_id": "c20ad4d",
+                        "question": "What makes Bungry different?",
+                        "answer": "<p>Our signature concept is the distinctive sealed-burger format. Explore the menu to see the current line-up.</p>"
+                      },
+                      {
+                        "_id": "c51ce41",
+                        "question": "Where can I find Bungry?",
+                        "answer": "<p>We are based in New Zealand. See our address and opening hours on the Find Us page. [CLIENT TO CONFIRM: suburb or city]</p>"
+                      },
+                      {
+                        "_id": "aab3238",
+                        "question": "Can I order online?",
+                        "answer": "<p>Online ordering is [CLIENT TO CONFIRM: available / not currently available]. When it is available, use the official Order Online link.</p>"
+                      },
+                      {
+                        "_id": "9bf31c7",
+                        "question": "Do you have vegetarian options?",
+                        "answer": "<p>The proposed menu includes Green Bungry. Confirm the final ingredients and preparation practices before publishing dietary assurances.</p>"
+                      },
+                      {
+                        "_id": "c74d97b",
+                        "question": "Where can I check allergens?",
+                        "answer": "<p>Please check the current ingredient and allergen information before ordering. If you have a food allergy, contact the team to discuss the specific item and preparation process.</p>"
+                      },
+                      {
+                        "_id": "70efdf2",
+                        "question": "Can ingredients or menu items change?",
+                        "answer": "<p>Menu availability and ingredients may change. We keep the live menu and allergen information aligned with the current kitchen specification.</p>"
+                      }
+                    ],
+                    "open_first": "yes",
+                    "schema": ""
+                  },
+                  "elements": []
+                }
+              ],
+              "isInner": false
+            }
+          ],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "8e296a0",
+      "elType": "container",
+      "settings": {
+        "flex_direction": "column",
+        "flex_direction_mobile": "column",
+        "content_width": "full",
+        "flex_gap": {
+          "column": "40",
+          "row": "40",
+          "unit": "px",
+          "size": 40
+        },
+        "padding": {
+          "unit": "px",
+          "top": "64",
+          "right": "80",
+          "bottom": "64",
+          "left": "80",
+          "isLinked": false
+        },
+        "padding_mobile": {
+          "unit": "px",
+          "top": "56",
+          "right": "24",
+          "bottom": "56",
+          "left": "24",
+          "isLinked": false
+        },
+        "background_background": "classic",
+        "background_color": "#F6F7EE",
+        "__globals__": {
+          "background_color": "globals/colors?id=bungryforest"
+        }
+      },
+      "elements": [
+        {
+          "id": "1ff1de7",
+          "elType": "container",
+          "settings": {
+            "flex_direction": "row",
+            "flex_direction_mobile": "column",
+            "content_width": "full",
+            "flex_gap": {
+              "column": "40",
+              "row": "40",
+              "unit": "px",
+              "size": 40
+            },
+            "padding": {
+              "unit": "px",
+              "top": "0",
+              "right": "0",
+              "bottom": "0",
+              "left": "0",
+              "isLinked": false
+            },
+            "padding_mobile": {
+              "unit": "px",
+              "top": "0",
+              "right": "24",
+              "bottom": "0",
+              "left": "24",
+              "isLinked": false
+            }
+          },
+          "elements": [
+            {
+              "id": "b6d767d",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "STILL HAVE A QUESTION?",
+                "header_size": "h3",
+                "__globals__": {
+                  "title_color": "globals/colors?id=bungrycream"
+                }
+              },
+              "elements": []
+            },
+            {
+              "id": "37693cf",
+              "elType": "widget",
+              "widgetType": "bungry-button",
+              "settings": {
+                "text": "Contact us",
+                "link": {
+                  "url": "/find-us/",
+                  "is_external": "",
+                  "nofollow": ""
+                },
+                "style": "primary",
+                "size": "default",
+                "arrow": "yes"
+              },
+              "elements": []
+            }
+          ],
+          "isInner": false
         }
       ],
       "isInner": false
