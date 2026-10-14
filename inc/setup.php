@@ -44,6 +44,18 @@ function bungry_setup(): void {
 add_action( 'after_setup_theme', 'bungry_setup' );
 
 /**
+ * Adds bungry-layout-full or bungry-layout-boxed to the body.
+ *
+ * @param string[] $classes Body classes.
+ * @return string[]
+ */
+function bungry_body_class( array $classes ): array {
+	$classes[] = 'bungry-layout-' . bungry_layout();
+	return $classes;
+}
+add_filter( 'body_class', 'bungry_body_class' );
+
+/**
  * Per-page meta description (pages, menu items). Falls back to the excerpt.
  */
 function bungry_register_meta(): void {

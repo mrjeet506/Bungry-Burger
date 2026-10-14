@@ -29,6 +29,7 @@ function bungry_default_settings(): array {
 		'social_facebook'      => '',
 		'social_tiktok'        => '',
 		'social_youtube'       => '',
+		'layout'               => 'full',
 		'footer_blurb'         => 'Meet Bungry Burger. A fresh take on a familiar favourite, made memorable by our signature sealed-burger concept.',
 		'copyright_text'       => '',
 		'show_tags'            => 1,
@@ -51,6 +52,13 @@ function bungry_get_settings(): array {
 function bungry_setting( string $key ) {
 	$settings = bungry_get_settings();
 	return $settings[ $key ] ?? '';
+}
+
+/**
+ * Page width: 'full' (edge to edge, default) or 'boxed' (framed, max 1280px).
+ */
+function bungry_layout(): string {
+	return 'boxed' === bungry_setting( 'layout' ) ? 'boxed' : 'full';
 }
 
 function bungry_tags_enabled(): bool {

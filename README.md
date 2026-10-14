@@ -39,6 +39,7 @@ Photos are styled slots until real photography is supplied. Unconfirmed details 
 | Menu items (name, description, diet, price, allergen notes, availability) | Menu items (`bungry_menu`) |
 | Menu order | Page attributes > Order on each menu item |
 | Header and footer details, ordering URL, social links, announcement, copyright | Appearance > Bungry Settings |
+| Page width (full width or boxed) | Appearance > Bungry Settings > Brand |
 | Page meta description | "Bungry SEO" box on each page |
 | Home, Menu, Find Us and Allergens copy | Elementor pages (demo pages hold placeholder copy until templates are built) |
 

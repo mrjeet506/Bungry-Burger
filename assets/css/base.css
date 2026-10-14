@@ -754,3 +754,36 @@ p {
 		scroll-behavior: auto !important;
 	}
 }
+
+/* Page width: full (default) or boxed. The wrapper is .bungry-site; see body.bungry-layout-* */
+.bungry-site {
+	min-height: 100vh;
+}
+
+body.bungry-layout-boxed {
+	background: var(--bungry-cream-dark);
+}
+
+body.bungry-layout-boxed .bungry-site {
+	max-width: var(--bungry-max);
+	margin: 32px auto;
+	background: var(--bungry-cream);
+	border-radius: 24px;
+	box-shadow: 0 12px 40px rgba(14, 58, 26, 0.12);
+	overflow: clip;
+}
+
+body.bungry-layout-boxed .bungry-footer {
+	border-radius: 0 0 24px 24px;
+}
+
+@media (max-width: 767px) {
+	body.bungry-layout-boxed .bungry-site {
+		margin: 12px;
+		border-radius: 16px;
+	}
+
+	body.bungry-layout-boxed .bungry-footer {
+		border-radius: 0 0 16px 16px;
+	}
+}

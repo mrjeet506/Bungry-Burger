@@ -16,6 +16,7 @@ defined( 'ABSPATH' ) || exit;
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
 <a class="bungry-skip-link" href="#content"><?php esc_html_e( 'Skip to content', 'bungry-burger' ); ?></a>
+<div class=\"bungry-site\">
 <?php
 get_template_part( 'template-parts/announcement' );
 if ( ! function_exists( 'elementor_theme_do_location' ) || ! elementor_theme_do_location( 'header' ) ) {

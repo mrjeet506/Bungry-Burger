@@ -38,6 +38,7 @@ function bungry_settings_fields(): array {
 		'social_facebook'      => array( 'social', __( 'Facebook URL', 'bungry-burger' ), 'url', '' ),
 		'social_tiktok'        => array( 'social', __( 'TikTok URL', 'bungry-burger' ), 'url', '' ),
 		'social_youtube'       => array( 'social', __( 'YouTube URL', 'bungry-burger' ), 'url', '' ),
+		'layout'               => array( 'brand', __( 'Page width', 'bungry-burger' ), 'layout', __( 'Full width runs edge to edge. Boxed frames the site in a centred 1280px panel.', 'bungry-burger' ) ),
 		'footer_blurb'         => array( 'footer', __( 'Footer blurb', 'bungry-burger' ), 'textarea', '' ),
 		'copyright_text'       => array( 'footer', __( 'Copyright line', 'bungry-burger' ), 'text', __( 'Leave empty for "© {year} Bungry Burger. All rights reserved."', 'bungry-burger' ) ),
 		'show_tags'            => array( 'compliance', __( 'Show "client to confirm" tags', 'bungry-burger' ), 'checkbox', __( 'Turn off once every placeholder is confirmed and removed. Empty fields then hide instead of showing a tag.', 'bungry-burger' ) ),
@@ -97,6 +98,17 @@ function bungry_render_field( array $args ): void {
 	$name     = 'bungry_settings[' . $key . ']';
 
 	switch ( $args['type'] ) {
+		case 'layout':
+			$options = array(
+				'full'  => __( 'Full width (edge to edge)', 'bungry-burger' ),
+				'boxed' => __( 'Boxed (centred, max 1280px)', 'bungry-burger' ),
+			);
+			echo '<select id="' . esc_attr( $id ) . '" name="' . esc_attr( $name ) . '">';
+			foreach ( $options as $option => $label ) {
+				printf( '<option value="%1$s" %2$s>%3$s</option>', esc_attr( $option ), selected( $value, $option, false ), esc_html( $label ) );
+			}
+			echo '</select>';
+			break;
 		case 'checkbox':
 			printf(
 				'<label><input type="checkbox" id="%1$s" name="%2$s" value="1" %3$s> %4$s</label>',
@@ -141,6 +153,9 @@ function bungry_sanitize_settings( $input ): array {
 	foreach ( bungry_settings_fields() as $key => $field ) {
 		$raw = $input[ $key ] ?? '';
 		switch ( $field[2] ) {
+			case 'layout':
+				$clean[ $key ] = in_array( $raw, array( 'full', 'boxed' ), true ) ? $raw : 'full';
+				break;
 			case 'checkbox':
 				$clean[ $key ] = empty( $raw ) ? 0 : 1;
 				break;
