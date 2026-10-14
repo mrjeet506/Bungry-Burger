@@ -765,7 +765,7 @@ body.bungry-layout-boxed {
 }
 
 body.bungry-layout-boxed .bungry-site {
-	max-width: var(--bungry-max);
+	width: 70%;
 	margin: 32px auto;
 	background: var(--bungry-cream);
 	border-radius: 24px;
@@ -779,6 +779,7 @@ body.bungry-layout-boxed .bungry-footer {
 
 @media (max-width: 767px) {
 	body.bungry-layout-boxed .bungry-site {
+		width: auto;
 		margin: 12px;
 		border-radius: 16px;
 	}

@@ -38,7 +38,7 @@ function bungry_settings_fields(): array {
 		'social_facebook'      => array( 'social', __( 'Facebook URL', 'bungry-burger' ), 'url', '' ),
 		'social_tiktok'        => array( 'social', __( 'TikTok URL', 'bungry-burger' ), 'url', '' ),
 		'social_youtube'       => array( 'social', __( 'YouTube URL', 'bungry-burger' ), 'url', '' ),
-		'layout'               => array( 'brand', __( 'Page width', 'bungry-burger' ), 'layout', __( 'Full width runs edge to edge. Boxed frames the site in a centred 1280px panel.', 'bungry-burger' ) ),
+		'layout'               => array( 'brand', __( 'Page width', 'bungry-burger' ), 'layout', __( 'Full width runs edge to edge. Boxed frames the site in a centred panel at 70% width. Phones always use full width.', 'bungry-burger' ) ),
 		'footer_blurb'         => array( 'footer', __( 'Footer blurb', 'bungry-burger' ), 'textarea', '' ),
 		'copyright_text'       => array( 'footer', __( 'Copyright line', 'bungry-burger' ), 'text', __( 'Leave empty for "© {year} Bungry Burger. All rights reserved."', 'bungry-burger' ) ),
 		'show_tags'            => array( 'compliance', __( 'Show "client to confirm" tags', 'bungry-burger' ), 'checkbox', __( 'Turn off once every placeholder is confirmed and removed. Empty fields then hide instead of showing a tag.', 'bungry-burger' ) ),
@@ -101,7 +101,7 @@ function bungry_render_field( array $args ): void {
 		case 'layout':
 			$options = array(
 				'full'  => __( 'Full width (edge to edge)', 'bungry-burger' ),
-				'boxed' => __( 'Boxed (centred, max 1280px)', 'bungry-burger' ),
+				'boxed' => __( 'Boxed (70% width, centred)', 'bungry-burger' ),
 			);
 			echo '<select id="' . esc_attr( $id ) . '" name="' . esc_attr( $name ) . '">';
 			foreach ( $options as $option => $label ) {

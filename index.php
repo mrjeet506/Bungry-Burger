@@ -16,7 +16,7 @@ get_header();
 			the_post();
 			?>
 			<article <?php post_class( 'bungry-article' ); ?>>
-				<h1 class="bungry-page__title"><?php the_title(); ?></h1>
+				<h1 class="screen-reader-text"><?php the_title(); ?></h1>
 				<div class="bungry-prose">
 					<?php the_content(); ?>
 				</div>
@@ -25,7 +25,7 @@ get_header();
 		}
 	} else {
 		?>
-		<h1 class="bungry-page__title"><?php esc_html_e( 'Nothing found', 'bungry-burger' ); ?></h1>
+		<h1 class="screen-reader-text"><?php esc_html_e( 'Nothing found', 'bungry-burger' ); ?></h1>
 		<?php
 	}
 	?>

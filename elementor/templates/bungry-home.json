@@ -2,7 +2,9 @@
   "version": "0.4",
   "title": "Home",
   "type": "page",
-  "page_settings": {},
+  "page_settings": {
+    "hide_title": "yes"
+  },
   "content": [
     {
       "id": "66f041e",
@@ -10,7 +12,7 @@
       "settings": {
         "flex_direction": "column",
         "flex_direction_mobile": "column",
-        "content_width": "boxed",
+        "content_width": "full",
         "flex_gap": {
           "column": "40",
           "row": "40",
@@ -20,9 +22,9 @@
         "padding": {
           "unit": "px",
           "top": "80",
-          "right": "0",
+          "right": "80",
           "bottom": "80",
-          "left": "0",
+          "left": "80",
           "isLinked": false
         },
         "padding_mobile": {
@@ -77,7 +79,7 @@
               "settings": {
                 "flex_direction": "column",
                 "flex_direction_mobile": "column",
-                "content_width": "boxed",
+                "content_width": "full",
                 "flex_gap": {
                   "column": "20",
                   "row": "20",
@@ -157,7 +159,7 @@
                   "settings": {
                     "flex_direction": "row",
                     "flex_direction_mobile": "column",
-                    "content_width": "boxed",
+                    "content_width": "full",
                     "flex_gap": {
                       "column": "16",
                       "row": "16",
@@ -228,7 +230,7 @@
               "settings": {
                 "flex_direction": "column",
                 "flex_direction_mobile": "column",
-                "content_width": "boxed",
+                "content_width": "full",
                 "flex_gap": {
                   "column": "20",
                   "row": "20",
@@ -269,7 +271,7 @@
                   "settings": {
                     "flex_direction": "column",
                     "flex_direction_mobile": "column",
-                    "content_width": "boxed",
+                    "content_width": "full",
                     "flex_gap": {
                       "column": "12",
                       "row": "12",
@@ -279,9 +281,9 @@
                     "padding": {
                       "unit": "px",
                       "top": "40",
-                      "right": "0",
+                      "right": "80",
                       "bottom": "40",
-                      "left": "0",
+                      "left": "80",
                       "isLinked": false
                     },
                     "padding_mobile": {
@@ -335,7 +337,7 @@
       "settings": {
         "flex_direction": "column",
         "flex_direction_mobile": "column",
-        "content_width": "boxed",
+        "content_width": "full",
         "flex_gap": {
           "column": "40",
           "row": "40",
@@ -345,9 +347,9 @@
         "padding": {
           "unit": "px",
           "top": "80",
-          "right": "0",
+          "right": "80",
           "bottom": "80",
-          "left": "0",
+          "left": "80",
           "isLinked": false
         },
         "padding_mobile": {
@@ -402,7 +404,7 @@
               "settings": {
                 "flex_direction": "column",
                 "flex_direction_mobile": "column",
-                "content_width": "boxed",
+                "content_width": "full",
                 "flex_gap": {
                   "column": "20",
                   "row": "20",
@@ -443,7 +445,7 @@
                   "settings": {
                     "flex_direction": "column",
                     "flex_direction_mobile": "column",
-                    "content_width": "boxed",
+                    "content_width": "full",
                     "flex_gap": {
                       "column": "12",
                       "row": "12",
@@ -453,9 +455,9 @@
                     "padding": {
                       "unit": "px",
                       "top": "40",
-                      "right": "0",
+                      "right": "80",
                       "bottom": "40",
-                      "left": "0",
+                      "left": "80",
                       "isLinked": false
                     },
                     "padding_mobile": {
@@ -503,7 +505,7 @@
               "settings": {
                 "flex_direction": "column",
                 "flex_direction_mobile": "column",
-                "content_width": "boxed",
+                "content_width": "full",
                 "flex_gap": {
                   "column": "20",
                   "row": "20",
@@ -582,7 +584,7 @@
                   "settings": {
                     "flex_direction": "row",
                     "flex_direction_mobile": "column",
-                    "content_width": "boxed",
+                    "content_width": "full",
                     "flex_gap": {
                       "column": "24",
                       "row": "24",
@@ -793,7 +795,7 @@
           "settings": {
             "flex_direction": "row",
             "flex_direction_mobile": "column",
-            "content_width": "boxed",
+            "content_width": "full",
             "flex_gap": {
               "column": "24",
               "row": "24",
@@ -824,7 +826,7 @@
               "settings": {
                 "flex_direction": "column",
                 "flex_direction_mobile": "column",
-                "content_width": "boxed",
+                "content_width": "full",
                 "flex_gap": {
                   "column": "10",
                   "row": "10",
@@ -883,7 +885,7 @@
               "settings": {
                 "flex_direction": "column",
                 "flex_direction_mobile": "column",
-                "content_width": "boxed",
+                "content_width": "full",
                 "flex_gap": {
                   "column": "10",
                   "row": "10",
@@ -942,7 +944,7 @@
               "settings": {
                 "flex_direction": "column",
                 "flex_direction_mobile": "column",
-                "content_width": "boxed",
+                "content_width": "full",
                 "flex_gap": {
                   "column": "10",
                   "row": "10",
@@ -1001,7 +1003,7 @@
               "settings": {
                 "flex_direction": "column",
                 "flex_direction_mobile": "column",
-                "content_width": "boxed",
+                "content_width": "full",
                 "flex_gap": {
                   "column": "10",
                   "row": "10",
@@ -1066,7 +1068,7 @@
       "settings": {
         "flex_direction": "column",
         "flex_direction_mobile": "column",
-        "content_width": "boxed",
+        "content_width": "full",
         "flex_gap": {
           "column": "40",
           "row": "40",
@@ -1076,9 +1078,9 @@
         "padding": {
           "unit": "px",
           "top": "80",
-          "right": "0",
+          "right": "80",
           "bottom": "80",
-          "left": "0",
+          "left": "80",
           "isLinked": false
         },
         "padding_mobile": {
@@ -1128,7 +1130,7 @@
               "settings": {
                 "flex_direction": "column",
                 "flex_direction_mobile": "column",
-                "content_width": "boxed",
+                "content_width": "full",
                 "flex_gap": {
                   "column": "20",
                   "row": "20",
@@ -1169,7 +1171,7 @@
                   "settings": {
                     "flex_direction": "column",
                     "flex_direction_mobile": "column",
-                    "content_width": "boxed",
+                    "content_width": "full",
                     "flex_gap": {
                       "column": "12",
                       "row": "12",
@@ -1179,9 +1181,9 @@
                     "padding": {
                       "unit": "px",
                       "top": "40",
-                      "right": "0",
+                      "right": "80",
                       "bottom": "40",
-                      "left": "0",
+                      "left": "80",
                       "isLinked": false
                     },
                     "padding_mobile": {
@@ -1229,7 +1231,7 @@
               "settings": {
                 "flex_direction": "column",
                 "flex_direction_mobile": "column",
-                "content_width": "boxed",
+                "content_width": "full",
                 "flex_gap": {
                   "column": "20",
                   "row": "20",

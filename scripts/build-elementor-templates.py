@@ -54,12 +54,12 @@ def container(children: list, *, row: bool = False, full: bool = False, bg: str 
     settings = {
         "flex_direction": "row" if row else "column",
         "flex_direction_mobile": "column",
-        "content_width": "full" if full else "boxed",
+        "content_width": "full",
         "flex_gap": {"column": str(gap), "row": str(gap), "unit": "px", "size": gap},
         "padding": {"unit": "px", "top": str(pad), "right": "0", "bottom": str(pad), "left": "0", "isLinked": False},
         "padding_mobile": {"unit": "px", "top": "56", "right": "24", "bottom": "56", "left": "24", "isLinked": False},
     }
-    if full:
+    if pad > 0:  # top-level sections get a 80px side gutter; columns do not
         settings["padding"]["right"] = "80"
         settings["padding"]["left"] = "80"
     if bg:
@@ -136,7 +136,7 @@ def notice(kind: str, title: str, text: str) -> dict:
 
 
 def page(title: str, sections: list) -> dict:
-    return {"version": "0.4", "title": title, "type": "page", "page_settings": {}, "content": sections}
+    return {"version": "0.4", "title": title, "type": "page", "page_settings": {"hide_title": "yes"}, "content": sections}
 
 
 # ---------------------------------------------------------------- HOME

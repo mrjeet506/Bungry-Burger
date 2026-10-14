@@ -2,7 +2,9 @@
   "version": "0.4",
   "title": "Privacy Policy",
   "type": "page",
-  "page_settings": {},
+  "page_settings": {
+    "hide_title": "yes"
+  },
   "content": [
     {
       "id": "7f6ffaa",
@@ -10,7 +12,7 @@
       "settings": {
         "flex_direction": "column",
         "flex_direction_mobile": "column",
-        "content_width": "boxed",
+        "content_width": "full",
         "flex_gap": {
           "column": "20",
           "row": "20",
@@ -20,9 +22,9 @@
         "padding": {
           "unit": "px",
           "top": "64",
-          "right": "0",
+          "right": "80",
           "bottom": "64",
-          "left": "0",
+          "left": "80",
           "isLinked": false
         },
         "padding_mobile": {
@@ -80,7 +82,7 @@
       "settings": {
         "flex_direction": "column",
         "flex_direction_mobile": "column",
-        "content_width": "boxed",
+        "content_width": "full",
         "flex_gap": {
           "column": "40",
           "row": "40",
