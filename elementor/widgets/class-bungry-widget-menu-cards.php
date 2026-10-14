@@ -127,7 +127,7 @@ class Bungry_Widget_Menu_Cards extends \Elementor\Widget_Base {
 				$art   = $data['illustration'] ? bungry_art( 'illustrations/' . $data['illustration'], 'bungry-menu-card__art' ) : '';
 				$media = has_post_thumbnail( $post ) ? get_the_post_thumbnail(
 					$post,
-					'bungry-card',
+					'large',
 					array(
 						'loading' => 'lazy',
 						'alt'     => '',

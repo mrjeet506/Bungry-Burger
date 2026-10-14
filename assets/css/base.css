@@ -712,15 +712,6 @@ p {
 		line-height: 24px;
 	}
 
-	.bungry-header .bungry-nav,
-	.bungry-header__order {
-		display: none;
-	}
-
-	.bungry-menu-toggle {
-		display: inline-flex;
-	}
-
 	.bungry-footer {
 		padding: 56px var(--bungry-gutter) 32px;
 	}
@@ -789,27 +780,24 @@ body.bungry-layout-boxed .bungry-footer {
 	}
 }
 
-/* Hamburger in the header on every screen size. Opens the full-screen menu. */
+/* Header menu: the hamburger replaces the links on mobile only (Figma mobile header:
+   logo, orange ORDER button and a 44px forest menu button). Desktop and tablet keep the links. */
 .bungry-menu-toggle {
-	display: inline-flex;
 	margin-left: 4px;
 }
 
-/* Header menu: the hamburger replaces the links from tablet width down (Figma mobile header:
-   logo, orange ORDER button and a 44px forest menu button). */
-@media (max-width: 1024px) {
-	.bungry-header .bungry-nav {
+@media (max-width: 767px) {
+	.bungry-header__nav {
 		display: none;
 	}
 
 	.bungry-menu-toggle {
 		display: inline-flex;
 	}
-}
 
-@media (max-width: 767px) {
 	.bungry-header__inner {
 		height: 68px;
+		gap: 12px;
 	}
 
 	.bungry-logo__img,
@@ -819,6 +807,13 @@ body.bungry-layout-boxed .bungry-footer {
 
 	.bungry-header__order {
 		display: inline-flex;
+		padding: 10px 14px;
+		font-size: 13px;
+	}
+
+	.bungry-header__actions {
+		gap: 10px;
+		flex-shrink: 0;
 	}
 }
 
