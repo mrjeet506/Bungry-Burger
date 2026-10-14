@@ -1,5 +1,7 @@
 # Bungry Burger theme
 
+Written and developed by **mementotech**.
+
 Classic WordPress theme for Bungry Burger ("Fresh. Sealed. Different."), built for Elementor. Tokens come from the Figma file `BgDWNsMfmJ9VwO8AD0iRdM`. Business facts are not invented: anything unconfirmed is empty, and the UI hides it or shows a placeholder tag.
 
 **Status: 0.1.0 foundation.** The header, footer, settings, menu data, Elementor kit and 8 widgets are built. Page templates, widgets 9–20 and the contact form are not done yet. See [CHANGELOG.md](CHANGELOG.md) for the full list.
