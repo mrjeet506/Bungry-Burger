@@ -1,0 +1,124 @@
+{
+  "version": "0.4",
+  "title": "Terms / Ordering Information",
+  "type": "page",
+  "page_settings": {},
+  "content": [
+    {
+      "id": "5ef0599",
+      "elType": "container",
+      "settings": {
+        "flex_direction": "column",
+        "flex_direction_mobile": "column",
+        "content_width": "boxed",
+        "flex_gap": {
+          "column": "20",
+          "row": "20",
+          "unit": "px",
+          "size": 20
+        },
+        "padding": {
+          "unit": "px",
+          "top": "64",
+          "right": "0",
+          "bottom": "64",
+          "left": "0",
+          "isLinked": false
+        },
+        "padding_mobile": {
+          "unit": "px",
+          "top": "56",
+          "right": "24",
+          "bottom": "56",
+          "left": "24",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "2b44928",
+          "elType": "widget",
+          "widgetType": "bungry-notice",
+          "settings": {
+            "type": "warning",
+            "title": "DRAFT OUTLINE — NOT LEGAL ADVICE",
+            "text": "This page is a draft outline and must be reviewed before publishing."
+          },
+          "elements": []
+        },
+        {
+          "id": "c45147d",
+          "elType": "widget",
+          "widgetType": "heading",
+          "settings": {
+            "title": "Terms / Ordering Information",
+            "header_size": "h1",
+            "__globals__": {
+              "title_color": "globals/colors?id=bungryforest"
+            }
+          },
+          "elements": []
+        },
+        {
+          "id": "eb160de",
+          "elType": "widget",
+          "widgetType": "text-editor",
+          "settings": {
+            "editor": "<p>This page explains ordering. Publish it only if online ordering is enabled.</p>",
+            "__globals__": {
+              "text_color": "globals/colors?id=bungryink"
+            }
+          },
+          "elements": []
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "da4fb5c",
+      "elType": "container",
+      "settings": {
+        "flex_direction": "column",
+        "flex_direction_mobile": "column",
+        "content_width": "boxed",
+        "flex_gap": {
+          "column": "40",
+          "row": "40",
+          "unit": "px",
+          "size": 40
+        },
+        "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "0",
+          "left": "0",
+          "isLinked": false
+        },
+        "padding_mobile": {
+          "unit": "px",
+          "top": "56",
+          "right": "24",
+          "bottom": "56",
+          "left": "24",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "07e1cd7",
+          "elType": "widget",
+          "widgetType": "text-editor",
+          "settings": {
+            "editor": "<h3>1. Ordering</h3><p>[CLIENT TO CONFIRM: ordering provider and URL]</p><h3>2. Pickup and delivery</h3><p>[CLIENT TO CONFIRM: pickup and delivery zones, and any fees]</p><h3>3. Payment</h3><p>[CLIENT TO CONFIRM: accepted payment methods]</p><h3>4. Prices</h3><p>Prices are shown in NZD. [CLIENT TO CONFIRM: any surcharges or conditions]</p><h3>5. Menu changes</h3><p>Menu availability and ingredients may change.</p><h3>6. Allergens</h3><p>Please check allergen information before ordering.</p>",
+            "__globals__": {
+              "text_color": "globals/colors?id=bungryink"
+            }
+          },
+          "elements": []
+        }
+      ],
+      "isInner": false
+    }
+  ]
+}

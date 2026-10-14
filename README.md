@@ -26,6 +26,13 @@ Classic WordPress theme for Bungry Burger ("Fresh. Sealed. Different."), built f
 - **Theme Builder** header and footer locations are supported. Assign the Bungry header or footer and the coded versions step aside.
 - Widgets are in the **Bungry** category: Button, Placeholder Tag, Section Heading, Menu Cards, Notice, FAQ, Info Rows, CTA Band.
 
+### Importing the page templates
+1. In Elementor, go to **Templates > Saved Templates > Import Templates** and upload the seven files from `elementor/templates/` (`bungry-home.json`, `bungry-menu.json`, `bungry-our-story.json`, `bungry-find-us.json`, `bungry-allergens-faqs.json`, `bungry-privacy.json`, `bungry-terms.json`).
+2. Create a page for each template, open it in Elementor, and use **Insert Template** to add the saved template.
+3. Rebuild the templates from source after editing copy: `python3 scripts/build-elementor-templates.py`.
+
+Photos are styled slots until real photography is supplied. Unconfirmed details are written as `[CLIENT TO CONFIRM: ...]` text, so remove those when confirmed. Unlike the tag widget, that text does not follow the global tag toggle.
+
 ## Editing content
 | What | Where |
 |---|---|

@@ -1,0 +1,328 @@
+{
+  "version": "0.4",
+  "title": "Our Story",
+  "type": "page",
+  "page_settings": {},
+  "content": [
+    {
+      "id": "43ec517",
+      "elType": "container",
+      "settings": {
+        "flex_direction": "column",
+        "flex_direction_mobile": "column",
+        "content_width": "boxed",
+        "flex_gap": {
+          "column": "40",
+          "row": "40",
+          "unit": "px",
+          "size": 40
+        },
+        "padding": {
+          "unit": "px",
+          "top": "80",
+          "right": "0",
+          "bottom": "80",
+          "left": "0",
+          "isLinked": false
+        },
+        "padding_mobile": {
+          "unit": "px",
+          "top": "56",
+          "right": "24",
+          "bottom": "56",
+          "left": "24",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "28dd2c7",
+          "elType": "container",
+          "settings": {
+            "flex_direction": "row",
+            "flex_direction_mobile": "column",
+            "content_width": "full",
+            "flex_gap": {
+              "column": "80",
+              "row": "80",
+              "unit": "px",
+              "size": 80
+            },
+            "padding": {
+              "unit": "px",
+              "top": "80",
+              "right": "80",
+              "bottom": "80",
+              "left": "80",
+              "isLinked": false
+            },
+            "padding_mobile": {
+              "unit": "px",
+              "top": "56",
+              "right": "24",
+              "bottom": "56",
+              "left": "24",
+              "isLinked": false
+            }
+          },
+          "elements": [
+            {
+              "id": "32bb90e",
+              "elType": "container",
+              "settings": {
+                "flex_direction": "column",
+                "flex_direction_mobile": "column",
+                "content_width": "boxed",
+                "flex_gap": {
+                  "column": "20",
+                  "row": "20",
+                  "unit": "px",
+                  "size": 20
+                },
+                "padding": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "0",
+                  "left": "0",
+                  "isLinked": false
+                },
+                "padding_mobile": {
+                  "unit": "px",
+                  "top": "56",
+                  "right": "24",
+                  "bottom": "56",
+                  "left": "24",
+                  "isLinked": false
+                },
+                "width": {
+                  "unit": "%",
+                  "size": 50,
+                  "sizes": []
+                },
+                "width_mobile": {
+                  "unit": "%",
+                  "size": 100,
+                  "sizes": []
+                }
+              },
+              "elements": [
+                {
+                  "id": "14bfa6b",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p>OUR STORY</p>",
+                    "_css_classes": "bungry-eyebrow",
+                    "__globals__": {
+                      "text_color": "globals/colors?id=bungryink"
+                    }
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "7cbbc40",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "A FAMILIAR FAVOURITE, WITH A BUNGRY TWIST.",
+                    "header_size": "h1",
+                    "__globals__": {
+                      "title_color": "globals/colors?id=bungryforest"
+                    }
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "e2c420d",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p>At Bungry, we believe a burger can be familiar and still feel different. Our idea centres on a distinctive sealed-burger format — a recognisable shape designed to give the Bungry experience its own identity. From the product presentation to the packaging and the way the brand shows up, every detail is intended to be simple, bold and memorable.</p>",
+                    "__globals__": {
+                      "text_color": "globals/colors?id=bungryink"
+                    }
+                  },
+                  "elements": []
+                }
+              ],
+              "isInner": false
+            },
+            {
+              "id": "fbd7939",
+              "elType": "container",
+              "settings": {
+                "flex_direction": "column",
+                "flex_direction_mobile": "column",
+                "content_width": "boxed",
+                "flex_gap": {
+                  "column": "20",
+                  "row": "20",
+                  "unit": "px",
+                  "size": 20
+                },
+                "padding": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "0",
+                  "bottom": "0",
+                  "left": "0",
+                  "isLinked": false
+                },
+                "padding_mobile": {
+                  "unit": "px",
+                  "top": "56",
+                  "right": "24",
+                  "bottom": "56",
+                  "left": "24",
+                  "isLinked": false
+                },
+                "width": {
+                  "unit": "%",
+                  "size": 50,
+                  "sizes": []
+                },
+                "width_mobile": {
+                  "unit": "%",
+                  "size": 100,
+                  "sizes": []
+                }
+              },
+              "elements": [
+                {
+                  "id": "d09bf41",
+                  "elType": "container",
+                  "settings": {
+                    "flex_direction": "column",
+                    "flex_direction_mobile": "column",
+                    "content_width": "boxed",
+                    "flex_gap": {
+                      "column": "12",
+                      "row": "12",
+                      "unit": "px",
+                      "size": 12
+                    },
+                    "padding": {
+                      "unit": "px",
+                      "top": "40",
+                      "right": "0",
+                      "bottom": "40",
+                      "left": "0",
+                      "isLinked": false
+                    },
+                    "padding_mobile": {
+                      "unit": "px",
+                      "top": "56",
+                      "right": "24",
+                      "bottom": "56",
+                      "left": "24",
+                      "isLinked": false
+                    },
+                    "_css_classes": "bungry-photo-slot"
+                  },
+                  "elements": [
+                    {
+                      "id": "d2ddea1",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p><strong>PHOTO PLACEHOLDER</strong></p><p>Packaging: real production packaging photo.</p>",
+                        "__globals__": {
+                          "text_color": "globals/colors?id=bungryforest"
+                        }
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "ad61ab1",
+                      "elType": "widget",
+                      "widgetType": "bungry-placeholder-tag",
+                      "settings": {
+                        "label": "Packaging photo TBC",
+                        "tone": "light"
+                      },
+                      "elements": []
+                    }
+                  ],
+                  "isInner": false
+                }
+              ],
+              "isInner": false
+            }
+          ],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "f033ab3",
+      "elType": "container",
+      "settings": {
+        "flex_direction": "column",
+        "flex_direction_mobile": "column",
+        "content_width": "full",
+        "flex_gap": {
+          "column": "24",
+          "row": "24",
+          "unit": "px",
+          "size": 24
+        },
+        "padding": {
+          "unit": "px",
+          "top": "80",
+          "right": "80",
+          "bottom": "80",
+          "left": "80",
+          "isLinked": false
+        },
+        "padding_mobile": {
+          "unit": "px",
+          "top": "56",
+          "right": "24",
+          "bottom": "56",
+          "left": "24",
+          "isLinked": false
+        },
+        "background_background": "classic",
+        "background_color": "#F6F7EE",
+        "__globals__": {
+          "background_color": "globals/colors?id=bungrycream"
+        }
+      },
+      "elements": [
+        {
+          "id": "35f4a8d",
+          "elType": "widget",
+          "widgetType": "heading",
+          "settings": {
+            "title": "ONE DISTINCTIVE BURGER. ONE RECOGNISABLE BRAND.",
+            "header_size": "h2",
+            "__globals__": {
+              "title_color": "globals/colors?id=bungryforest"
+            }
+          },
+          "elements": []
+        },
+        {
+          "id": "d1fe173",
+          "elType": "widget",
+          "widgetType": "bungry-button",
+          "settings": {
+            "text": "Explore the menu",
+            "link": {
+              "url": "/menu/",
+              "is_external": "",
+              "nofollow": ""
+            },
+            "style": "dark",
+            "size": "default",
+            "arrow": "yes"
+          },
+          "elements": []
+        }
+      ],
+      "isInner": false
+    }
+  ]
+}

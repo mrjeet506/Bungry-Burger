@@ -1,0 +1,173 @@
+{
+  "version": "0.4",
+  "title": "Menu",
+  "type": "page",
+  "page_settings": {},
+  "content": [
+    {
+      "id": "03afdbd",
+      "elType": "container",
+      "settings": {
+        "flex_direction": "column",
+        "flex_direction_mobile": "column",
+        "content_width": "full",
+        "flex_gap": {
+          "column": "40",
+          "row": "40",
+          "unit": "px",
+          "size": 40
+        },
+        "padding": {
+          "unit": "px",
+          "top": "80",
+          "right": "80",
+          "bottom": "80",
+          "left": "80",
+          "isLinked": false
+        },
+        "padding_mobile": {
+          "unit": "px",
+          "top": "56",
+          "right": "24",
+          "bottom": "56",
+          "left": "24",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "44f683a",
+          "elType": "widget",
+          "widgetType": "bungry-section-heading",
+          "settings": {
+            "eyebrow": "MENU",
+            "title": "THE BUNGRY LINE-UP",
+            "title_tag": "h2",
+            "text": "Five burger concepts. One signature sealed-burger idea. Take a look through the line-up and choose your Bungry.",
+            "align": "left",
+            "button_text": "",
+            "button_link": {
+              "url": ""
+            }
+          },
+          "elements": []
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "fc490ca",
+      "elType": "container",
+      "settings": {
+        "flex_direction": "column",
+        "flex_direction_mobile": "column",
+        "content_width": "full",
+        "flex_gap": {
+          "column": "40",
+          "row": "40",
+          "unit": "px",
+          "size": 40
+        },
+        "padding": {
+          "unit": "px",
+          "top": "40",
+          "right": "80",
+          "bottom": "40",
+          "left": "80",
+          "isLinked": false
+        },
+        "padding_mobile": {
+          "unit": "px",
+          "top": "56",
+          "right": "24",
+          "bottom": "56",
+          "left": "24",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "ea5d2f1",
+          "elType": "widget",
+          "widgetType": "bungry-menu-cards",
+          "settings": {
+            "category": "",
+            "limit": -1,
+            "columns": "5",
+            "columns_tablet": "2",
+            "columns_mobile": "1",
+            "show_price": "yes",
+            "show_order": "yes",
+            "allergen_link": {
+              "url": "/food-allergens-faqs/"
+            }
+          },
+          "elements": []
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "a3f390d",
+      "elType": "container",
+      "settings": {
+        "flex_direction": "column",
+        "flex_direction_mobile": "column",
+        "content_width": "boxed",
+        "flex_gap": {
+          "column": "20",
+          "row": "20",
+          "unit": "px",
+          "size": 20
+        },
+        "padding": {
+          "unit": "px",
+          "top": "40",
+          "right": "0",
+          "bottom": "40",
+          "left": "0",
+          "isLinked": false
+        },
+        "padding_mobile": {
+          "unit": "px",
+          "top": "56",
+          "right": "24",
+          "bottom": "56",
+          "left": "24",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "3295c76",
+          "elType": "widget",
+          "widgetType": "bungry-notice",
+          "settings": {
+            "type": "info",
+            "title": "Check before you order",
+            "text": "Menu availability and ingredients may change. Check allergen information before you order."
+          },
+          "elements": []
+        },
+        {
+          "id": "735b90b",
+          "elType": "widget",
+          "widgetType": "bungry-button",
+          "settings": {
+            "text": "Allergens & FAQs",
+            "link": {
+              "url": "/food-allergens-faqs/",
+              "is_external": "",
+              "nofollow": ""
+            },
+            "style": "dark",
+            "size": "default",
+            "arrow": "yes"
+          },
+          "elements": []
+        }
+      ],
+      "isInner": false
+    }
+  ]
+}

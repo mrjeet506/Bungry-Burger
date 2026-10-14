@@ -1,0 +1,124 @@
+{
+  "version": "0.4",
+  "title": "Privacy Policy",
+  "type": "page",
+  "page_settings": {},
+  "content": [
+    {
+      "id": "7f6ffaa",
+      "elType": "container",
+      "settings": {
+        "flex_direction": "column",
+        "flex_direction_mobile": "column",
+        "content_width": "boxed",
+        "flex_gap": {
+          "column": "20",
+          "row": "20",
+          "unit": "px",
+          "size": 20
+        },
+        "padding": {
+          "unit": "px",
+          "top": "64",
+          "right": "0",
+          "bottom": "64",
+          "left": "0",
+          "isLinked": false
+        },
+        "padding_mobile": {
+          "unit": "px",
+          "top": "56",
+          "right": "24",
+          "bottom": "56",
+          "left": "24",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "2723d09",
+          "elType": "widget",
+          "widgetType": "bungry-notice",
+          "settings": {
+            "type": "warning",
+            "title": "DRAFT OUTLINE — NOT LEGAL ADVICE",
+            "text": "This page is a draft outline and must be reviewed before publishing."
+          },
+          "elements": []
+        },
+        {
+          "id": "5f93f98",
+          "elType": "widget",
+          "widgetType": "heading",
+          "settings": {
+            "title": "Privacy Policy",
+            "header_size": "h1",
+            "__globals__": {
+              "title_color": "globals/colors?id=bungryforest"
+            }
+          },
+          "elements": []
+        },
+        {
+          "id": "698d51a",
+          "elType": "widget",
+          "widgetType": "text-editor",
+          "settings": {
+            "editor": "<p>This policy explains how Bungry Burger handles personal information and analytics data.</p>",
+            "__globals__": {
+              "text_color": "globals/colors?id=bungryink"
+            }
+          },
+          "elements": []
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "5fd0b37",
+      "elType": "container",
+      "settings": {
+        "flex_direction": "column",
+        "flex_direction_mobile": "column",
+        "content_width": "boxed",
+        "flex_gap": {
+          "column": "40",
+          "row": "40",
+          "unit": "px",
+          "size": 40
+        },
+        "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "0",
+          "left": "0",
+          "isLinked": false
+        },
+        "padding_mobile": {
+          "unit": "px",
+          "top": "56",
+          "right": "24",
+          "bottom": "56",
+          "left": "24",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "73278a4",
+          "elType": "widget",
+          "widgetType": "text-editor",
+          "settings": {
+            "editor": "<h3>1. What we collect</h3><p>If you contact us, we collect the details you send. [CLIENT TO CONFIRM: contact form fields]</p><h3>2. Why we collect it</h3><p>To respond to your enquiry and to run the website.</p><h3>3. Analytics and cookies</h3><p>[CLIENT TO CONFIRM: analytics, advertising and cookie tools in use, and whether consent is required]</p><h3>4. Sharing</h3><p>[CLIENT TO CONFIRM: any third parties that receive information, such as an ordering provider]</p><h3>5. Your rights</h3><p>You can ask what personal information we hold about you and ask us to correct it. Contact: [CLIENT TO CONFIRM: monitored privacy email]</p>",
+            "__globals__": {
+              "text_color": "globals/colors?id=bungryink"
+            }
+          },
+          "elements": []
+        }
+      ],
+      "isInner": false
+    }
+  ]
+}

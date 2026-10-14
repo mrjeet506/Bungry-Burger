@@ -306,3 +306,19 @@
 		font-size: 20px;
 	}
 }
+
+/* Photo slots: styled fallback until real photography is supplied (see elementor templates). */
+.bungry-photo-slot {
+	min-height: 360px;
+	border: 2px dashed var(--bungry-olive);
+	border-radius: 20px;
+	background: var(--bungry-cream-dark);
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.bungry-lead {
+	font-size: 20px;
+	line-height: 32px;
+}

@@ -1,0 +1,190 @@
+{
+  "version": "0.4",
+  "title": "Food Allergens & FAQs",
+  "type": "page",
+  "page_settings": {},
+  "content": [
+    {
+      "id": "e2ef524",
+      "elType": "container",
+      "settings": {
+        "flex_direction": "column",
+        "flex_direction_mobile": "column",
+        "content_width": "full",
+        "flex_gap": {
+          "column": "40",
+          "row": "40",
+          "unit": "px",
+          "size": 40
+        },
+        "padding": {
+          "unit": "px",
+          "top": "80",
+          "right": "80",
+          "bottom": "80",
+          "left": "80",
+          "isLinked": false
+        },
+        "padding_mobile": {
+          "unit": "px",
+          "top": "56",
+          "right": "24",
+          "bottom": "56",
+          "left": "24",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "26657d5",
+          "elType": "widget",
+          "widgetType": "bungry-section-heading",
+          "settings": {
+            "eyebrow": "FOOD ALLERGENS & FAQS",
+            "title": "FREQUENTLY ASKED QUESTIONS",
+            "title_tag": "h2",
+            "text": "Answers about our menu, ordering and food information.",
+            "align": "left",
+            "button_text": "",
+            "button_link": {
+              "url": ""
+            }
+          },
+          "elements": []
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "65b9eea",
+      "elType": "container",
+      "settings": {
+        "flex_direction": "column",
+        "flex_direction_mobile": "column",
+        "content_width": "boxed",
+        "flex_gap": {
+          "column": "40",
+          "row": "40",
+          "unit": "px",
+          "size": 40
+        },
+        "padding": {
+          "unit": "px",
+          "top": "40",
+          "right": "0",
+          "bottom": "40",
+          "left": "0",
+          "isLinked": false
+        },
+        "padding_mobile": {
+          "unit": "px",
+          "top": "56",
+          "right": "24",
+          "bottom": "56",
+          "left": "24",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "c9e1074",
+          "elType": "widget",
+          "widgetType": "bungry-faq",
+          "settings": {
+            "items": [
+              {
+                "_id": "ed3d2c2",
+                "question": "What makes Bungry different?",
+                "answer": "<p>Our signature concept is the distinctive sealed-burger format. Explore the menu to see the current line-up.</p>"
+              },
+              {
+                "_id": "ac627ab",
+                "question": "Where can I find Bungry?",
+                "answer": "<p>We are based in New Zealand. See our address and opening hours on the Find Us page. [CLIENT TO CONFIRM: suburb or city]</p>"
+              },
+              {
+                "_id": "f899139",
+                "question": "Can I order online?",
+                "answer": "<p>Online ordering is [CLIENT TO CONFIRM: available / not currently available]. When it is available, use the official Order Online link.</p>"
+              },
+              {
+                "_id": "38b3eff",
+                "question": "Do you have vegetarian options?",
+                "answer": "<p>The proposed menu includes Green Bungry. Confirm the final ingredients and preparation practices before publishing dietary assurances.</p>"
+              },
+              {
+                "_id": "ec89566",
+                "question": "Where can I check allergens?",
+                "answer": "<p>Please check the current ingredient and allergen information before ordering. If you have a food allergy, contact the team to discuss the specific item and preparation process.</p>"
+              },
+              {
+                "_id": "6974ce5",
+                "question": "Can ingredients or menu items change?",
+                "answer": "<p>Menu availability and ingredients may change. We keep the live menu and allergen information aligned with the current kitchen specification.</p>"
+              }
+            ],
+            "open_first": "",
+            "schema": ""
+          },
+          "elements": []
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "a3c65c2",
+      "elType": "container",
+      "settings": {
+        "flex_direction": "column",
+        "flex_direction_mobile": "column",
+        "content_width": "boxed",
+        "flex_gap": {
+          "column": "20",
+          "row": "20",
+          "unit": "px",
+          "size": 20
+        },
+        "padding": {
+          "unit": "px",
+          "top": "40",
+          "right": "0",
+          "bottom": "40",
+          "left": "0",
+          "isLinked": false
+        },
+        "padding_mobile": {
+          "unit": "px",
+          "top": "56",
+          "right": "24",
+          "bottom": "56",
+          "left": "24",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "f0935e4",
+          "elType": "widget",
+          "widgetType": "bungry-notice",
+          "settings": {
+            "type": "warning",
+            "title": "ITEM-LEVEL ALLERGEN INFORMATION",
+            "text": "To be verified by the kitchen before publishing. Contact the team to discuss a specific item and its preparation before you order."
+          },
+          "elements": []
+        },
+        {
+          "id": "a97da62",
+          "elType": "widget",
+          "widgetType": "bungry-placeholder-tag",
+          "settings": {
+            "label": "Allergen table TBC",
+            "tone": "light"
+          },
+          "elements": []
+        }
+      ],
+      "isInner": false
+    }
+  ]
+}
