@@ -310,8 +310,32 @@ function bungry_menu_item_data( int $post_id ): array {
 		'price_tbc'      => (bool) get_post_meta( $post_id, '_bungry_price_tbc', true ),
 		'allergen_notes' => (string) get_post_meta( $post_id, '_bungry_allergen_notes', true ),
 		'order_url'      => esc_url( $order ),
-		'illustration'   => (string) get_post_meta( $post_id, '_bungry_illustration', true ),
+		'illustration'   => bungry_menu_illustration( $post_id ),
 	);
+}
+
+/**
+ * Illustration slug for a menu item: the one chosen in the editor, otherwise matched from the item name.
+ */
+function bungry_menu_illustration( int $post_id ): string {
+	$chosen = (string) get_post_meta( $post_id, '_bungry_illustration', true );
+	if ( '' !== $chosen ) {
+		return $chosen;
+	}
+	$title = strtolower( (string) get_the_title( $post_id ) );
+	$map   = array(
+		'free-range' => 'burger-free-range',
+		'smoky'      => 'burger-smoky',
+		'double'     => 'burger-double',
+		'green'      => 'burger-green',
+		'classic'    => 'burger-classic',
+	);
+	foreach ( $map as $keyword => $slug ) {
+		if ( false !== strpos( $title, $keyword ) ) {
+			return $slug;
+		}
+	}
+	return 'burger-classic';
 }
 
 /**

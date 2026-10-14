@@ -123,12 +123,20 @@ class Bungry_Widget_Menu_Cards extends \Elementor\Widget_Base {
 		<div class="bungry-menu-cards">
 			<?php
 			foreach ( $items as $post ) :
-				$data = bungry_menu_item_data( $post->ID );
-				$art  = $data['illustration'] ? bungry_art( 'illustrations/' . $data['illustration'], 'bungry-menu-card__art' ) : '';
+				$data  = bungry_menu_item_data( $post->ID );
+				$art   = $data['illustration'] ? bungry_art( 'illustrations/' . $data['illustration'], 'bungry-menu-card__art' ) : '';
+				$media = has_post_thumbnail( $post ) ? get_the_post_thumbnail(
+					$post,
+					'bungry-card',
+					array(
+						'loading' => 'lazy',
+						'alt'     => '',
+					)
+				) : '';
 				?>
 				<article class="bungry-menu-card">
 					<div class="bungry-menu-card__media">
-						<?php echo $art; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- bundled SVG. ?>
+						<?php echo $media ? $media : $art; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- core escapes the image; bundled SVG. ?>
 					</div>
 					<h3 class="bungry-menu-card__title"><?php echo esc_html( get_the_title( $post ) ); ?></h3>
 					<?php if ( $data['diet_label'] ) : ?>
