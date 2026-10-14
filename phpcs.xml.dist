@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<ruleset name="Bungry Burger">
+	<description>WordPress Coding Standards for the Bungry Burger theme.</description>
+
+	<file>.</file>
+	<exclude-pattern>*/assets/*</exclude-pattern>
+	<exclude-pattern>*/vendor/*</exclude-pattern>
+	<exclude-pattern>*/scripts/*</exclude-pattern>
+
+	<arg name="extensions" value="php"/>
+	<arg name="colors"/>
+	<arg value="sp"/>
+
+	<config name="testVersion" value="8.0-"/>
+	<config name="minimum_supported_wp_version" value="6.4"/>
+
+	<rule ref="WordPress">
+		<!-- Theme text domain is set in style.css, not in a plugin header. -->
+		<exclude name="WordPress.WP.I18n.MissingTranslatorsComment"/>
+	</rule>
+
+	<rule ref="WordPress.WP.I18n">
+		<properties>
+			<property name="text_domain" type="array">
+				<element value="bungry-burger"/>
+			</property>
+		</properties>
+	</rule>
+</ruleset>
