@@ -38,6 +38,7 @@ function bungry_settings_fields(): array {
 		'social_facebook'      => array( 'social', __( 'Facebook URL', 'bungry-burger' ), 'url', '' ),
 		'social_tiktok'        => array( 'social', __( 'TikTok URL', 'bungry-burger' ), 'url', '' ),
 		'social_youtube'       => array( 'social', __( 'YouTube URL', 'bungry-burger' ), 'url', '' ),
+		'fx_mode'              => array( 'brand', __( 'Background animation', 'bungry-burger' ), 'fx_mode', __( 'Animated shapes behind the page. Visitors who ask for reduced motion see a still image.', 'bungry-burger' ) ),
 		'layout'               => array( 'brand', __( 'Page width', 'bungry-burger' ), 'layout', __( 'Full width runs edge to edge. Boxed frames the site in a centred panel at 70% width. Phones always use full width.', 'bungry-burger' ) ),
 		'footer_blurb'         => array( 'footer', __( 'Footer blurb', 'bungry-burger' ), 'textarea', '' ),
 		'copyright_text'       => array( 'footer', __( 'Copyright line', 'bungry-burger' ), 'text', __( 'Leave empty for "© {year} Bungry Burger. All rights reserved."', 'bungry-burger' ) ),
@@ -109,6 +110,18 @@ function bungry_render_field( array $args ): void {
 			}
 			echo '</select>';
 			break;
+		case 'fx_mode':
+			$fx_options = array(
+				'off'   => __( 'Off', 'bungry-burger' ),
+				'calm'  => __( 'Calm (gentle drift)', 'bungry-burger' ),
+				'crazy' => __( 'Crazy (waves, bursts, mouse play)', 'bungry-burger' ),
+			);
+			echo '<select id="' . esc_attr( $id ) . '" name="' . esc_attr( $name ) . '">';
+			foreach ( $fx_options as $option => $label ) {
+				printf( '<option value="%1$s" %2$s>%3$s</option>', esc_attr( $option ), selected( $value, $option, false ), esc_html( $label ) );
+			}
+			echo '</select>';
+			break;
 		case 'checkbox':
 			printf(
 				'<label><input type="checkbox" id="%1$s" name="%2$s" value="1" %3$s> %4$s</label>',
@@ -155,6 +168,9 @@ function bungry_sanitize_settings( $input ): array {
 		switch ( $field[2] ) {
 			case 'layout':
 				$clean[ $key ] = in_array( $raw, array( 'full', 'boxed' ), true ) ? $raw : 'full';
+				break;
+			case 'fx_mode':
+				$clean[ $key ] = in_array( $raw, array( 'off', 'calm', 'crazy' ), true ) ? $raw : 'off';
 				break;
 			case 'checkbox':
 				$clean[ $key ] = empty( $raw ) ? 0 : 1;

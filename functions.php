@@ -21,3 +21,4 @@ require_once BUNGRY_DIR . '/inc/elementor-kit.php';
 require_once BUNGRY_DIR . '/inc/elementor-widgets.php';
 require_once BUNGRY_DIR . '/inc/admin-notices.php';
 require_once BUNGRY_DIR . '/inc/demo-importer.php';
+require_once BUNGRY_DIR . '/inc/fx.php';

@@ -32,11 +32,6 @@
           "bottom": "56",
           "left": "24",
           "isLinked": false
-        },
-        "background_background": "classic",
-        "background_color": "#F6F7EE",
-        "__globals__": {
-          "background_color": "globals/colors?id=bungrycream"
         }
       },
       "elements": [

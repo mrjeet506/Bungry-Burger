@@ -151,7 +151,7 @@ def home() -> dict:
                        btn("Find us", "/find-us/", "outline-dark")], row=True, gap=16, pad=0),
         ]),
         half([photo_slot("Hero: close-up product photography showing the sealed edge and mark.", "Product photo TBC")]),
-        bg=CREAM,
+        bg=None,
     )
 
     signature = row(
@@ -168,7 +168,7 @@ def home() -> dict:
             ], row=True, gap=24, pad=0),
             widget("bungry-placeholder-tag", {"label": "Preparation steps: confirm with kitchen", "tone": "light"}),
         ]),
-        bg=CREAM,
+        bg=None,
     )
 
     menu = container([
@@ -193,7 +193,7 @@ def home() -> dict:
         section_heading("WHY BUNGRY", "FRESH. SEALED. SIMPLE. MEMORABLE."),
         container([container([h(t, "h5"), p(f"<p>{b}</p>")], gap=10, pad=0) for t, b in pillars],
                   row=True, gap=24, pad=0),
-    ], full=True, pad=80, gap=40, bg=CREAM)
+    ], full=True, pad=80, gap=40, bg=None)
 
     kitchen = row(
         half([photo_slot("Kitchen or prep photo. Use only if the site has a visible kitchen.", "Confirm open kitchen")]),
@@ -257,7 +257,7 @@ def our_story() -> dict:
     close = container([
         h("ONE DISTINCTIVE BURGER. ONE RECOGNISABLE BRAND.", "h2"),
         btn("Explore the menu", "/menu/", "dark"),
-    ], full=True, pad=80, gap=24, bg=CREAM)
+    ], full=True, pad=80, gap=24, bg=None)
     return page("Our Story", [container([top]), close])
 
 
@@ -276,7 +276,7 @@ def find_us() -> dict:
         p("<p>Contact form goes here. Use Elementor Pro Form or Contact Form 7. Suggested fields: name (optional), "
           "email, topic, message, and a link to the privacy policy.</p>"),
         widget("bungry-placeholder-tag", {"label": "Form to be added", "tone": "light"}),
-    ], full=True, pad=64, gap=16, bg=CREAM)
+    ], full=True, pad=64, gap=16, bg=None)
     return page("Find Us", [intro, container([details]), contact])
 
 
@@ -380,7 +380,7 @@ def header() -> dict:
             "text": "Order online", "link": {"url": "", "is_external": "", "nofollow": ""},
             "style": "primary", "size": "small", "arrow": "",
         }, css="bungry-header-order"),
-    ], row=True, full=True, pad=19, gap=40, bg=CREAM)
+    ], row=True, full=True, pad=19, gap=40, bg=None)
     return {"version": "0.4", "title": "Bungry Header", "type": "header", "page_settings": {}, "content": [bar]}
 
 

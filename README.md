@@ -33,6 +33,16 @@ Classic WordPress theme for Bungry Burger ("Fresh. Sealed. Different."), built f
 
 Photos are styled slots until real photography is supplied. Unconfirmed details are written as `[CLIENT TO CONFIRM: ...]` text, so remove those when confirmed. Unlike the tag widget, that text does not follow the global tag toggle.
 
+## Background animation
+Turn it on under **Appearance > Bungry Settings > Brand > Background animation**:
+- **Off** (default): no animation, no extra JavaScript loaded.
+- **Calm**: a few seeds and soft colour blobs drift slowly.
+- **Crazy**: about 160 sesame seeds and rings, moving wave lines like the wave strip, colour blobs, mouse play (shapes move away from the pointer), and a burst of seeds on every click or tap.
+
+How it works: one fixed canvas sits behind the page content. The animation shows wherever a section has no background colour. It pauses in background tabs, and visitors with reduced motion see a still image. Form fields do not trigger bursts.
+
+In Elementor, a section with a background colour will cover the animation. To let it show, set that section's **Background** to *None*. The Bungry templates already do this for the cream sections. Footer and header keep their solid colours.
+
 ## Editing content
 | What | Where |
 |---|---|

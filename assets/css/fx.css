@@ -1,0 +1,21 @@
+/* Background animation layer. Behind the content (z-index -1); sections with their own background cover it. */
+
+.bungry-fx {
+	position: fixed;
+	inset: 0;
+	z-index: -1;
+	overflow: hidden;
+	pointer-events: none;
+}
+
+.bungry-fx canvas {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+/* Let the animation show through the framed site and the page background. */
+body.bungry-fx-on .bungry-site,
+body.bungry-fx-on.bungry-layout-boxed .bungry-site {
+	background: transparent;
+}
