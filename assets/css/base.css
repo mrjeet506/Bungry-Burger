@@ -788,3 +788,9 @@ body.bungry-layout-boxed .bungry-footer {
 		border-radius: 0 0 16px 16px;
 	}
 }
+
+/* Hamburger in the header on every screen size. Opens the full-screen menu. */
+.bungry-menu-toggle {
+	display: inline-flex;
+	margin-left: 4px;
+}
