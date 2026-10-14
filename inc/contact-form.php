@@ -1,7 +1,7 @@
 <?php
 /**
- * Contact form: a Contact Form 7 form created by the demo import, shown with [bungry_contact_form].
- * The shortcode is what the Elementor templates use, so the form can be changed in Contact Form 7 without editing the page.
+ * Contact Form 7 setup matched to the Figma contact form, with a branded HTML email to the site admin.
+ * [bungry_contact_form] outputs the form, so the Elementor Find Us page never needs editing.
  *
  * @package BungryBurger
  */
@@ -13,7 +13,7 @@ function bungry_cf7_active(): bool {
 }
 
 /**
- * [bungry_contact_form]: outputs the Bungry contact form, or a setup note for administrators.
+ * [bungry_contact_form]: the Bungry form, or a setup note for administrators.
  */
 function bungry_contact_form_shortcode(): string {
 	$form_id = (int) get_option( 'bungry_cf7_form_id' );
@@ -28,8 +28,66 @@ function bungry_contact_form_shortcode(): string {
 add_shortcode( 'bungry_contact_form', 'bungry_contact_form_shortcode' );
 
 /**
- * Creates the Bungry contact form once (never overwrites an existing one).
- * Mail goes to the site admin address and replies go to the sender.
+ * Form markup (Figma: Name (optional), Email, Topic, Message, privacy line, SEND MESSAGE).
+ */
+function bungry_cf7_form_markup(): string {
+	return implode(
+		"\n",
+		array(
+			'<p class="bungry-field-label">Name (optional)</p>',
+			'[text your-name class:bungry-input placeholder "Your name"]',
+			'<p class="bungry-field-label">Email</p>',
+			'[email* your-email class:bungry-input placeholder "you@example.com"]',
+			'<p class="bungry-field-label">Topic</p>',
+			'[select* your-topic class:bungry-input first_as_label "Select a topic" "General enquiry" "The menu" "Order or delivery" "Something else"]',
+			'<p class="bungry-field-label">Message</p>',
+			'[textarea* your-message class:bungry-input placeholder "How can we help?"]',
+			'[acceptance privacy-consent]We’ll use your details only to reply. Read our <a href="/privacy-policy/">Privacy Policy</a>.[/acceptance]',
+			'[submit class:bungry-btn class:bungry-btn--primary "Send message"]',
+		)
+	);
+}
+
+/**
+ * Branded HTML email the admin receives. Mail tags are filled in by Contact Form 7.
+ */
+function bungry_cf7_mail_html(): string {
+	return <<<'HTML'
+<!doctype html>
+<html>
+<body style="margin:0;padding:0;background:#F6F7EE;font-family:Montserrat,Arial,sans-serif;color:#0E3A1A;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#F6F7EE;padding:24px 0;">
+<tr><td align="center">
+<table role="presentation" width="600" cellpadding="0" cellspacing="0" style="max-width:600px;width:100%;background:#FFFFFF;border-radius:20px;overflow:hidden;">
+<tr><td style="background:#185B28;padding:28px 32px;">
+<div style="font-family:'Bakbak One',Arial,sans-serif;font-size:26px;line-height:30px;color:#F6F7EE;text-transform:uppercase;">Bungry Burger</div>
+<div style="font-size:12px;font-weight:700;letter-spacing:1.4px;color:#F6A531;margin-top:6px;text-transform:uppercase;">New website enquiry</div>
+</td></tr>
+<tr><td style="padding:32px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+<tr><td style="padding:0 0 16px;font-size:12px;font-weight:700;letter-spacing:1px;color:#6D7A38;text-transform:uppercase;">Name</td></tr>
+<tr><td style="padding:0 0 20px;font-size:16px;line-height:26px;">[your-name]</td></tr>
+<tr><td style="padding:0 0 16px;font-size:12px;font-weight:700;letter-spacing:1px;color:#6D7A38;text-transform:uppercase;">Email</td></tr>
+<tr><td style="padding:0 0 20px;font-size:16px;line-height:26px;"><a href="mailto:[your-email]" style="color:#185B28;">[your-email]</a></td></tr>
+<tr><td style="padding:0 0 16px;font-size:12px;font-weight:700;letter-spacing:1px;color:#6D7A38;text-transform:uppercase;">Topic</td></tr>
+<tr><td style="padding:0 0 20px;font-size:16px;line-height:26px;">[your-topic]</td></tr>
+<tr><td style="padding:0 0 16px;font-size:12px;font-weight:700;letter-spacing:1px;color:#6D7A38;text-transform:uppercase;">Message</td></tr>
+<tr><td style="padding:16px 20px;background:#F6F7EE;border-radius:12px;font-size:16px;line-height:26px;">[your-message]</td></tr>
+</table>
+</td></tr>
+<tr><td style="padding:20px 32px;background:#E9EBD7;font-size:13px;line-height:22px;color:#0E3A1A;">
+Reply to this email to answer the sender directly. Sent from [_site_url] on [_date] at [_time].
+</td></tr>
+</table>
+</td></tr>
+</table>
+</body>
+</html>
+HTML;
+}
+
+/**
+ * Creates the Bungry contact form once; never overwrites an existing one.
  */
 function bungry_create_contact_form(): void {
 	if ( ! bungry_cf7_active() ) {
@@ -40,30 +98,15 @@ function bungry_create_contact_form(): void {
 		return;
 	}
 
-	$form = implode(
-		"\n",
-		array(
-			'<p class="bungry-field-label">Name (optional)</p>',
-			'[text your-name class:bungry-input]',
-			'<p class="bungry-field-label">Email</p>',
-			'[email* your-email class:bungry-input]',
-			'<p class="bungry-field-label">Topic</p>',
-			'[select your-topic class:bungry-input "General enquiry" "The menu" "Order or delivery" "Something else"]',
-			'<p class="bungry-field-label">Message</p>',
-			'[textarea* your-message class:bungry-input]',
-			'[acceptance privacy-consent]I agree that Bungry Burger can reply to my message. Read our <a href="/privacy-policy/">Privacy Policy</a>.[/acceptance]',
-			'[submit class:bungry-btn class:bungry-btn--primary "Send message"]',
-		)
-	);
-
-	$mail = array(
+	$admin = get_option( 'admin_email' );
+	$mail  = array(
 		'subject'            => 'Bungry website enquiry: [your-topic]',
-		'sender'             => '[_site_title] <' . get_option( 'admin_email' ) . '>',
-		'recipient'          => get_option( 'admin_email' ),
-		'body'               => "From: [your-name] <[your-email]>\nTopic: [your-topic]\n\nMessage:\n[your-message]",
+		'sender'             => '[_site_title] <' . $admin . '>',
+		'recipient'          => $admin,
+		'body'               => bungry_cf7_mail_html(),
 		'additional_headers' => 'Reply-To: [your-email]',
 		'attachments'        => '',
-		'use_html'           => false,
+		'use_html'           => true,
 		'exclude_blank'      => false,
 	);
 
@@ -78,7 +121,7 @@ function bungry_create_contact_form(): void {
 	if ( is_wp_error( $post_id ) || ! $post_id ) {
 		return;
 	}
-	update_post_meta( $post_id, '_form', $form );
+	update_post_meta( $post_id, '_form', bungry_cf7_form_markup() );
 	update_post_meta( $post_id, '_mail', $mail );
 	update_post_meta( $post_id, '_mail_2', array( 'active' => false ) );
 	update_option( 'bungry_cf7_form_id', $post_id );

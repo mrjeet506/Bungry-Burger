@@ -595,3 +595,8 @@
 	height: auto;
 	aspect-ratio: 1 / 1;
 }
+
+.bungry-cf7 .bungry-input::placeholder {
+	color: rgba(14, 58, 26, 0.5);
+	opacity: 1;
+}
