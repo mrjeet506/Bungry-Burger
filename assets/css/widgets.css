@@ -569,3 +569,23 @@
 	margin: 16px 0 0;
 	font-size: 14px;
 }
+
+/* Menu card media: fixed height, featured photo pinned inside it so it never overlaps the title. */
+.bungry-menu-card {
+	overflow: hidden;
+}
+
+.bungry-menu-card__media {
+	position: relative;
+	height: 240px;
+	overflow: hidden;
+	background: var(--bungry-cream-dark);
+}
+
+.bungry-menu-card__media img {
+	position: absolute;
+	inset: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
