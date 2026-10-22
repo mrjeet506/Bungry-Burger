@@ -9,10 +9,25 @@ defined( 'ABSPATH' ) || exit;
 
 get_header();
 
+$bungry_doc = class_exists( '\Elementor\Plugin' ) && is_singular() ? \Elementor\Plugin::$instance->documents->get( get_queried_object_id() ) : false;
+$bungry_built = $bungry_doc && $bungry_doc->is_built_with_elementor();
+
 while ( have_posts() ) :
 	the_post();
 	$categories = get_the_category();
 	$category   = ! empty( $categories ) ? $categories[0] : null;
+	if ( $bungry_built ) {
+		// Elementor-built post (e.g. Find Us): the Elementor layout is the full page, with no blog hero or pager.
+		?>
+		<article <?php post_class( 'bungry-article bungry-page-elementor' ); ?>>
+			<h1 class="screen-reader-text"><?php the_title(); ?></h1>
+			<div class="bungry-prose">
+				<?php the_content(); ?>
+			</div>
+		</article>
+		<?php
+		continue;
+	}
 	?>
 	<article <?php post_class( 'bungry-article-single' ); ?>>
 		<header class="bungry-blog-hero">

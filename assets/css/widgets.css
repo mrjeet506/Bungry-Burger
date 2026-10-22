@@ -855,3 +855,9 @@
 		transform: none;
 	}
 }
+
+/* Info rows inside a card (Find Us): one column, so address, hours, phone and email never overlap. */
+.bungry-card .bungry-info-rows {
+	grid-template-columns: minmax(0, 1fr);
+	gap: 22px;
+}
