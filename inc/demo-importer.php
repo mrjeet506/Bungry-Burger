@@ -38,6 +38,12 @@ function bungry_demo_pages(): array {
 			'description' => 'Find Bungry Burger in New Zealand. Check opening hours, contact details and ordering options.',
 			'body'        => '<h1>COME FIND YOUR BUNGRY.</h1>',
 		),
+		'contact'   => array(
+				'title'       => 'Contact Us',
+				'status'      => 'publish',
+				'description' => 'Contact Bungry Burger about the menu, your order or allergens. Send us a message and we will reply to the email address you provide.',
+				'body'        => '<h1>GET IN TOUCH.</h1>',
+			),
 		'faqs'      => array(
 			'title'       => 'Food Allergens & FAQs',
 			'status'      => 'publish',

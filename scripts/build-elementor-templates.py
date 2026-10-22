@@ -361,7 +361,23 @@ def find_us() -> dict:
             ], width=60, bg=WHITE, css="bungry-card", pad=(40, 40), side=40, gap=16),
         ], gap=80),
     ], bg=CREAM_DARK, pad=(96, 96))
-    return page("Find Us", [intro, details, contact])
+    stores = section([
+        h("OUR STORES", "h2"),
+        p("<p>Find your nearest Bungry and check today’s hours.</p>"),
+        row([
+            col([
+                h(f"STORE {n} — SUBURB", "h5"),
+                tag("Client to confirm"),
+                p("<p>Street address, suburb</p>"), tag("TBC"),
+                p("<p>Opening hours</p>"), tag("TBC"),
+                p("<p>Phone number</p>"), tag("TBC"),
+            ], width=33, bg=WHITE, css="bungry-card", pad=(28, 28), side=28, gap=12)
+            for n in (1, 2, 3)
+        ], gap=24),
+        notice("warning", "Placeholder stores",
+               "Replace with confirmed locations. Hide this list if there is only one site."),
+    ], pad=(72, 72), gap=32)
+    return page("Find Us", [intro, details, stores, contact])
 
 
 # ---------------------------------------------------------------- ALLERGENS & FAQS (Figma 10:1409)
@@ -509,6 +525,59 @@ def terms() -> dict:
 
 
 # ---------------------------------------------------------------- HEADER & FOOTER (Theme Builder, Elementor Pro)
+def contact_us() -> dict:
+    intro = hero("CONTACT US", "GET IN TOUCH.",
+                 "Have a question about the menu, your order or allergens? Send us a message and we’ll get back to you.")
+    channels = section([
+        row([
+            col([
+                col([disc("mail"), kicker("EMAIL US"), p("<p>hello@bungryburger.co.nz</p>"),
+                     tag("Verify before publishing")], bg=WHITE, css="bungry-card", pad=(24, 24), side=24, gap=10),
+                col([disc("phone"), kicker("CALL US"), p("<p>Phone number</p>"),
+                     tag("Client to confirm")], bg=WHITE, css="bungry-card", pad=(24, 24), side=24, gap=10),
+                col([disc("clock"), kicker("REPLY TIME"), p("<p>Typical response time</p>"),
+                     tag("Client to confirm")], bg=WHITE, css="bungry-card", pad=(24, 24), side=24, gap=10),
+                col([h("LOOKING FOR OUR ADDRESS OR HOURS?", "h5"),
+                     p("<p>Store details and the map live on the Find Us page.</p>"),
+                     btn("FIND US", "/find-us/", "outline-dark")],
+                    bg=CREAM_DARK, css="bungry-card", pad=(24, 24), side=24, gap=10),
+            ], width=40, gap=20),
+            col([
+                h("SEND US A MESSAGE", "h4"),
+                widget("shortcode", {"shortcode": "[bungry_contact_form]"}, css="bungry-cf7"),
+            ], width=60, bg=WHITE, css="bungry-card", pad=(40, 40), side=40, gap=20),
+        ], gap=56),
+    ], pad=(72, 72))
+    topics = [
+        ("burger", "MENU QUESTION", "Ask about the line-up, descriptions or availability."),
+        ("bag", "ORDER HELP", "Need a hand with an order? Tell us what happened."),
+        ("info", "ALLERGENS & DIET", "Check ingredient and allergen information with the team."),
+        ("mail", "GENERAL ENQUIRY", "Anything else — we’re happy to help."),
+    ]
+    topic_band = section([
+        h("WHAT CAN WE HELP WITH?", "h2"),
+        row([
+            col([disc(icon), h(title, "h5"), p(f"<p>{body}</p>")],
+                bg=WHITE, css="bungry-card", width=25, gap=12, pad=(28, 28), side=28)
+            for icon, title, body in topics
+        ], gap=24),
+    ], bg=CREAM_DARK, pad=(96, 96), gap=40)
+    states = section([
+        kicker("FORM STATES"),
+        row([
+            notice("info", "Thanks — your message has been sent.", "We’ll reply to the email address you provided."),
+            notice("warning", "Something went wrong.", "Please try again, or email us directly at the address above."),
+        ], gap=24),
+    ], pad=(72, 72), gap=24)
+    cta = section([
+        row([
+            h("PREFER TO VISIT?", "h2", CREAM),
+            btn("FIND US", "/find-us/", "primary"),
+        ], gap=40),
+    ], bg=FOREST, pad=(56, 56))
+    return page("Contact Us", [intro, channels, topic_band, states, cta])
+
+
 def nav(menu_slug: str, layout: str = "horizontal", color: str | None = None) -> dict:
     settings = {"menu": menu_slug, "layout": layout, "mobile_layout": "full-screen", "align_items": "center"}
     globals_ = {"color_menu_item": color} if color else None
@@ -561,6 +630,7 @@ FILES = {
     "bungry-menu.json": menu,
     "bungry-our-story.json": our_story,
     "bungry-find-us.json": find_us,
+    "bungry-contact-us.json": contact_us,
     "bungry-allergens-faqs.json": faqs,
     "bungry-privacy.json": privacy,
     "bungry-terms.json": terms,
