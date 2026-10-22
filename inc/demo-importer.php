@@ -48,7 +48,7 @@ function bungry_demo_pages(): array {
 			'title'       => 'Food Allergens & FAQs',
 			'status'      => 'publish',
 			'description' => 'Answers about the Bungry menu, ordering and allergen information. Check current ingredient and allergen information before you order.',
-			'body'        => '<h1>FOOD ALLERGENS &amp; FAQS</h1>',
+			'body'        => '<h1>ALLERGENS &amp; FAQS</h1>',
 		),
 		'blog'      => array(
 			'title'       => 'Blog',

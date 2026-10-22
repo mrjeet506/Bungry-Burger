@@ -361,7 +361,7 @@
           "elType": "widget",
           "widgetType": "bungry-section-heading",
           "settings": {
-            "eyebrow": "OUR VALUES",
+            "eyebrow": "",
             "title": "WHAT BUNGRY STANDS FOR",
             "title_tag": "h3",
             "text": "",

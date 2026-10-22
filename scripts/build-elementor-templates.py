@@ -258,7 +258,7 @@ def home() -> dict:
     ], pad=(64, 64))
 
     social = section([
-        section_heading("FOLLOW ALONG", "WHICH BUNGRY ARE YOU?",
+        section_heading("", "WHICH BUNGRY ARE YOU?",
                         "Follow along for product close-ups and behind-the-scenes prep.", title_tag="h3"),
         socials(),
         tag("Official links TBC"),
@@ -277,7 +277,7 @@ def menu() -> dict:
                  btn("Beef", "/menu-category/beef/", "outline-dark", "small"),
                  btn("Chicken", "/menu-category/chicken/", "outline-dark", "small"),
                  btn("Vegetarian", "/menu-category/vegetarian/", "outline-dark", "small")], gap=12),
-            tag("Categories optional: confirm final menu"),
+            tag("Categories optional – confirm final menu"),
         ], gap=24),
     ], pad=(56, 0), gap=0)
     allergen = section([
@@ -323,7 +323,7 @@ def our_story() -> dict:
         ("WELCOMING", "A friendly, conversational voice for everyone."),
     ]
     value_band = section([
-        section_heading("OUR VALUES", "WHAT BUNGRY STANDS FOR", align="center", title_tag="h3"),
+        section_heading("", "WHAT BUNGRY STANDS FOR", align="center", title_tag="h3"),
         row([col([disc(VALUE_ICONS[i]),
                   h(t, "h5", css="bungry-center"), p(f"<p>{b}</p>")],
                  bg=WHITE, css="bungry-card", width=25, gap=12, pad=(28, 28), side=28)
@@ -365,12 +365,18 @@ def find_us() -> dict:
         h("OUR STORES", "h2"),
         p("<p>Find your nearest Bungry and check today’s hours.</p>"),
         row([
+            col([p("<p>Search suburb or city</p>", color=INK)], width=60, bg=WHITE, css="bungry-search-input", pad=(14, 16), side=16),
+            col([btn("USE MY LOCATION", "#", "outline-dark")], width=40),
+        ], gap=12),
+        row([
             col([
                 h(f"STORE {n} — SUBURB", "h5"),
                 tag("Client to confirm"),
                 p("<p>Street address, suburb</p>"), tag("TBC"),
                 p("<p>Opening hours</p>"), tag("TBC"),
                 p("<p>Phone number</p>"), tag("TBC"),
+                divider(),
+                row([btn("GET DIRECTIONS", "#", "dark"), btn("ORDER", "#", "primary")], gap=12),
             ], width=33, bg=WHITE, css="bungry-card", pad=(28, 28), side=28, gap=12)
             for n in (1, 2, 3)
         ], gap=24),
@@ -436,27 +442,30 @@ def faqs() -> dict:
         ], gap=72),
     ], bg=CREAM_DARK, pad=(96, 96))
     cta = section([
-        row([h("STILL HAVE A QUESTION?", "h3", CREAM), btn("Contact us", "/find-us/", "primary")], gap=40),
+        row([h("STILL HAVE A QUESTION?", "h3", CREAM), btn("CONTACT US", "/find-us/", "primary")], gap=40),
     ], bg=FOREST, pad=(64, 64))
     return page("Food Allergens & FAQs", [intro, allergens, faq_band, cta])
 
 
 # ---------------------------------------------------------------- LEGAL (Figma 10:1682, 10:1907)
-def legal(title: str, kicker_text: str, intro: str, toc: list, sections: list, top_notice: dict) -> dict:
+def legal(title: str, kicker_text: str, intro: str, toc: list, sections: list, top_notice: dict | None = None,
+          top_tag: str = "Draft outline – client / legal review required") -> dict:
     head = hero(kicker_text, title, intro)
     toc_card = col([
         kicker("ON THIS PAGE", ORANGE_DARK),
         *[p(f"<p>{line}</p>", color=FOREST) for line in toc],
     ], width=30, bg=WHITE, css="bungry-card", pad=(28, 28), side=28, gap=14)
-    body_items = [tag("Draft outline: not legal advice. Client / legal review required.")
-                  if top_notice is None else top_notice]
-    for heading, text, tag_label in sections:
+    body_items = [tag(top_tag)]
+    if top_notice is not None:
+        body_items.append(top_notice)
+    for index, (heading, text, tag_label) in enumerate(sections):
         items = [h(heading, "h4"), p(f"<p>{text}</p>")]
         if tag_label:
             items.append(tag(tag_label))
-        body_items.append(divider())
+        if index > 0:
+            body_items.append(divider())  # Figma: dividers sit between sections, not above the first.
         body_items.append(col(items, gap=12))
-    body = col(body_items, width=70, gap=28)
+    body = col(body_items, width=70, gap=40)
     content = section([row([toc_card, body], gap=64)], pad=(72, 96))
     return page(title, [head, content])
 
@@ -521,6 +530,7 @@ def terms() -> dict:
              "Questions about an order? Get in touch using the details on our Find Us page.", None),
         ],
         closed,
+        top_tag="Draft outline – applies only if online ordering is enabled",
     )
 
 

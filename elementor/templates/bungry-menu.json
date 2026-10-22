@@ -263,7 +263,7 @@
               "elType": "widget",
               "widgetType": "bungry-placeholder-tag",
               "settings": {
-                "label": "Categories optional: confirm final menu",
+                "label": "Categories optional – confirm final menu",
                 "tone": "light"
               },
               "elements": []

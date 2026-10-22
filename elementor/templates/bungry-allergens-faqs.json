@@ -477,7 +477,7 @@
               "elType": "widget",
               "widgetType": "bungry-button",
               "settings": {
-                "text": "Contact us",
+                "text": "CONTACT US",
                 "link": {
                   "url": "/find-us/",
                   "is_external": "",

@@ -1601,7 +1601,7 @@
           "elType": "widget",
           "widgetType": "bungry-section-heading",
           "settings": {
-            "eyebrow": "FOLLOW ALONG",
+            "eyebrow": "",
             "title": "WHICH BUNGRY ARE YOU?",
             "title_tag": "h3",
             "text": "Follow along for product close-ups and behind-the-scenes prep.",

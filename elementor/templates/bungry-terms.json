@@ -311,10 +311,10 @@
                 "flex_direction_mobile": "column",
                 "content_width": "full",
                 "flex_gap": {
-                  "column": "28",
-                  "row": "28",
+                  "column": "40",
+                  "row": "40",
                   "unit": "px",
-                  "size": 28
+                  "size": 40
                 },
                 "padding": {
                   "unit": "px",
@@ -345,6 +345,16 @@
               },
               "elements": [
                 {
+                  "id": "c74d97b",
+                  "elType": "widget",
+                  "widgetType": "bungry-placeholder-tag",
+                  "settings": {
+                    "label": "Draft outline – applies only if online ordering is enabled",
+                    "tone": "light"
+                  },
+                  "elements": []
+                },
+                {
                   "id": "c4ca423",
                   "elType": "widget",
                   "widgetType": "bungry-notice",
@@ -354,45 +364,6 @@
                     "text": "Please check back soon, or find us in store once our details are confirmed. [Show this state if ordering is unavailable, the menu is out of date or the store is temporarily closed.]"
                   },
                   "elements": []
-                },
-                {
-                  "id": "1f0e3da",
-                  "elType": "container",
-                  "settings": {
-                    "flex_direction": "column",
-                    "flex_direction_mobile": "column",
-                    "content_width": "full",
-                    "flex_gap": {
-                      "column": "40",
-                      "row": "40",
-                      "unit": "px",
-                      "size": 40
-                    },
-                    "padding": {
-                      "unit": "px",
-                      "top": "0",
-                      "right": "0",
-                      "bottom": "0",
-                      "left": "0",
-                      "isLinked": false
-                    },
-                    "padding_mobile": {
-                      "unit": "px",
-                      "top": "0",
-                      "right": "24",
-                      "bottom": "0",
-                      "left": "24",
-                      "isLinked": false
-                    },
-                    "background_background": "classic",
-                    "background_color": "#F6F7EE",
-                    "__globals__": {
-                      "background_color": "globals/colors?id=bungryolive"
-                    },
-                    "_css_classes": "bungry-divider"
-                  },
-                  "elements": [],
-                  "isInner": false
                 },
                 {
                   "id": "98f1370",
@@ -426,7 +397,7 @@
                   },
                   "elements": [
                     {
-                      "id": "c74d97b",
+                      "id": "70efdf2",
                       "elType": "widget",
                       "widgetType": "heading",
                       "settings": {
@@ -439,7 +410,7 @@
                       "elements": []
                     },
                     {
-                      "id": "70efdf2",
+                      "id": "6f4922f",
                       "elType": "widget",
                       "widgetType": "text-editor",
                       "settings": {
@@ -451,7 +422,7 @@
                       "elements": []
                     },
                     {
-                      "id": "6f4922f",
+                      "id": "1f0e3da",
                       "elType": "widget",
                       "widgetType": "bungry-placeholder-tag",
                       "settings": {
